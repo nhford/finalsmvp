@@ -82,6 +82,38 @@ def fit_oof_logistic(players: pd.DataFrame):
     return out, clf, X, y
 
 
+def feature_diagnostics(X: pd.DataFrame) -> dict:
+    """Pearson correlations + VIF for the lean design matrix."""
+    from sklearn.linear_model import LinearRegression
+
+    frame = X.astype(float)
+    cols = list(frame.columns)
+    corr = frame.corr()
+
+    pairs: list[dict] = []
+    for i, a in enumerate(cols):
+        for b in cols[i + 1 :]:
+            r = float(corr.loc[a, b])
+            pairs.append({"a": a, "b": b, "r": round(r, 3)})
+    pairs.sort(key=lambda row: abs(row["r"]), reverse=True)
+
+    vif_rows: list[dict] = []
+    for col in cols:
+        y = frame[col]
+        others = frame.drop(columns=[col])
+        model = LinearRegression().fit(others, y)
+        r2 = float(model.score(others, y))
+        vif = float("inf") if r2 >= 1 - 1e-12 else 1.0 / (1.0 - r2)
+        vif_rows.append({"name": col, "vif": round(vif, 2)})
+    vif_rows.sort(key=lambda row: row["vif"], reverse=True)
+
+    return {
+        "n": int(len(frame)),
+        "topPairs": pairs[:12],
+        "vif": vif_rows,
+    }
+
+
 def summarize_accuracy(out: pd.DataFrame, label: str) -> None:
     picks = out.loc[out.groupby("Year")["mvp_share"].idxmax()]
     year_hits = int(
@@ -115,6 +147,7 @@ def main() -> None:
     out.to_csv(out_path, index=False)
 
     coefs = pd.Series(clf.coef_[0], index=X.columns).sort_values(ascending=False)
+    diagnostics = feature_diagnostics(X)
     weights_path = Path(FEATURE_WEIGHTS_JSON)
     weights_payload = {
         "note": "Standardized logistic coefficients from the last OOF fold fit",
@@ -122,6 +155,9 @@ def main() -> None:
             {"name": str(name), "weight": round(float(value), 3)}
             for name, value in coefs.items()
         ],
+        "n": diagnostics["n"],
+        "topPairs": diagnostics["topPairs"],
+        "vif": diagnostics["vif"],
     }
     weights_path.write_text(
         json.dumps(weights_payload, indent=2) + "\n",
@@ -132,6 +168,9 @@ def main() -> None:
     summarize_accuracy(out, "LEAN + advanced")
     print("\nStandardized coefs (last OOF fold fit):")
     print(coefs.round(3).to_string())
+    print("\nVIF:")
+    for row in diagnostics["vif"]:
+        print(f"  {row['name']:<16} {row['vif']:6.2f}")
 
 
 if __name__ == "__main__":

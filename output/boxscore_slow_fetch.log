@@ -1,0 +1,137 @@
+14:04:39 Starting slow fetch: 43 games, 60s between each
+14:04:39 [1/43] 198906060DET
+14:04:39   FAIL 429 — sleeping 120s (attempt 1/6)
+14:06:39   FAIL 429 — sleeping 240s (attempt 2/6)
+14:10:39   FAIL 429 — sleeping 360s (attempt 3/6)
+14:16:40   FAIL 429 — sleeping 480s (attempt 4/6)
+14:24:40   FAIL 429 — sleeping 600s (attempt 5/6)
+14:44:57 Starting slow fetch: 42 games, 60s between each
+14:44:57 [1/42] 198906080DET
+14:44:57   saved data/series_html/boxscores/198906080DET.html (217909 bytes)
+14:44:57   sleeping 60s
+14:45:57 [2/42] 198906110LAL
+14:45:58   saved data/series_html/boxscores/198906110LAL.html (220040 bytes)
+14:45:58   sleeping 60s
+14:46:58 [3/42] 198906130LAL
+14:46:58   saved data/series_html/boxscores/198906130LAL.html (219900 bytes)
+14:46:58   sleeping 60s
+14:47:58 [4/42] 199006050DET
+14:47:58   saved data/series_html/boxscores/199006050DET.html (216481 bytes)
+14:47:58   sleeping 60s
+14:48:41 Starting slow fetch: 38 games, 20s between each
+14:48:41 [1/38] 199006070DET
+14:48:41   saved data/series_html/boxscores/199006070DET.html (218864 bytes)
+14:48:41   sleeping 20s
+14:49:01 [2/38] 199006100POR
+14:49:01   saved data/series_html/boxscores/199006100POR.html (222976 bytes)
+14:49:01   sleeping 20s
+14:49:21 [3/38] 199006120POR
+14:49:22   saved data/series_html/boxscores/199006120POR.html (223007 bytes)
+14:49:22   sleeping 20s
+14:49:42 [4/38] 199006140POR
+14:49:42   saved data/series_html/boxscores/199006140POR.html (216291 bytes)
+14:49:42   sleeping 20s
+14:50:02 [5/38] 199106020CHI
+14:50:02   saved data/series_html/boxscores/199106020CHI.html (216268 bytes)
+14:50:02   sleeping 20s
+14:50:22 [6/38] 199106050CHI
+14:50:22   saved data/series_html/boxscores/199106050CHI.html (227077 bytes)
+14:50:22   sleeping 20s
+14:50:42 [7/38] 199106070LAL
+14:50:42   saved data/series_html/boxscores/199106070LAL.html (222976 bytes)
+14:50:42   sleeping 20s
+14:51:02 [8/38] 199106090LAL
+14:51:02   saved data/series_html/boxscores/199106090LAL.html (220569 bytes)
+14:51:02   sleeping 20s
+14:51:22 [9/38] 199106120LAL
+14:51:22   saved data/series_html/boxscores/199106120LAL.html (216164 bytes)
+14:51:22   sleeping 20s
+14:51:42 [10/38] 199206030CHI
+14:51:42   saved data/series_html/boxscores/199206030CHI.html (229868 bytes)
+14:51:42   sleeping 20s
+14:52:02 [11/38] 199206050CHI
+14:52:03   saved data/series_html/boxscores/199206050CHI.html (219419 bytes)
+14:52:03   sleeping 20s
+14:52:23 [12/38] 199206070POR
+14:52:23   saved data/series_html/boxscores/199206070POR.html (219142 bytes)
+14:52:23   sleeping 20s
+14:52:43 [13/38] 199206100POR
+14:52:43   saved data/series_html/boxscores/199206100POR.html (217041 bytes)
+14:52:43   sleeping 20s
+14:53:03 [14/38] 199206120POR
+14:53:03   saved data/series_html/boxscores/199206120POR.html (225650 bytes)
+14:53:03   sleeping 20s
+14:53:23 [15/38] 199206140CHI
+14:53:23   saved data/series_html/boxscores/199206140CHI.html (216869 bytes)
+14:53:23   sleeping 20s
+14:53:43 [16/38] 199306090PHO
+14:53:43   saved data/series_html/boxscores/199306090PHO.html (218943 bytes)
+14:53:43   sleeping 20s
+14:54:03 [17/38] 199306110PHO
+14:54:03   saved data/series_html/boxscores/199306110PHO.html (218937 bytes)
+14:54:03   sleeping 20s
+14:54:23 [18/38] 199306130CHI
+14:54:24   saved data/series_html/boxscores/199306130CHI.html (223846 bytes)
+14:54:24   sleeping 20s
+14:54:44 [19/38] 199306160CHI
+14:54:44   saved data/series_html/boxscores/199306160CHI.html (223253 bytes)
+14:54:44   sleeping 20s
+14:55:04 [20/38] 199306180CHI
+14:55:04   saved data/series_html/boxscores/199306180CHI.html (225384 bytes)
+14:55:04   sleeping 20s
+14:55:24 [21/38] 199306200PHO
+14:55:24   saved data/series_html/boxscores/199306200PHO.html (218810 bytes)
+14:55:24   sleeping 20s
+14:55:44 [22/38] 199406080HOU
+14:55:44   saved data/series_html/boxscores/199406080HOU.html (219569 bytes)
+14:55:44   sleeping 20s
+14:56:04 [23/38] 199406100HOU
+14:56:04   saved data/series_html/boxscores/199406100HOU.html (219623 bytes)
+14:56:04   sleeping 20s
+14:56:24 [24/38] 199406120NYK
+14:56:24   saved data/series_html/boxscores/199406120NYK.html (217537 bytes)
+14:56:24   sleeping 20s
+14:56:44 [25/38] 199406150NYK
+14:56:45   saved data/series_html/boxscores/199406150NYK.html (217520 bytes)
+14:56:45   sleeping 20s
+14:57:05 [26/38] 199406170NYK
+14:57:05   saved data/series_html/boxscores/199406170NYK.html (219661 bytes)
+14:57:05   sleeping 20s
+14:57:25 [27/38] 199406190HOU
+14:57:26   saved data/series_html/boxscores/199406190HOU.html (215353 bytes)
+14:57:26   sleeping 20s
+14:57:46 [28/38] 199406220HOU
+14:57:46   saved data/series_html/boxscores/199406220HOU.html (219692 bytes)
+14:57:46   sleeping 20s
+14:58:06 [29/38] 199506070ORL
+14:58:06   saved data/series_html/boxscores/199506070ORL.html (217952 bytes)
+14:58:06   sleeping 20s
+14:58:26 [30/38] 199506090ORL
+14:58:26   saved data/series_html/boxscores/199506090ORL.html (215553 bytes)
+14:58:26   sleeping 20s
+14:58:46 [31/38] 199506110HOU
+14:58:46   saved data/series_html/boxscores/199506110HOU.html (215588 bytes)
+14:58:46   sleeping 20s
+14:59:06 [32/38] 199506140HOU
+14:59:06   saved data/series_html/boxscores/199506140HOU.html (213289 bytes)
+14:59:06   sleeping 20s
+14:59:26 [33/38] 199606050CHI
+14:59:26   saved data/series_html/boxscores/199606050CHI.html (227646 bytes)
+14:59:26   sleeping 20s
+14:59:46 [34/38] 199606070CHI
+14:59:47   saved data/series_html/boxscores/199606070CHI.html (225518 bytes)
+14:59:47   sleeping 20s
+15:00:07 [35/38] 199606090SEA
+15:00:07   saved data/series_html/boxscores/199606090SEA.html (227655 bytes)
+15:00:07   sleeping 20s
+15:00:27 [36/38] 199606120SEA
+15:00:27   saved data/series_html/boxscores/199606120SEA.html (225508 bytes)
+15:00:27   sleeping 20s
+15:00:47 [37/38] 199606140SEA
+15:00:47   saved data/series_html/boxscores/199606140SEA.html (225562 bytes)
+15:00:47   sleeping 20s
+15:01:07 [38/38] 199606160CHI
+15:01:07   saved data/series_html/boxscores/199606160CHI.html (225436 bytes)
+15:01:08 Done. still missing: 0
+15:01:08 Running extract_wl_efg.py
+15:02:19 extract_wl_efg.py finished

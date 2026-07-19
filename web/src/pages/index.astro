@@ -9,6 +9,9 @@ import finals from "@/data/finals.json";
 const data = finals as FinalsData;
 const correct = data.years.filter((y) => y.correct).length;
 const featureWeights = data.featureWeights ?? [];
+const featureVif = data.featureVif ?? [];
+const featureTopPairs = data.featureTopPairs ?? [];
+const featureN = data.featureN ?? null;
 ---
 
 <Layout
@@ -23,8 +26,9 @@ const featureWeights = data.featureWeights ?? [];
           Finals MVP Standings
         </h2>
         <p class="text-center text-sm md:text-base text-white/65 mb-2">
-          {correct}/{data.years.length} years where the model matched the award (
-          {data.minYear}–{data.maxYear})
+          {correct}/{data.years.length} years where the model matched the award ({
+            data.minYear
+          }–{data.maxYear})
         </p>
         <Content data={data} client:load />
       </div>
@@ -33,7 +37,8 @@ const featureWeights = data.featureWeights ?? [];
       <div
         aria-hidden
         class="hidden md:block w-px shrink-0 self-stretch bg-white/30 mx-4 lg:mx-6"
-      />
+      >
+      </div>
 
       <div class="w-full md:flex-1 min-w-0">
         <h2 class="my-2 text-xl md:text-2xl lg:text-3xl text-center font-bold">
@@ -42,6 +47,9 @@ const featureWeights = data.featureWeights ?? [];
         <HowItWorks
           client:load
           featureWeights={featureWeights}
+          featureVif={featureVif}
+          featureTopPairs={featureTopPairs}
+          featureN={featureN}
           correct={correct}
           total={data.years.length}
           minYear={data.minYear}

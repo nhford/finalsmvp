@@ -3,59 +3,156 @@
   "features": [
     {
       "name": "USG%",
-      "weight": 2.309
-    },
-    {
-      "name": "PTS",
-      "weight": 2.24
-    },
-    {
-      "name": "FG%",
-      "weight": 1.191
-    },
-    {
-      "name": "ORtg",
-      "weight": 0.961
-    },
-    {
-      "name": "rel_Q4_eFG%",
-      "weight": 0.469
-    },
-    {
-      "name": "3P%",
-      "weight": 0.419
+      "weight": 3.334
     },
     {
       "name": "MP",
-      "weight": 0.4
+      "weight": 1.685
     },
     {
-      "name": "AST",
-      "weight": 0.257
+      "name": "eFG%",
+      "weight": 1.551
     },
     {
-      "name": "TRB",
-      "weight": 0.09
+      "name": "NetRtg",
+      "weight": 1.349
     },
     {
-      "name": "TOV",
-      "weight": -0.05
+      "name": "rel_WL_eFG%",
+      "weight": 1.148
+    },
+    {
+      "name": "AST%-TOV%",
+      "weight": 0.493
+    },
+    {
+      "name": "rel_Q4_eFG%",
+      "weight": 0.373
+    },
+    {
+      "name": "TRB%",
+      "weight": 0.217
+    },
+    {
+      "name": "rel_closeout_PTS",
+      "weight": -0.032
     },
     {
       "name": "GM",
-      "weight": -0.331
+      "weight": -0.605
     },
     {
-      "name": "STL",
-      "weight": -0.361
+      "name": "PTS_CV",
+      "weight": -0.94
+    }
+  ],
+  "n": 344,
+  "topPairs": [
+    {
+      "a": "eFG%",
+      "b": "NetRtg",
+      "r": 0.757
     },
     {
-      "name": "BLK",
-      "weight": -0.403
+      "a": "PTS_CV",
+      "b": "MP",
+      "r": -0.623
     },
     {
-      "name": "DRtg",
-      "weight": -1.369
+      "a": "USG%",
+      "b": "AST%-TOV%",
+      "r": 0.498
+    },
+    {
+      "a": "USG%",
+      "b": "PTS_CV",
+      "r": -0.481
+    },
+    {
+      "a": "USG%",
+      "b": "MP",
+      "r": 0.405
+    },
+    {
+      "a": "PTS_CV",
+      "b": "AST%-TOV%",
+      "r": -0.37
+    },
+    {
+      "a": "MP",
+      "b": "GM",
+      "r": -0.344
+    },
+    {
+      "a": "AST%-TOV%",
+      "b": "NetRtg",
+      "r": 0.325
+    },
+    {
+      "a": "AST%-TOV%",
+      "b": "MP",
+      "r": 0.302
+    },
+    {
+      "a": "PTS_CV",
+      "b": "NetRtg",
+      "r": -0.258
+    },
+    {
+      "a": "rel_closeout_PTS",
+      "b": "rel_WL_eFG%",
+      "r": 0.189
+    },
+    {
+      "a": "eFG%",
+      "b": "rel_WL_eFG%",
+      "r": -0.189
+    }
+  ],
+  "vif": [
+    {
+      "name": "NetRtg",
+      "vif": 4.33
+    },
+    {
+      "name": "eFG%",
+      "vif": 3.36
+    },
+    {
+      "name": "AST%-TOV%",
+      "vif": 2.16
+    },
+    {
+      "name": "PTS_CV",
+      "vif": 2.12
+    },
+    {
+      "name": "MP",
+      "vif": 2.03
+    },
+    {
+      "name": "USG%",
+      "vif": 1.92
+    },
+    {
+      "name": "TRB%",
+      "vif": 1.48
+    },
+    {
+      "name": "GM",
+      "vif": 1.19
+    },
+    {
+      "name": "rel_WL_eFG%",
+      "vif": 1.13
+    },
+    {
+      "name": "rel_closeout_PTS",
+      "vif": 1.05
+    },
+    {
+      "name": "rel_Q4_eFG%",
+      "vif": 1.05
     }
   ]
 }

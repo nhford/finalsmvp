@@ -15,28 +15,25 @@ from helpers.paths import (
 )
 
 # Available on Basketball-Reference advanced series tables from 1984 on.
-ADVANCED_FEATURE_COLS = ("USG%", "ORtg", "DRtg")
+ADVANCED_FEATURE_COLS = ("USG%", "TRB%", "AST%", "TOV%", "ORtg", "DRtg")
+# Derived after join: NetRtg = ORtg − DRtg; AST%-TOV% = AST% − TOV%.
+ADVANCED_DERIVED_COLS = ("NetRtg", "AST%-TOV%")
 
-# Lean logistic feature set: one scoring total, rates, secondary stats, GM.
-# Drops collinear counting stats (FG/FT/ORB/DRB/PF/G/3P/FT%).
+# Lean logistic feature set: usage/minutes, rates, secondary stats, GM.
+# Drops collinear counting stats (FG/FT/ORB/DRB/TRB/AST/STL/BLK/PF/G/3P/FT%/TOV).
 # PTS_CV = std(per-game PTS) / mean(per-game PTS) — scale-free consistency.
 # rel_closeout_PTS = closeout PTS − mean PTS in other series games.
+# NetRtg replaces separate ORtg / DRtg; AST%-TOV% replaces raw TOV%.
 LEAN_MODEL_FEATURE_COLS = (
     "USG%",
-    "PTS",
     "PTS_CV",
     "rel_closeout_PTS",
-    "FG%",
-    "3P%",
+    "eFG%",
     "rel_Q4_eFG%",
     "rel_WL_eFG%",
-    "AST",
-    "TRB",
-    "STL",
-    "BLK",
-    "TOV",
-    "ORtg",
-    "DRtg",
+    "TRB%",
+    "AST%-TOV%",
+    "NetRtg",
     "MP",
     "GM",
 )
@@ -125,7 +122,8 @@ def select_model_features(
     """Return Year/Player/mvp + lean model columns (optionally without advanced)."""
     cols = list(feature_cols)
     if not advanced:
-        cols = [c for c in cols if c not in ADVANCED_FEATURE_COLS]
+        drop = set(ADVANCED_FEATURE_COLS) | set(ADVANCED_DERIVED_COLS)
+        cols = [c for c in cols if c not in drop]
     missing = [c for c in cols if c not in players.columns]
     if missing:
         raise KeyError(f"Missing model feature columns: {missing}")
@@ -273,6 +271,14 @@ def top_table_from_csv(
         df = rank_table(df)
     if advanced:
         df = attach_advanced(df, path.name, advanced_dir=advanced_dir, cols=advanced_cols)
+        df["NetRtg"] = (
+            pd.to_numeric(df["ORtg"], errors="coerce")
+            - pd.to_numeric(df["DRtg"], errors="coerce")
+        ).round(1)
+        df["AST%-TOV%"] = (
+            pd.to_numeric(df["AST%"], errors="coerce")
+            - pd.to_numeric(df["TOV%"], errors="coerce")
+        ).round(1)
     df.insert(0, "Year", year)
     df["Series_G"] = series_g
     df["GM"] = games_missed.to_numpy()
@@ -300,7 +306,7 @@ def build_top8(
     pts_cv: bool = True,
     closeout: bool = True,
 ) -> pd.DataFrame:
-    """Stack top-N champion tables. Set ``advanced=True`` to add USG%/ORtg/DRtg.
+    """Stack top-N champion tables. Set ``advanced=True`` to add USG%/NetRtg/….
 
     When ``require_advanced`` is True, only series with an advanced CSV are kept
     (Basketball-Reference advanced Finals tables start in 1984).

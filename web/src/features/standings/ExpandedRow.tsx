@@ -1,3 +1,4 @@
+import { useState } from "react";
 import type { Candidate, ViewMode, YearRow } from "@/types/finals";
 import { playerImageUrl } from "@/lib/playerImage";
 
@@ -5,6 +6,8 @@ interface Props {
   row: YearRow;
   view: ViewMode;
 }
+
+const DEFAULT_VISIBLE = 5;
 
 function fmt(value: number | null | undefined, digits = 0) {
   if (value == null || Number.isNaN(value)) return "—";
@@ -38,7 +41,13 @@ function candidateHighlight(c: Candidate, view: ViewMode) {
 }
 
 export default function ExpandedRow({ row, view }: Props) {
+  const [showAll, setShowAll] = useState(false);
   const disagree = !row.correct;
+  const hasMore = row.candidates.length > DEFAULT_VISIBLE;
+  const visible = showAll
+    ? row.candidates
+    : row.candidates.slice(0, DEFAULT_VISIBLE);
+  const hiddenCount = row.candidates.length - DEFAULT_VISIBLE;
 
   return (
     <tr className="bg-neutral-50">
@@ -98,16 +107,10 @@ export default function ExpandedRow({ row, view }: Props) {
                   <th className="py-2 px-1 font-semibold text-right">TRB</th>
                   <th className="py-2 px-1 font-semibold text-right">AST</th>
                   <th className="py-2 px-1 font-semibold text-right hidden sm:table-cell">
-                    GM
-                  </th>
-                  <th className="py-2 px-1 font-semibold text-right hidden sm:table-cell">
                     USG%
                   </th>
                   <th className="py-2 px-1 font-semibold text-right hidden md:table-cell">
-                    ORtg
-                  </th>
-                  <th className="py-2 px-1 font-semibold text-right hidden md:table-cell">
-                    DRtg
+                    NetRtg
                   </th>
                   <th className="py-2 px-1 font-semibold text-right hidden lg:table-cell">
                     FG%
@@ -118,7 +121,7 @@ export default function ExpandedRow({ row, view }: Props) {
                 </tr>
               </thead>
               <tbody>
-                {row.candidates.map((c) => {
+                {visible.map((c) => {
                   const highlight = candidateHighlight(c, view);
                   const headshot = playerImageUrl(
                     row.year,
@@ -134,13 +137,11 @@ export default function ExpandedRow({ row, view }: Props) {
                     >
                       <td className="py-2 pr-2 font-medium whitespace-nowrap">
                         <span className="inline-flex items-center gap-2">
-                          {headshot ? (
-                            <img
-                              src={headshot}
-                              alt=""
-                              className="h-8 w-8 object-contain shrink-0"
-                            />
-                          ) : null}
+                          <img
+                            src={headshot}
+                            alt=""
+                            className="h-8 w-8 object-contain shrink-0"
+                          />
                           <span>
                             {c.player}
                             {c.isActualMvp ? (
@@ -169,16 +170,10 @@ export default function ExpandedRow({ row, view }: Props) {
                         {fmt(c.stats.AST)}
                       </td>
                       <td className="py-2 px-1 text-right tabular-nums hidden sm:table-cell">
-                        {fmt(c.stats.GM)}
-                      </td>
-                      <td className="py-2 px-1 text-right tabular-nums hidden sm:table-cell">
                         {fmt(c.stats["USG%"], 1)}
                       </td>
                       <td className="py-2 px-1 text-right tabular-nums hidden md:table-cell">
-                        {fmt(c.stats.ORtg, 1)}
-                      </td>
-                      <td className="py-2 px-1 text-right tabular-nums hidden md:table-cell">
-                        {fmt(c.stats.DRtg, 1)}
+                        {fmt(c.stats.NetRtg, 1)}
                       </td>
                       <td className="py-2 px-1 text-right tabular-nums hidden lg:table-cell">
                         {fmtPct(c.stats["FG%"])}
@@ -192,6 +187,18 @@ export default function ExpandedRow({ row, view }: Props) {
               </tbody>
             </table>
           </div>
+
+          {hasMore ? (
+            <button
+              type="button"
+              className="self-center rounded border border-neutral-300 bg-white px-3 py-1.5 text-sm font-medium text-neutral-800 transition-colors hover:bg-neutral-100"
+              onClick={() => setShowAll((prev) => !prev)}
+            >
+              {showAll
+                ? "Show less"
+                : `Show ${hiddenCount} more`}
+            </button>
+          ) : null}
         </div>
       </td>
     </tr>

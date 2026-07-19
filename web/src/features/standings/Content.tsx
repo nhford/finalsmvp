@@ -1,4 +1,4 @@
-import { Fragment, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import type { FinalsData, GroupBy, ViewMode } from "@/types/finals";
 import ControlButton from "@/ui/ControlButton";
 import ScrollHintStrip from "@/ui/ScrollHintStrip";
@@ -8,70 +8,81 @@ interface Props {
   data: FinalsData;
 }
 
+function decadeStart(year: number) {
+  return Math.floor(year / 10) * 10;
+}
+
+function decadeLabel(start: number) {
+  return `${start}s`;
+}
+
 export default function Content({ data }: Props) {
   const { years, teams, maxYear, minYear } = data;
-  const yearList = useMemo(
-    () =>
-      Array.from({ length: maxYear - minYear + 1 }, (_, i) => maxYear - i),
-    [maxYear, minYear],
-  );
+  const decades = useMemo(() => {
+    const maxDecade = decadeStart(maxYear);
+    const minDecade = decadeStart(minYear);
+    const list: number[] = [];
+    for (let d = maxDecade; d >= minDecade; d -= 10) list.push(d);
+    return list;
+  }, [maxYear, minYear]);
 
   const [view, setView] = useState<ViewMode>("predicted");
   const [groupBy, setGroupBy] = useState<GroupBy>("year");
-  const [yearFilter, setYearFilter] = useState<number | "all">("all");
+  const [decadeFilter, setDecadeFilter] = useState<number | "all">("all");
   const [team, setTeam] = useState(teams[0] ?? "BOS");
 
   const filtered = useMemo(() => {
     if (groupBy === "year") {
-      if (yearFilter === "all") return years;
-      return years.filter((row) => row.year === yearFilter);
+      if (decadeFilter === "all") return years;
+      return years.filter((row) => decadeStart(row.year) === decadeFilter);
     }
     return years.filter((row) => row.teamAbbr === team);
-  }, [groupBy, yearFilter, team, years]);
+  }, [groupBy, decadeFilter, team, years]);
 
   return (
     <div className="h-full pb-10">
-      <div className="flex flex-wrap py-2 gap-2 justify-center items-center">
-        <p className="text-sm md:text-base mr-1">view:</p>
-        {(
-          [
-            { key: "predicted", label: "Predicted" },
-            { key: "actual", label: "Actual" },
-          ] as const
-        ).map(({ key, label }) => (
-          <ControlButton
-            key={key}
-            active={view === key}
-            size="sm"
-            className="w-28"
-            onClick={() => setView(key)}
-          >
-            {label}
-          </ControlButton>
-        ))}
-      </div>
-
-      <div className="flex flex-wrap py-2 gap-2 justify-center items-center">
-        <p className="text-sm md:text-base mr-1">group by:</p>
-        {(
-          [
-            { key: "year", label: "Year" },
-            { key: "team", label: "Team" },
-          ] as const
-        ).map(({ key, label }) => (
-          <ControlButton
-            key={key}
-            active={groupBy === key}
-            size="sm"
-            className="w-20"
-            onClick={() => {
-              if (groupBy === key) return;
-              setGroupBy(key);
-            }}
-          >
-            {label}
-          </ControlButton>
-        ))}
+      <div className="flex flex-wrap py-2 gap-x-6 gap-y-2 justify-center items-center">
+        <div className="flex flex-wrap gap-2 items-center">
+          <p className="text-sm md:text-base mr-1">view:</p>
+          {(
+            [
+              { key: "predicted", label: "Predicted" },
+              { key: "actual", label: "Actual" },
+            ] as const
+          ).map(({ key, label }) => (
+            <ControlButton
+              key={key}
+              active={view === key}
+              size="sm"
+              className="w-28"
+              onClick={() => setView(key)}
+            >
+              {label}
+            </ControlButton>
+          ))}
+        </div>
+        <div className="flex flex-wrap gap-2 items-center">
+          <p className="text-sm md:text-base mr-1">group by:</p>
+          {(
+            [
+              { key: "year", label: "Year" },
+              { key: "team", label: "Team" },
+            ] as const
+          ).map(({ key, label }) => (
+            <ControlButton
+              key={key}
+              active={groupBy === key}
+              size="sm"
+              className="w-20"
+              onClick={() => {
+                if (groupBy === key) return;
+                setGroupBy(key);
+              }}
+            >
+              {label}
+            </ControlButton>
+          ))}
+        </div>
       </div>
 
       <div className="flex items-center gap-2 py-2">
@@ -80,7 +91,7 @@ export default function Content({ data }: Props) {
           className="min-w-0 flex-1"
           label={
             groupBy === "year"
-              ? "Scroll for more years"
+              ? "Scroll for more decades"
               : "Scroll for more teams"
           }
         >
@@ -88,36 +99,23 @@ export default function Content({ data }: Props) {
             <>
               <ControlButton
                 size="sm"
-                active={yearFilter === "all"}
+                active={decadeFilter === "all"}
                 className="shrink-0"
-                onClick={() => setYearFilter("all")}
+                onClick={() => setDecadeFilter("all")}
               >
                 All
               </ControlButton>
-              {yearList.map((item, index, items) => {
-                const prev = items[index - 1];
-                const showDecadeLine =
-                  prev != null &&
-                  Math.floor(prev / 10) !== Math.floor(item / 10);
-                return (
-                  <Fragment key={`year_${item}`}>
-                    {showDecadeLine ? (
-                      <div
-                        aria-hidden
-                        className="mx-0.5 h-7 w-px shrink-0 self-center bg-white/55"
-                      />
-                    ) : null}
-                    <ControlButton
-                      size="sm"
-                      active={yearFilter === item}
-                      className="shrink-0"
-                      onClick={() => setYearFilter(item)}
-                    >
-                      {item}
-                    </ControlButton>
-                  </Fragment>
-                );
-              })}
+              {decades.map((start) => (
+                <ControlButton
+                  key={`decade_${start}`}
+                  size="sm"
+                  active={decadeFilter === start}
+                  className="shrink-0"
+                  onClick={() => setDecadeFilter(start)}
+                >
+                  {decadeLabel(start)}
+                </ControlButton>
+              ))}
             </>
           ) : (
             teams.map((abbr) => (

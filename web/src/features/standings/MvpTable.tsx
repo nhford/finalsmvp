@@ -4,7 +4,7 @@ import ControlButton from "@/ui/ControlButton";
 import { sortRows, toggleSort } from "@/lib/sort";
 import Row from "./Row";
 
-const PAGE_SIZE = 10;
+const PAGE_SIZE = 15;
 
 interface Props {
   view: ViewMode;
@@ -56,6 +56,7 @@ export default function MvpTable({ view, groupBy, source }: Props) {
 
   const playerLabel = view === "predicted" ? "Predicted" : "Actual MVP";
   const shareLabel = view === "predicted" ? "Share" : "Share";
+  const correctLabel = view === "predicted" ? "Correct" : "Picked";
 
   return (
     <div className="w-full">
@@ -86,7 +87,7 @@ export default function MvpTable({ view, groupBy, source }: Props) {
                   },
                   {
                     key: "correct" as const,
-                    label: "Correct",
+                    label: correctLabel,
                     natural: "desc" as const,
                   },
                 ] as const
@@ -94,6 +95,8 @@ export default function MvpTable({ view, groupBy, source }: Props) {
                 <th
                   key={col.key}
                   className={`px-1 py-4 whitespace-nowrap text-center cursor-pointer transition-colors hover:bg-neutral-100 hover:underline decoration-black underline-offset-2 ${
+                    col.key === "team" ? "border-x border-neutral-200" : ""
+                  } ${
                     sorted.key === col.key
                       ? "bg-neutral-200 hover:bg-neutral-300"
                       : ""
@@ -137,8 +140,8 @@ export default function MvpTable({ view, groupBy, source }: Props) {
       </div>
 
       <p className="mt-3 text-center text-sm md:text-base text-white/70">
-        <span className="rounded px-1.5 py-0.5 text-white bg-emerald-700/80">
-          green
+        <span className="rounded px-1.5 py-0.5 text-neutral-800 bg-white">
+          white
         </span>
         {" = model pick matched Finals MVP · "}
         <span className="rounded px-1.5 py-0.5 text-white bg-rose-700/70">

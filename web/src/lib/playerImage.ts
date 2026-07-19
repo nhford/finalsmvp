@@ -12,13 +12,15 @@ function slugifyPlayer(name: string): string {
     .replace(/^_|_$/g, "");
 }
 
-/** Local headshot path when a cutout exists under /images/players/. */
+const DEFAULT_PLAYER_IMAGE = "/images/misc/default_player.png";
+
+/** Local headshot path, or the default silhouette when missing. */
 export function playerImageUrl(
   _year: number,
   _teamAbbr: string,
   player: string,
-): string | null {
+): string {
   const slug = slugifyPlayer(player);
-  if (!availableSet.has(slug)) return null;
-  return `/images/players/${slug}.png`;
+  if (availableSet.has(slug)) return `/images/players/${slug}.png`;
+  return DEFAULT_PLAYER_IMAGE;
 }

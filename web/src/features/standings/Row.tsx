@@ -15,7 +15,7 @@ function cellClass(sortKey: SortKey, key: SortKey, correct: boolean, extra = "")
   const sorted = sortKey === key;
   return [
     "py-4",
-    sorted && correct ? "bg-emerald-200/80" : "",
+    sorted && correct ? "bg-neutral-200" : "",
     sorted && !correct ? "bg-rose-200/80" : "",
     extra,
   ]
@@ -42,7 +42,7 @@ export default function Row({
       <tr
         className={`group border-b border-neutral-600 cursor-pointer transition-colors ${
           row.correct
-            ? "bg-emerald-100/70 hover:bg-emerald-200/80"
+            ? "bg-white hover:bg-neutral-100"
             : "bg-rose-100/60 hover:bg-rose-200/70"
         }`}
         role="button"
@@ -70,7 +70,7 @@ export default function Row({
           </span>
           <span className="hidden md:block">{row.year}</span>
         </td>
-        <td className={cellClass(sortKey, "team", row.correct, "px-0.5 text-center")}>
+        <td className="py-4 px-0.5 text-center bg-white border-x border-neutral-200">
           {row.logoUrl ? (
             <img
               src={row.logoUrl}

@@ -44,7 +44,7 @@ def main() -> None:
     )
     print(
         f"Wrote {FULL_TOP_8_UNRANKED_ADVANCED_CSV} "
-        f"({unranked_adv.Year.nunique()} years with USG%/ORtg/DRtg, {len(unranked_adv)} rows)"
+        f"({unranked_adv.Year.nunique()} years with USG%/NetRtg, {len(unranked_adv)} rows)"
     )
 
 

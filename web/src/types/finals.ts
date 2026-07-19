@@ -15,6 +15,7 @@ export interface PlayerStats {
   "FG%": number | null;
   "3P%": number | null;
   "USG%": number | null;
+  NetRtg: number | null;
   ORtg: number | null;
   DRtg: number | null;
 }
@@ -48,12 +49,26 @@ export interface FeatureWeight {
   weight: number;
 }
 
+export interface FeatureVif {
+  name: string;
+  vif: number;
+}
+
+export interface FeaturePair {
+  a: string;
+  b: string;
+  r: number;
+}
+
 export interface FinalsData {
   generatedFrom: string;
   minYear: number;
   maxYear: number;
   teams: string[];
   featureWeights: FeatureWeight[];
+  featureVif: FeatureVif[];
+  featureTopPairs: FeaturePair[];
+  featureN: number | null;
   years: YearRow[];
 }
 

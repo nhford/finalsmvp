@@ -38,6 +38,7 @@ STAT_COLS = [
     "FG%",
     "3P%",
     "USG%",
+    "NetRtg",
     "ORtg",
     "DRtg",
 ]
@@ -90,6 +91,9 @@ def candidate_stats(stats_row: pd.Series | None) -> dict:
             out[col] = round(raw, 3)
         else:
             out[col] = round(raw, 1)
+
+    if out.get("NetRtg") is None and out.get("ORtg") is not None and out.get("DRtg") is not None:
+        out["NetRtg"] = round(float(out["ORtg"]) - float(out["DRtg"]), 1)
     return out
 
 
@@ -167,11 +171,16 @@ def main() -> None:
 
     weights_path = ROOT / FEATURE_WEIGHTS_JSON
     if weights_path.exists():
-        feature_weights = json.loads(weights_path.read_text(encoding="utf-8")).get(
-            "features", []
-        )
+        weights_payload = json.loads(weights_path.read_text(encoding="utf-8"))
+        feature_weights = weights_payload.get("features", [])
+        feature_vif = weights_payload.get("vif", [])
+        feature_top_pairs = weights_payload.get("topPairs", [])
+        feature_n = weights_payload.get("n")
     else:
         feature_weights = []
+        feature_vif = []
+        feature_top_pairs = []
+        feature_n = None
 
     teams = sorted({row["teamAbbr"] for row in years if row["teamAbbr"]})
     payload = {
@@ -180,6 +189,9 @@ def main() -> None:
         "maxYear": max(row["year"] for row in years),
         "teams": teams,
         "featureWeights": feature_weights,
+        "featureVif": feature_vif,
+        "featureTopPairs": feature_top_pairs,
+        "featureN": feature_n,
         "years": years,
     }
 

@@ -1,10 +1,33 @@
-## Who should've won NBA Finals MVP?
+# Finals MVP
 
-### A Python Machine Learning Analysis
+Interactive standings + logistic model for who *should* have won NBA Finals MVP. Built by Noah Ford (MSCS, Carnegie Mellon ’26) as a sports-analytics portfolio project: scrape → feature design → out-of-fold classification → a UI meant for non-technical stakeholders.
 
-The **notebook is analysis-only**. Scraping Basketball-Reference is intentionally separate — HTML quirks and rate limits don't belong in the story.
+## What it does
 
-### Quick start
+- **Standings** — Browse Finals years (1984–2026) by season or champion. Each row shows model MVP share, predicted vs actual award, and whether the pick matched. Expand a row for the full share stack and series box stats.
+- **Predicted vs Actual** — Toggle the standings strip to compare the model’s top pick against the real Finals MVP.
+- **How It Works** — Short project brief: lean feature weights, correlation/VIF diagnostics, and how to read the page.
+
+The model scores each champion Finals top-8 scorer, then softmaxes logits within the year into an **MVP share**. Treat it as a transparent counterfactual on the award, not a guarantee.
+
+## Model (brief)
+
+- **Task:** Binary classification — among champion Finals top scorers, does this player’s series resemble Finals MVP seasons?
+- **Algorithm:** Logistic regression on **16** lean series features (e.g. USG%, PTS, NetRtg, shooting rates, minutes, games missed, scoring volatility), with SMOTE inside each training fold for class imbalance.
+- **Evaluation:** 5-fold out-of-fold probabilities; year-level pick = argmax of softmaxed OOF logits. Matches the actual award in **38/43** years (1984–2026).
+- **Data:** Finals box scores and award history from [Basketball-Reference](https://www.basketball-reference.com/); scraping is intentionally separated from the analysis notebook.
+- **Serving:** Precomputed OOF scores → JSON for the Astro UI (no live predict API).
+
+## Stack
+
+| Layer | Choice |
+| --- | --- |
+| Analysis | Python, pandas, scikit-learn, imbalanced-learn, Jupyter |
+| Pipeline | Scrapers + feature builders under `scripts/` |
+| Frontend | Astro + React + TypeScript, Tailwind CSS |
+| Data | Committed series CSVs → generated `web/src/data/finals.json` |
+
+## Local development
 
 ```bash
 # Explore / model (uses committed CSVs)
@@ -13,66 +36,41 @@ jupyter notebook finalsmvp.ipynb
 # After a new Finals season, refresh tables then re-run the notebook
 python3 scripts/refresh_data.py
 
-# Frontend (Astro + React) — rebuild JSON then run the site
+# Frontend — rebuild JSON then run the site
 python3 scripts/build_frontend_data.py
 cd web && npm install && npm run dev
 ```
 
-### Layout
+## Project layout
 
-```text
-finalsmvp.ipynb                 # explanatory ML walkthrough (starts from CSVs)
-helpers/                        # analysis helpers (box scores, meta lookups, softmax)
-scripts/
-  refresh_data.py               # scrape → parse team meta → build top-8 features
-  update_finals_through_2026.py # Basketball-Reference scrape (HTML cache → CSVs)
-  parse_team_meta.py            # team #meta HTML → champions_seasons.csv
-  build_top8.py                 # series_tables → output/full_top_8*.csv + finals_series_games.csv
-  build_ml_output.py            # lean OOF logistic → machine_learning_output.csv
-  extract_advanced_winners.py   # series HTML → advanced/winner CSVs
-  build_frontend_data.py        # ML + advanced + logos → web JSON
-
-web/                            # Astro + React standings UI (Hot Seat–style)
-  src/data/finals.json          # generated year summary + candidates
-
+```
+finalsmvp.ipynb           # explanatory ML walkthrough (starts from CSVs)
+helpers/                  # box scores, meta lookups, softmax, naming
+scripts/                  # scrape → features → ML output → frontend JSON
+web/                      # Astro + React standings UI
+  src/features/standings/
+  src/features/how-it-works/
+  src/data/finals.json    # generated year summary + candidates
 data/
-  series_tables/                # committed box-score CSVs (basic/advanced × winner/loser)
-  meta/                         # finals_mvp, finals_series_games, champions, team IDs
-  teams/
-    champions_seasons.csv       # committed season summary + logo URLs
-    champions_playoff_rounds.csv
-    html/                       # gitignored: {ABBREV}_{year}.html
-  series_html/                  # gitignored scrape cache
-    finals/                     # {year}_nba_finals_{a}_vs_{b}.html
-    meta/                       # finals_mvp.html, playoffs_series.html
-
-output/                         # model / feature outputs (+ frontend_finals.json)
-tableau/                        # Tableau workbook + screenshots
+  series_tables/          # committed box-score CSVs (basic/advanced × winner/loser)
+  meta/                   # finals_mvp, series games, champions, team IDs
+output/                   # model / feature CSVs (+ frontend_finals.json)
 ```
 
-### HTML naming
+HTML scrape caches (`data/series_html/`, `data/teams/html/`) are optional and gitignored; the notebook and UI read the CSV layer.
 
-| Kind | Pattern | Example |
-|------|---------|---------|
-| Finals series page | `{year}_nba_finals_{a}_vs_{b}.html` | `finals/2024_nba_finals_mavericks_vs_celtics.html` |
-| Box-score CSV stem | same as series HTML (no extension) | `2024_nba_finals_mavericks_vs_celtics.csv` |
-| Team season meta | `{ABBREV}_{year}.html` | `BOS_2024.html` |
-| Award / index pages | `series_html/meta/{name}.html` | `meta/finals_mvp.html` |
+## Notes for recruiters
 
-Helpers live in [`helpers/naming.py`](helpers/naming.py).
+- End-to-end path: scrape Basketball-Reference → engineer lean series features → OOF logistic with imbalance handling → ship an interactive UI that compares model picks to the actual award.
+- Emphasis on **communicating the award counterfactual** (MVP share, predicted vs actual, expandable box scores, feature-weight transparency) as much as on raw hit rate.
+- Honest limits: box scores miss narrative and defensive reputation; the model is strongest when one star clearly leads scoring/usage, and can miss years with two near-equal candidates.
 
-### What matters
+## Possible next work
 
-- [`finalsmvp.ipynb`](finalsmvp.ipynb) — data peek → features → baselines → logistic regression → mistakes/viz
-- [`output/`](output) — CSVs written at key notebook steps
-- [`tableau/`](tableau) — visualizations
+- Richer clutch / series-context features beyond the lean set
+- Stronger evaluation reporting (calibration, era holdouts)
+- Live predict API for counterfactual “what if this player’s series looked like X?”
 
-<img src="/tableau/predictions_crop.png" alt="Predictions Cropped" style="width:100%;height:100%; padding-top:10px">
+## License
 
-### HTML caches
-
-`data/series_html/` and `data/teams/html/` are **optional local caches** written by the scrape scripts. They are gitignored. The notebook and Tableau logo column use the CSV layer (`series_tables`, `champions_seasons.csv`).
-
-### Development
-
-Python + pandas + scikit-learn + imbalanced-learn.
+Personal portfolio project — see repository for terms.

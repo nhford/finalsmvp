@@ -1,0 +1,276 @@
+13:55:57 Starting slow fetch: 84 players, 60s between each
+13:55:57 [1/84] Aaron Gordon
+13:55:59   saved web/public/images/players/aaron_gordon.png (39653 bytes)
+13:55:59   sleeping 60s
+13:56:59 [2/84] Alonzo Mourning
+13:57:01   saved web/public/images/players/alonzo_mourning.png (36509 bytes)
+13:57:01   sleeping 60s
+13:58:01 [3/84] Andrew Bynum
+13:58:03   saved web/public/images/players/andrew_bynum.png (39336 bytes)
+13:58:03   sleeping 60s
+13:59:03 [4/84] Andrew Wiggins
+13:59:05   saved web/public/images/players/andrew_wiggins.png (35181 bytes)
+13:59:05   sleeping 60s
+14:00:05 [5/84] Anthony Davis
+14:00:07   saved web/public/images/players/anthony_davis.png (46807 bytes)
+14:00:07   sleeping 60s
+14:01:07 [6/84] Antoine Walker
+14:01:07   FAIL image 404 pid=walkean01
+14:01:07   sleeping 60s
+14:02:07 [7/84] Beno Udrih
+14:02:08   saved web/public/images/players/beno_udrih.png (30093 bytes)
+14:02:08   sleeping 60s
+14:03:08 [8/84] Bobby Portis
+14:03:11   saved web/public/images/players/bobby_portis.png (38699 bytes)
+14:03:11   sleeping 60s
+14:04:11 [9/84] Boris Diaw
+14:04:16   saved web/public/images/players/boris_diaw.png (37246 bytes)
+14:04:16   sleeping 60s
+14:05:16 [10/84] Brook Lopez
+14:05:34   saved web/public/images/players/brook_lopez.png (35478 bytes)
+14:05:34   sleeping 60s
+14:06:34 [11/84] Bruce Brown
+14:06:35   saved web/public/images/players/bruce_brown.png (40339 bytes)
+14:06:35   sleeping 60s
+14:07:35 [12/84] Bryn Forbes
+14:07:38   saved web/public/images/players/bryn_forbes.png (38729 bytes)
+14:07:38   sleeping 60s
+14:08:38 [13/84] Carl Herrera
+14:08:39   FAIL image 404 pid=herreca01
+14:08:39   sleeping 60s
+14:09:39 [14/84] Charles Jones
+14:09:39   FAIL image 404 pid=jonesch02
+14:09:39   sleeping 60s
+14:10:39 [15/84] Chris Andersen
+14:10:41   saved web/public/images/players/chris_andersen.png (34912 bytes)
+14:10:41   sleeping 60s
+14:11:41 [16/84] Chris Bosh
+14:11:42   saved web/public/images/players/chris_bosh.png (29172 bytes)
+14:11:42   sleeping 60s
+14:12:42 [17/84] Christian Braun
+14:12:44   saved web/public/images/players/christian_braun.png (35322 bytes)
+14:12:44   sleeping 60s
+14:13:44 [18/84] Chucky Brown
+14:13:44   FAIL image 404 pid=brownch01
+14:13:44   sleeping 60s
+14:14:44 [19/84] Danny Green
+14:14:46   saved web/public/images/players/danny_green.png (41801 bytes)
+14:14:46   sleeping 60s
+14:15:46 [20/84] David West
+14:15:48   saved web/public/images/players/david_west.png (35888 bytes)
+14:15:48   sleeping 60s
+14:16:48 [21/84] DeShawn Stevenson
+14:16:49   saved web/public/images/players/deshawn_stevenson.png (34023 bytes)
+14:16:49   sleeping 60s
+14:17:49 [22/84] Dirk Nowitzki
+14:17:53   saved web/public/images/players/dirk_nowitzki.png (38674 bytes)
+14:17:53   sleeping 60s
+14:18:53 [23/84] Dwyane Wade
+14:19:14   saved web/public/images/players/dwyane_wade.png (30983 bytes)
+14:19:14   sleeping 60s
+14:20:14 [24/84] Eddie House
+14:20:16   saved web/public/images/players/eddie_house.png (32862 bytes)
+14:20:16   sleeping 60s
+14:21:16 [25/84] Fred VanVleet
+14:21:18   saved web/public/images/players/fred_vanvleet.png (40297 bytes)
+14:21:18   sleeping 60s
+14:22:18 [26/84] Gary Payton
+14:22:20   saved web/public/images/players/gary_payton.png (32342 bytes)
+14:22:20   sleeping 60s
+14:23:20 [27/84] Gary Payton II
+14:23:22   saved web/public/images/players/gary_payton_ii.png (40126 bytes)
+14:23:22   sleeping 60s
+14:24:22 [28/84] Giannis Antetokounmpo
+14:24:23   saved web/public/images/players/giannis_antetokounmpo.png (39491 bytes)
+14:24:23   sleeping 60s
+14:25:23 [29/84] Ian Clark
+14:25:25   saved web/public/images/players/ian_clark.png (37087 bytes)
+14:25:25   sleeping 60s
+14:26:25 [30/84] Ian Mahinmi
+14:26:26   saved web/public/images/players/ian_mahinmi.png (34914 bytes)
+14:26:26   sleeping 60s
+14:27:26 [31/84] J.J. Barea
+14:27:27   saved web/public/images/players/jj_barea.png (39657 bytes)
+14:27:27   sleeping 60s
+14:28:27 [32/84] JaVale McGee
+14:28:29   saved web/public/images/players/javale_mcgee.png (44216 bytes)
+14:28:29   sleeping 60s
+14:29:29 [33/84] Jamal Murray
+14:29:30   saved web/public/images/players/jamal_murray.png (48041 bytes)
+14:29:30   sleeping 60s
+14:30:30 [34/84] James Posey
+14:30:33   saved web/public/images/players/james_posey.png (32760 bytes)
+14:30:33   sleeping 60s
+14:36:31 [35/84] Jaren Jackson
+14:36:31   FAIL image 404 pid=jacksja01
+14:36:31   sleeping 60s
+14:42:31 [36/84] Jason Kidd
+14:42:44   saved web/public/images/players/jason_kidd.png (40315 bytes)
+14:42:44   sleeping 60s
+14:43:43 Starting slow fetch: 53 players, 20s between each
+14:43:43 [1/53] Antoine Walker
+14:43:43   FAIL image 404 pid=walkean01
+14:43:43   sleeping 20s
+14:44:03 [2/53] Carl Herrera
+14:44:03   FAIL image 404 pid=herreca01
+14:44:03   sleeping 20s
+14:44:23 [3/53] Charles Jones
+14:44:23   FAIL image 404 pid=jonesch02
+14:44:23   sleeping 20s
+14:44:43 [4/53] Chucky Brown
+14:44:43   FAIL image 404 pid=brownch01
+14:44:43   sleeping 20s
+14:45:03 [5/53] Jaren Jackson
+14:45:03   FAIL image 404 pid=jacksja01
+14:45:03   sleeping 20s
+14:45:23 [6/53] Jason Terry
+14:45:25   saved web/public/images/players/jason_terry.png (38880 bytes)
+14:45:25   sleeping 20s
+14:45:45 [7/53] Jason Williams
+14:45:47   saved web/public/images/players/jason_williams.png (36014 bytes)
+14:45:47   sleeping 20s
+14:46:07 [8/53] Jeff Green
+14:46:08   saved web/public/images/players/jeff_green.png (37783 bytes)
+14:46:08   sleeping 20s
+14:46:28 [9/53] Jordan Bell
+14:46:30   saved web/public/images/players/jordan_bell.png (37725 bytes)
+14:46:30   sleeping 20s
+14:46:50 [10/53] Jordan Farmar
+14:46:52   saved web/public/images/players/jordan_farmar.png (38368 bytes)
+14:46:52   sleeping 20s
+14:47:12 [11/53] Jordan Poole
+14:47:16   saved web/public/images/players/jordan_poole.png (39766 bytes)
+14:47:16   sleeping 20s
+14:47:36 [12/53] Kawhi Leonard
+14:47:37   saved web/public/images/players/kawhi_leonard.png (39471 bytes)
+14:47:37   sleeping 20s
+14:47:57 [13/53] Kentavious Caldwell-Pope
+14:47:59   saved web/public/images/players/kentavious_caldwell_pope.png (40590 bytes)
+14:47:59   sleeping 20s
+14:48:19 [14/53] Kevin Durant
+14:48:20   saved web/public/images/players/kevin_durant.png (38583 bytes)
+14:48:20   sleeping 20s
+14:48:40 [15/53] Kevin Garnett
+14:48:42   saved web/public/images/players/kevin_garnett.png (32388 bytes)
+14:48:42   sleeping 20s
+14:49:02 [16/53] Kevon Looney
+14:49:04   saved web/public/images/players/kevon_looney.png (36561 bytes)
+14:49:04   sleeping 20s
+14:49:24 [17/53] Khris Middleton
+14:49:26   saved web/public/images/players/khris_middleton.png (40571 bytes)
+14:49:26   sleeping 20s
+14:49:46 [18/53] Kristaps Porzingis
+14:49:48   saved web/public/images/players/kristaps_porzingis.png (37296 bytes)
+14:49:48   sleeping 20s
+14:50:08 [19/53] Kyle Kuzma
+14:50:09   saved web/public/images/players/kyle_kuzma.png (39620 bytes)
+14:50:09   sleeping 20s
+14:50:29 [20/53] Kyle Lowry
+14:50:31   saved web/public/images/players/kyle_lowry.png (39652 bytes)
+14:50:31   sleeping 20s
+14:50:51 [21/53] Lamar Odom
+14:50:56   saved web/public/images/players/lamar_odom.png (40954 bytes)
+14:50:56   sleeping 20s
+14:51:16 [22/53] Leon Powe
+14:51:18   saved web/public/images/players/leon_powe.png (33502 bytes)
+14:51:18   sleeping 20s
+14:51:38 [23/53] Luke Walton
+14:51:39   saved web/public/images/players/luke_walton.png (34668 bytes)
+14:51:39   sleeping 20s
+14:51:59 [24/53] Marc Gasol
+14:52:01   saved web/public/images/players/marc_gasol.png (37237 bytes)
+14:52:01   sleeping 20s
+14:52:21 [25/53] Mario Chalmers
+14:52:22   saved web/public/images/players/mario_chalmers.png (37240 bytes)
+14:52:22   sleeping 20s
+14:52:42 [26/53] Markieff Morris
+14:52:43   saved web/public/images/players/markieff_morris.png (39419 bytes)
+14:52:43   sleeping 20s
+14:53:03 [27/53] Metta World Peace
+14:53:05   saved web/public/images/players/metta_world_peace.png (36599 bytes)
+14:53:05   sleeping 20s
+14:53:25 [28/53] Michael Porter Jr.
+14:53:26   saved web/public/images/players/michael_porter_jr.png (40423 bytes)
+14:53:26   sleeping 20s
+14:53:46 [29/53] Mike Miller
+14:53:47   saved web/public/images/players/mike_miller.png (31866 bytes)
+14:53:47   sleeping 20s
+14:54:07 [30/53] Nazr Mohammed
+14:54:09   saved web/public/images/players/nazr_mohammed.png (33567 bytes)
+14:54:09   sleeping 20s
+14:54:29 [31/53] Nikola Jokic
+14:54:30   saved web/public/images/players/nikola_jokic.png (38211 bytes)
+14:54:30   sleeping 20s
+14:54:50 [32/53] Norman Powell
+14:54:51   saved web/public/images/players/norman_powell.png (35160 bytes)
+14:54:51   sleeping 20s
+14:55:11 [33/53] Norris Cole
+14:55:13   saved web/public/images/players/norris_cole.png (34716 bytes)
+14:55:13   sleeping 20s
+14:55:33 [34/53] Otto Porter Jr.
+14:55:35   saved web/public/images/players/otto_porter_jr.png (38318 bytes)
+14:55:35   sleeping 20s
+14:55:55 [35/53] P.J. Brown
+14:55:57   saved web/public/images/players/pj_brown.png (34077 bytes)
+14:55:57   sleeping 20s
+14:56:17 [36/53] P.J. Tucker
+14:56:18   saved web/public/images/players/pj_tucker.png (39789 bytes)
+14:56:18   sleeping 20s
+14:56:38 [37/53] Pascal Siakam
+14:56:39   saved web/public/images/players/pascal_siakam.png (41257 bytes)
+14:56:39   sleeping 20s
+14:56:59 [38/53] Pat Connaughton
+14:57:01   saved web/public/images/players/pat_connaughton.png (38327 bytes)
+14:57:01   sleeping 20s
+14:57:21 [39/53] Patty Mills
+14:57:25   saved web/public/images/players/patty_mills.png (39197 bytes)
+14:57:25   sleeping 20s
+14:57:45 [40/53] Pau Gasol
+14:57:47   saved web/public/images/players/pau_gasol.png (38641 bytes)
+14:57:47   sleeping 20s
+14:58:07 [41/53] Paul Pierce
+14:58:08   saved web/public/images/players/paul_pierce.png (37674 bytes)
+14:58:08   sleeping 20s
+14:58:28 [42/53] Rajon Rondo
+14:58:30   saved web/public/images/players/rajon_rondo.png (37098 bytes)
+14:58:30   sleeping 20s
+14:58:50 [43/53] Ray Allen
+14:58:51   saved web/public/images/players/ray_allen.png (39164 bytes)
+14:58:51   sleeping 20s
+14:59:11 [44/53] Scott Williams
+14:59:11   FAIL image 404 pid=willisc01
+14:59:11   sleeping 20s
+14:59:31 [45/53] Serge Ibaka
+14:59:33   saved web/public/images/players/serge_ibaka.png (40023 bytes)
+14:59:33   sleeping 20s
+14:59:53 [46/53] Shane Battier
+14:59:54   saved web/public/images/players/shane_battier.png (35114 bytes)
+14:59:54   sleeping 20s
+15:00:14 [47/53] Shannon Brown
+15:00:16   saved web/public/images/players/shannon_brown.png (39759 bytes)
+15:00:16   sleeping 20s
+15:00:36 [48/53] Shawn Marion
+15:00:37   saved web/public/images/players/shawn_marion.png (39587 bytes)
+15:00:37   sleeping 20s
+15:00:57 [49/53] Tiago Splitter
+15:00:59   saved web/public/images/players/tiago_splitter.png (32319 bytes)
+15:00:59   sleeping 20s
+15:01:19 [50/53] Tony Campbell
+15:01:19   FAIL image 404 pid=campbto01
+15:01:19   sleeping 20s
+15:01:39 [51/53] Trevor Ariza
+15:01:41   saved web/public/images/players/trevor_ariza.png (45811 bytes)
+15:01:41   sleeping 20s
+15:02:01 [52/53] Tyson Chandler
+15:02:03   saved web/public/images/players/tyson_chandler.png (37584 bytes)
+15:02:03   sleeping 20s
+15:02:23 [53/53] Udonis Haslem
+15:02:24   saved web/public/images/players/udonis_haslem.png (43976 bytes)
+15:02:24 Done. still missing: 7
+15:02:24   Antoine Walker
+15:02:24   Carl Herrera
+15:02:24   Charles Jones
+15:02:24   Chucky Brown
+15:02:24   Jaren Jackson
+15:02:24   Scott Williams
+15:02:24   Tony Campbell
