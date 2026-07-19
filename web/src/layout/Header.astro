@@ -1,0 +1,35 @@
+---
+interface Props {
+  maxYear?: number;
+  minYear?: number;
+}
+
+const { maxYear, minYear } = Astro.props;
+const range =
+  maxYear != null && minYear != null ? `${minYear}–${maxYear}` : "1984–present";
+---
+
+<header class="mx-auto mt-4 mb-4 md:mb-6">
+  <div class="flex flex-col items-center gap-2">
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-center">
+      <span class="md:hidden">Finals MVP</span>
+      <span class="hidden md:inline">Who should've won Finals MVP?</span>
+    </h1>
+    <p class="text-center text-base md:text-lg text-white/70">
+      A Machine Learning Classification Problem
+    </p>
+    <p class="flex items-center justify-center gap-1.5 text-sm text-white/55">
+      <img
+        src="/images/misc/bref.png"
+        alt=""
+        class="h-4 w-auto opacity-80"
+        width="16"
+        height="16"
+      />
+      powered by Basketball-Reference
+    </p>
+    <p class="text-sm text-white/45 text-center">
+      Champion top-8 · advanced era · {range}
+    </p>
+  </div>
+</header>

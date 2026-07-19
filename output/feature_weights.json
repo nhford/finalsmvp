@@ -1,0 +1,61 @@
+{
+  "note": "Standardized logistic coefficients from the last OOF fold fit",
+  "features": [
+    {
+      "name": "USG%",
+      "weight": 2.309
+    },
+    {
+      "name": "PTS",
+      "weight": 2.24
+    },
+    {
+      "name": "FG%",
+      "weight": 1.191
+    },
+    {
+      "name": "ORtg",
+      "weight": 0.961
+    },
+    {
+      "name": "rel_Q4_eFG%",
+      "weight": 0.469
+    },
+    {
+      "name": "3P%",
+      "weight": 0.419
+    },
+    {
+      "name": "MP",
+      "weight": 0.4
+    },
+    {
+      "name": "AST",
+      "weight": 0.257
+    },
+    {
+      "name": "TRB",
+      "weight": 0.09
+    },
+    {
+      "name": "TOV",
+      "weight": -0.05
+    },
+    {
+      "name": "GM",
+      "weight": -0.331
+    },
+    {
+      "name": "STL",
+      "weight": -0.361
+    },
+    {
+      "name": "BLK",
+      "weight": -0.403
+    },
+    {
+      "name": "DRtg",
+      "weight": -1.369
+    }
+  ]
+}

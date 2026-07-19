@@ -1,0 +1,34 @@
+---
+import "../styles/globals.css";
+import Header from "./Header.astro";
+
+interface Props {
+  title: string;
+  description?: string;
+  minYear?: number;
+  maxYear?: number;
+}
+
+const { title, minYear, maxYear } = Astro.props;
+const description =
+  Astro.props.description ??
+  "Finals MVP: a logistic model that estimates who should have won NBA Finals MVP from series box scores.";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="author" content="Noah Ford" />
+    <meta name="theme-color" content="#262626" />
+    <title>{title}</title>
+  </head>
+  <body class="px-2 antialiased text-white bg-neutral-800 sm:px-8">
+    <Header minYear={minYear} maxYear={maxYear} />
+    <main class="w-full grow">
+      <slot />
+    </main>
+  </body>
+</html>

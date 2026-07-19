@@ -1,449 +1,345 @@
-,Year,Team,MVP,Player,mvp,prob_mvp,Rank,Binary,Correct
-0,2024,Boston Celtics,Jaylen Brown,Jayson Tatum,False,0.87,1,1.0,False
-1,2024,Boston Celtics,Jaylen Brown,Jaylen Brown,True,0.01,3,0.0,False
-2,2024,Boston Celtics,Jaylen Brown,Jrue Holiday,False,0.03,2,0.0,True
-3,2024,Boston Celtics,Jaylen Brown,Derrick White,False,0.0,4,0.0,True
-4,2024,Boston Celtics,Jaylen Brown,Sam Hauser,False,0.0,4,0.0,True
-5,2024,Boston Celtics,Jaylen Brown,Kristaps Porzingis,False,0.0,4,0.0,True
-6,2024,Boston Celtics,Jaylen Brown,Al Horford,False,0.0,4,0.0,True
-7,2024,Boston Celtics,Jaylen Brown,Payton Pritchard,False,0.0,4,0.0,True
-8,2023,Denver Nuggets,Nikola Jokic,Nikola Jokic,True,0.6,1,1.0,True
-9,2023,Denver Nuggets,Nikola Jokic,Jamal Murray,False,0.54,2,1.0,False
-10,2023,Denver Nuggets,Nikola Jokic,Aaron Gordon,False,0.0,3,0.0,True
-11,2023,Denver Nuggets,Nikola Jokic,Bruce Brown,False,0.0,3,0.0,True
-12,2023,Denver Nuggets,Nikola Jokic,Michael Porter Jr.,False,0.0,3,0.0,True
-13,2023,Denver Nuggets,Nikola Jokic,Kentavious Caldwell-Pope,False,0.0,3,0.0,True
-14,2023,Denver Nuggets,Nikola Jokic,Christian Braun,False,0.0,3,0.0,True
-15,2023,Denver Nuggets,Nikola Jokic,Jeff Green,False,0.0,3,0.0,True
-16,2022,Golden State Warriors,Stephen Curry,Stephen Curry,True,0.87,1,1.0,True
-17,2022,Golden State Warriors,Stephen Curry,Andrew Wiggins,False,0.1,2,0.0,True
-18,2022,Golden State Warriors,Stephen Curry,Klay Thompson,False,0.0,3,0.0,True
-19,2022,Golden State Warriors,Stephen Curry,Jordan Poole,False,0.0,3,0.0,True
-20,2022,Golden State Warriors,Stephen Curry,Draymond Green,False,0.0,3,0.0,True
-21,2022,Golden State Warriors,Stephen Curry,Gary Payton II,False,0.0,3,0.0,True
-22,2022,Golden State Warriors,Stephen Curry,Otto Porter Jr.,False,0.0,3,0.0,True
-23,2022,Golden State Warriors,Stephen Curry,Kevon Looney,False,0.0,3,0.0,True
-24,2021,Milwaukee Bucks,Giannis Antetokounmpo,Giannis Antetokounmpo,True,0.91,1,1.0,True
-25,2021,Milwaukee Bucks,Giannis Antetokounmpo,Khris Middleton,False,0.89,2,1.0,False
-26,2021,Milwaukee Bucks,Giannis Antetokounmpo,Jrue Holiday,False,0.05,3,0.0,True
-27,2021,Milwaukee Bucks,Giannis Antetokounmpo,Brook Lopez,False,0.0,4,0.0,True
-28,2021,Milwaukee Bucks,Giannis Antetokounmpo,Pat Connaughton,False,0.0,4,0.0,True
-29,2021,Milwaukee Bucks,Giannis Antetokounmpo,Bobby Portis,False,0.0,4,0.0,True
-30,2021,Milwaukee Bucks,Giannis Antetokounmpo,P.J. Tucker,False,0.0,4,0.0,True
-31,2021,Milwaukee Bucks,Giannis Antetokounmpo,Bryn Forbes,False,0.0,4,0.0,True
-32,2020,Los Angeles Lakers,LeBron James,LeBron James,True,1.0,1,1.0,True
-33,2020,Los Angeles Lakers,LeBron James,Anthony Davis,False,0.92,2,1.0,False
-34,2020,Los Angeles Lakers,LeBron James,Kentavious Caldwell-Pope,False,0.0,4,0.0,True
-35,2020,Los Angeles Lakers,LeBron James,Rajon Rondo,False,0.01,3,0.0,True
-36,2020,Los Angeles Lakers,LeBron James,Kyle Kuzma,False,0.0,4,0.0,True
-37,2020,Los Angeles Lakers,LeBron James,Danny Green,False,0.0,4,0.0,True
-38,2020,Los Angeles Lakers,LeBron James,Markieff Morris,False,0.0,4,0.0,True
-39,2020,Los Angeles Lakers,LeBron James,Alex Caruso,False,0.0,4,0.0,True
-40,2019,Toronto Raptors,Kawhi Leonard,Kawhi Leonard,True,0.76,1,1.0,True
-41,2019,Toronto Raptors,Kawhi Leonard,Pascal Siakam,False,0.57,2,1.0,False
-42,2019,Toronto Raptors,Kawhi Leonard,Kyle Lowry,False,0.02,3,0.0,True
-43,2019,Toronto Raptors,Kawhi Leonard,Fred VanVleet,False,0.0,4,0.0,True
-44,2019,Toronto Raptors,Kawhi Leonard,Marc Gasol,False,0.0,4,0.0,True
-45,2019,Toronto Raptors,Kawhi Leonard,Serge Ibaka,False,0.0,4,0.0,True
-46,2019,Toronto Raptors,Kawhi Leonard,Danny Green,False,0.0,4,0.0,True
-47,2019,Toronto Raptors,Kawhi Leonard,Norman Powell,False,0.0,4,0.0,True
-48,2018,Golden State Warriors,Kevin Durant,Kevin Durant,True,0.94,1,1.0,True
-49,2018,Golden State Warriors,Kevin Durant,Stephen Curry,False,0.01,2,0.0,True
-50,2018,Golden State Warriors,Kevin Durant,Klay Thompson,False,0.0,3,0.0,True
-51,2018,Golden State Warriors,Kevin Durant,Draymond Green,False,0.01,2,0.0,True
-52,2018,Golden State Warriors,Kevin Durant,JaVale McGee,False,0.0,3,0.0,True
-53,2018,Golden State Warriors,Kevin Durant,Shaun Livingston,False,0.0,3,0.0,True
-54,2018,Golden State Warriors,Kevin Durant,Jordan Bell,False,0.0,3,0.0,True
-55,2018,Golden State Warriors,Kevin Durant,Andre Iguodala,False,0.0,3,0.0,True
-56,2017,Golden State Warriors,Kevin Durant,Kevin Durant,True,0.99,1,1.0,True
-57,2017,Golden State Warriors,Kevin Durant,Stephen Curry,False,0.35,2,0.0,True
-58,2017,Golden State Warriors,Kevin Durant,Klay Thompson,False,0.0,3,0.0,True
-59,2017,Golden State Warriors,Kevin Durant,Draymond Green,False,0.0,3,0.0,True
-60,2017,Golden State Warriors,Kevin Durant,Andre Iguodala,False,0.0,3,0.0,True
-61,2017,Golden State Warriors,Kevin Durant,Shaun Livingston,False,0.0,3,0.0,True
-62,2017,Golden State Warriors,Kevin Durant,David West,False,0.0,3,0.0,True
-63,2017,Golden State Warriors,Kevin Durant,Ian Clark,False,0.0,3,0.0,True
-64,2016,Cleveland Cavaliers,LeBron James,LeBron James,True,0.98,1,1.0,True
-65,2016,Cleveland Cavaliers,LeBron James,Kyrie Irving,False,0.14,2,0.0,True
-66,2016,Cleveland Cavaliers,LeBron James,J.R. Smith,False,0.0,3,0.0,True
-67,2016,Cleveland Cavaliers,LeBron James,Tristan Thompson,False,0.0,3,0.0,True
-68,2016,Cleveland Cavaliers,LeBron James,Kevin Love,False,0.0,3,0.0,True
-69,2016,Cleveland Cavaliers,LeBron James,Richard Jefferson,False,0.0,3,0.0,True
-70,2016,Cleveland Cavaliers,LeBron James,Iman Shumpert,False,0.0,3,0.0,True
-71,2016,Cleveland Cavaliers,LeBron James,Matthew Dellavedova,False,0.0,3,0.0,True
-72,2015,Golden State Warriors,Andre Iguodala,Stephen Curry,False,0.91,1,1.0,False
-73,2015,Golden State Warriors,Andre Iguodala,Andre Iguodala,True,0.69,2,1.0,True
-74,2015,Golden State Warriors,Andre Iguodala,Klay Thompson,False,0.0,3,0.0,True
-75,2015,Golden State Warriors,Andre Iguodala,Draymond Green,False,0.0,3,0.0,True
-76,2015,Golden State Warriors,Andre Iguodala,Harrison Barnes,False,0.0,3,0.0,True
-77,2015,Golden State Warriors,Andre Iguodala,Leandro Barbosa,False,0.0,3,0.0,True
-78,2015,Golden State Warriors,Andre Iguodala,Shaun Livingston,False,0.0,3,0.0,True
-79,2015,Golden State Warriors,Andre Iguodala,Festus Ezeli,False,0.0,3,0.0,True
-80,2014,San Antonio Spurs,Kawhi Leonard,Tony Parker,False,0.01,3,0.0,True
-81,2014,San Antonio Spurs,Kawhi Leonard,Kawhi Leonard,True,0.84,1,1.0,True
-82,2014,San Antonio Spurs,Kawhi Leonard,Tim Duncan,False,0.02,2,0.0,True
-83,2014,San Antonio Spurs,Kawhi Leonard,Manu GinÃ³bili,False,0.0,4,0.0,True
-84,2014,San Antonio Spurs,Kawhi Leonard,Patty Mills,False,0.0,4,0.0,True
-85,2014,San Antonio Spurs,Kawhi Leonard,Danny Green,False,0.0,4,0.0,True
-86,2014,San Antonio Spurs,Kawhi Leonard,Boris Diaw,False,0.0,4,0.0,True
-87,2014,San Antonio Spurs,Kawhi Leonard,Tiago Splitter,False,0.0,4,0.0,True
-88,2013,Miami Heat,LeBron James,LeBron James,True,0.96,1,1.0,True
-89,2013,Miami Heat,LeBron James,Dwyane Wade,False,0.33,2,0.0,True
-90,2013,Miami Heat,LeBron James,Chris Bosh,False,0.02,3,0.0,True
-91,2013,Miami Heat,LeBron James,Ray Allen,False,0.0,4,0.0,True
-92,2013,Miami Heat,LeBron James,Mario Chalmers,False,0.0,4,0.0,True
-93,2013,Miami Heat,LeBron James,Shane Battier,False,0.0,4,0.0,True
-94,2013,Miami Heat,LeBron James,Mike Miller,False,0.0,4,0.0,True
-95,2013,Miami Heat,LeBron James,Chris Andersen,False,0.0,4,0.0,True
-96,2012,Miami Heat,LeBron James,LeBron James,True,0.99,1,1.0,True
-97,2012,Miami Heat,LeBron James,Dwyane Wade,False,0.03,2,0.0,True
-98,2012,Miami Heat,LeBron James,Chris Bosh,False,0.0,3,0.0,True
-99,2012,Miami Heat,LeBron James,Shane Battier,False,0.0,3,0.0,True
-100,2012,Miami Heat,LeBron James,Mario Chalmers,False,0.0,3,0.0,True
-101,2012,Miami Heat,LeBron James,Mike Miller,False,0.0,3,0.0,True
-102,2012,Miami Heat,LeBron James,Norris Cole,False,0.0,3,0.0,True
-103,2012,Miami Heat,LeBron James,Udonis Haslem,False,0.0,3,0.0,True
-104,2011,Dallas Mavericks,Dirk Nowitzki,Dirk Nowitzki,True,0.44,1,0.0,False
-105,2011,Dallas Mavericks,Dirk Nowitzki,Jason Terry,False,0.01,3,0.0,True
-106,2011,Dallas Mavericks,Dirk Nowitzki,Shawn Marion,False,0.0,4,0.0,True
-107,2011,Dallas Mavericks,Dirk Nowitzki,Tyson Chandler,False,0.02,2,0.0,True
-108,2011,Dallas Mavericks,Dirk Nowitzki,J.J. Barea,False,0.0,4,0.0,True
-109,2011,Dallas Mavericks,Dirk Nowitzki,Jason Kidd,False,0.0,4,0.0,True
-110,2011,Dallas Mavericks,Dirk Nowitzki,DeShawn Stevenson,False,0.0,4,0.0,True
-111,2011,Dallas Mavericks,Dirk Nowitzki,Ian Mahinmi,False,0.0,4,0.0,True
-112,2010,Los Angeles Lakers,Kobe Bryant,Kobe Bryant,True,0.9,1,1.0,True
-113,2010,Los Angeles Lakers,Kobe Bryant,Pau Gasol,False,0.88,2,1.0,False
-114,2010,Los Angeles Lakers,Kobe Bryant,Metta World Peace,False,0.0,3,0.0,True
-115,2010,Los Angeles Lakers,Kobe Bryant,Derek Fisher,False,0.0,3,0.0,True
-116,2010,Los Angeles Lakers,Kobe Bryant,Lamar Odom,False,0.0,3,0.0,True
-117,2010,Los Angeles Lakers,Kobe Bryant,Andrew Bynum,False,0.0,3,0.0,True
-118,2010,Los Angeles Lakers,Kobe Bryant,Shannon Brown,False,0.0,3,0.0,True
-119,2010,Los Angeles Lakers,Kobe Bryant,Jordan Farmar,False,0.0,3,0.0,True
-120,2009,Los Angeles Lakers,Kobe Bryant,Kobe Bryant,True,0.49,2,0.0,False
-121,2009,Los Angeles Lakers,Kobe Bryant,Pau Gasol,False,0.89,1,1.0,False
-122,2009,Los Angeles Lakers,Kobe Bryant,Lamar Odom,False,0.0,3,0.0,True
-123,2009,Los Angeles Lakers,Kobe Bryant,Trevor Ariza,False,0.0,3,0.0,True
-124,2009,Los Angeles Lakers,Kobe Bryant,Derek Fisher,False,0.0,3,0.0,True
-125,2009,Los Angeles Lakers,Kobe Bryant,Andrew Bynum,False,0.0,3,0.0,True
-126,2009,Los Angeles Lakers,Kobe Bryant,Luke Walton,False,0.0,3,0.0,True
-127,2009,Los Angeles Lakers,Kobe Bryant,Jordan Farmar,False,0.0,3,0.0,True
-128,2008,Boston Celtics,Paul Pierce,Paul Pierce,True,0.7,2,1.0,True
-129,2008,Boston Celtics,Paul Pierce,Ray Allen,False,0.8,1,1.0,False
-130,2008,Boston Celtics,Paul Pierce,Kevin Garnett,False,0.04,3,0.0,True
-131,2008,Boston Celtics,Paul Pierce,Rajon Rondo,False,0.0,4,0.0,True
-132,2008,Boston Celtics,Paul Pierce,James Posey,False,0.0,4,0.0,True
-133,2008,Boston Celtics,Paul Pierce,Leon Powe,False,0.0,4,0.0,True
-134,2008,Boston Celtics,Paul Pierce,Eddie House,False,0.0,4,0.0,True
-135,2008,Boston Celtics,Paul Pierce,P.J. Brown,False,0.0,4,0.0,True
-136,2007,San Antonio Spurs,Tony Parker,Tony Parker,True,0.68,1,1.0,True
-137,2007,San Antonio Spurs,Tony Parker,Tim Duncan,False,0.52,2,1.0,False
-138,2007,San Antonio Spurs,Tony Parker,Manu GinÃ³bili,False,0.16,3,0.0,True
-139,2007,San Antonio Spurs,Tony Parker,Bruce Bowen,False,0.0,4,0.0,True
-140,2007,San Antonio Spurs,Tony Parker,Fabricio Oberto,False,0.0,4,0.0,True
-141,2007,San Antonio Spurs,Tony Parker,Francisco Elson,False,0.0,4,0.0,True
-142,2007,San Antonio Spurs,Tony Parker,Michael Finley,False,0.0,4,0.0,True
-143,2007,San Antonio Spurs,Tony Parker,Brent Barry,False,0.0,4,0.0,True
-144,2006,Miami Heat,Dwyane Wade,Dwyane Wade,True,0.99,1,1.0,True
-145,2006,Miami Heat,Dwyane Wade,Antoine Walker,False,0.0,3,0.0,True
-146,2006,Miami Heat,Dwyane Wade,Shaquille O'Neal,False,0.02,2,0.0,True
-147,2006,Miami Heat,Dwyane Wade,Jason Williams,False,0.0,3,0.0,True
-148,2006,Miami Heat,Dwyane Wade,James Posey,False,0.0,3,0.0,True
-149,2006,Miami Heat,Dwyane Wade,Udonis Haslem,False,0.0,3,0.0,True
-150,2006,Miami Heat,Dwyane Wade,Alonzo Mourning,False,0.0,3,0.0,True
-151,2006,Miami Heat,Dwyane Wade,Gary Payton,False,0.0,3,0.0,True
-152,2005,San Antonio Spurs,Tim Duncan,Tim Duncan,True,0.11,2,0.0,False
-153,2005,San Antonio Spurs,Tim Duncan,Manu GinÃ³bili,False,0.97,1,1.0,False
-154,2005,San Antonio Spurs,Tim Duncan,Tony Parker,False,0.03,3,0.0,True
-155,2005,San Antonio Spurs,Tim Duncan,Robert Horry,False,0.01,4,0.0,True
-156,2005,San Antonio Spurs,Tim Duncan,Bruce Bowen,False,0.0,5,0.0,True
-157,2005,San Antonio Spurs,Tim Duncan,Nazr Mohammed,False,0.0,5,0.0,True
-158,2005,San Antonio Spurs,Tim Duncan,Brent Barry,False,0.0,5,0.0,True
-159,2005,San Antonio Spurs,Tim Duncan,Beno Udrih,False,0.0,5,0.0,True
-160,2004,Detroit Pistons,Chauncey Billups,Richard Hamilton,False,0.91,2,1.0,False
-161,2004,Detroit Pistons,Chauncey Billups,Chauncey Billups,True,0.95,1,1.0,True
-162,2004,Detroit Pistons,Chauncey Billups,Rasheed Wallace,False,0.01,3,0.0,True
-163,2004,Detroit Pistons,Chauncey Billups,Ben Wallace,False,0.01,3,0.0,True
-164,2004,Detroit Pistons,Chauncey Billups,Tayshaun Prince,False,0.0,4,0.0,True
-165,2004,Detroit Pistons,Chauncey Billups,Corliss Williamson,False,0.0,4,0.0,True
-166,2004,Detroit Pistons,Chauncey Billups,Lindsey Hunter,False,0.0,4,0.0,True
-167,2004,Detroit Pistons,Chauncey Billups,Elden Campbell,False,0.0,4,0.0,True
-168,2003,San Antonio Spurs,Tim Duncan,Tim Duncan,True,0.92,1,1.0,True
-169,2003,San Antonio Spurs,Tim Duncan,Tony Parker,False,0.02,3,0.0,True
-170,2003,San Antonio Spurs,Tim Duncan,David Robinson,False,0.11,2,0.0,True
-171,2003,San Antonio Spurs,Tim Duncan,Stephen Jackson,False,0.0,4,0.0,True
-172,2003,San Antonio Spurs,Tim Duncan,Manu GinÃ³bili,False,0.0,4,0.0,True
-173,2003,San Antonio Spurs,Tim Duncan,Malik Rose,False,0.0,4,0.0,True
-174,2003,San Antonio Spurs,Tim Duncan,Speedy Claxton,False,0.0,4,0.0,True
-175,2003,San Antonio Spurs,Tim Duncan,Bruce Bowen,False,0.0,4,0.0,True
-176,2002,Los Angeles Lakers,Shaquille O'Neal,Shaquille O'Neal,True,0.84,1,1.0,True
-177,2002,Los Angeles Lakers,Shaquille O'Neal,Kobe Bryant,False,0.43,2,0.0,True
-178,2002,Los Angeles Lakers,Shaquille O'Neal,Derek Fisher,False,0.01,3,0.0,True
-179,2002,Los Angeles Lakers,Shaquille O'Neal,Rick Fox,False,0.01,3,0.0,True
-180,2002,Los Angeles Lakers,Shaquille O'Neal,Robert Horry,False,0.01,3,0.0,True
-181,2002,Los Angeles Lakers,Shaquille O'Neal,Devean George,False,0.0,4,0.0,True
-182,2002,Los Angeles Lakers,Shaquille O'Neal,Brian Shaw,False,0.0,4,0.0,True
-183,2002,Los Angeles Lakers,Shaquille O'Neal,Samaki Walker,False,0.0,4,0.0,True
-184,2001,Los Angeles Lakers,Shaquille O'Neal,Shaquille O'Neal,True,0.6,2,1.0,True
-185,2001,Los Angeles Lakers,Shaquille O'Neal,Kobe Bryant,False,0.63,1,1.0,False
-186,2001,Los Angeles Lakers,Shaquille O'Neal,Derek Fisher,False,0.0,3,0.0,True
-187,2001,Los Angeles Lakers,Shaquille O'Neal,Rick Fox,False,0.0,3,0.0,True
-188,2001,Los Angeles Lakers,Shaquille O'Neal,Robert Horry,False,0.0,3,0.0,True
-189,2001,Los Angeles Lakers,Shaquille O'Neal,Horace Grant,False,0.0,3,0.0,True
-190,2001,Los Angeles Lakers,Shaquille O'Neal,Tyronn Lue,False,0.0,3,0.0,True
-191,2001,Los Angeles Lakers,Shaquille O'Neal,Brian Shaw,False,0.0,3,0.0,True
-192,2000,Los Angeles Lakers,Shaquille O'Neal,Shaquille O'Neal,True,0.9,1,1.0,True
-193,2000,Los Angeles Lakers,Shaquille O'Neal,Kobe Bryant,False,0.13,2,0.0,True
-194,2000,Los Angeles Lakers,Shaquille O'Neal,Glen Rice,False,0.0,4,0.0,True
-195,2000,Los Angeles Lakers,Shaquille O'Neal,Ron Harper,False,0.03,3,0.0,True
-196,2000,Los Angeles Lakers,Shaquille O'Neal,Robert Horry,False,0.0,4,0.0,True
-197,2000,Los Angeles Lakers,Shaquille O'Neal,Rick Fox,False,0.0,4,0.0,True
-198,2000,Los Angeles Lakers,Shaquille O'Neal,Derek Fisher,False,0.0,4,0.0,True
-199,2000,Los Angeles Lakers,Shaquille O'Neal,A.C. Green,False,0.0,4,0.0,True
-200,1999,San Antonio Spurs,Tim Duncan,Tim Duncan,True,0.99,1,1.0,True
-201,1999,San Antonio Spurs,Tim Duncan,David Robinson,False,0.01,3,0.0,True
-202,1999,San Antonio Spurs,Tim Duncan,Mario Elie,False,0.02,2,0.0,True
-203,1999,San Antonio Spurs,Tim Duncan,Avery Johnson,False,0.0,4,0.0,True
-204,1999,San Antonio Spurs,Tim Duncan,Sean Elliott,False,0.0,4,0.0,True
-205,1999,San Antonio Spurs,Tim Duncan,Jaren Jackson,False,0.0,4,0.0,True
-206,1999,San Antonio Spurs,Tim Duncan,Antonio Daniels,False,0.0,4,0.0,True
-207,1999,San Antonio Spurs,Tim Duncan,Steve Kerr,False,0.0,4,0.0,True
-208,1998,Chicago Bulls,Michael Jordan,Michael Jordan,True,0.04,3,0.0,False
-209,1998,Chicago Bulls,Michael Jordan,Scottie Pippen,False,0.52,1,1.0,False
-210,1998,Chicago Bulls,Michael Jordan,Toni KukoÄ,False,0.09,2,0.0,True
-211,1998,Chicago Bulls,Michael Jordan,Ron Harper,False,0.0,4,0.0,True
-212,1998,Chicago Bulls,Michael Jordan,Luc Longley,False,0.0,4,0.0,True
-213,1998,Chicago Bulls,Michael Jordan,Steve Kerr,False,0.0,4,0.0,True
-214,1998,Chicago Bulls,Michael Jordan,Scott Burrell,False,0.0,4,0.0,True
-215,1998,Chicago Bulls,Michael Jordan,Dennis Rodman,False,0.0,4,0.0,True
-216,1997,Chicago Bulls,Michael Jordan,Michael Jordan,True,0.96,1,1.0,True
-217,1997,Chicago Bulls,Michael Jordan,Scottie Pippen,False,0.85,2,1.0,False
-218,1997,Chicago Bulls,Michael Jordan,Toni KukoÄ,False,0.0,3,0.0,True
-219,1997,Chicago Bulls,Michael Jordan,Bison Dele,False,0.0,3,0.0,True
-220,1997,Chicago Bulls,Michael Jordan,Luc Longley,False,0.0,3,0.0,True
-221,1997,Chicago Bulls,Michael Jordan,Ron Harper,False,0.0,3,0.0,True
-222,1997,Chicago Bulls,Michael Jordan,Steve Kerr,False,0.0,3,0.0,True
-223,1997,Chicago Bulls,Michael Jordan,Dennis Rodman,False,0.0,3,0.0,True
-224,1996,Chicago Bulls,Michael Jordan,Michael Jordan,True,0.78,1,1.0,True
-225,1996,Chicago Bulls,Michael Jordan,Scottie Pippen,False,0.15,2,0.0,True
-226,1996,Chicago Bulls,Michael Jordan,Toni KukoÄ,False,0.01,3,0.0,True
-227,1996,Chicago Bulls,Michael Jordan,Luc Longley,False,0.0,4,0.0,True
-228,1996,Chicago Bulls,Michael Jordan,Dennis Rodman,False,0.0,4,0.0,True
-229,1996,Chicago Bulls,Michael Jordan,Ron Harper,False,0.0,4,0.0,True
-230,1996,Chicago Bulls,Michael Jordan,Steve Kerr,False,0.0,4,0.0,True
-231,1996,Chicago Bulls,Michael Jordan,Randy Brown,False,0.0,4,0.0,True
-232,1995,Houston Rockets,Hakeem Olajuwon,Hakeem Olajuwon,True,0.93,1,1.0,True
-233,1995,Houston Rockets,Hakeem Olajuwon,Clyde Drexler,False,0.01,2,0.0,True
-234,1995,Houston Rockets,Hakeem Olajuwon,Robert Horry,False,0.01,2,0.0,True
-235,1995,Houston Rockets,Hakeem Olajuwon,Mario Elie,False,0.01,2,0.0,True
-236,1995,Houston Rockets,Hakeem Olajuwon,Sam Cassell,False,0.0,3,0.0,True
-237,1995,Houston Rockets,Hakeem Olajuwon,Kenny Smith,False,0.0,3,0.0,True
-238,1995,Houston Rockets,Hakeem Olajuwon,Chucky Brown,False,0.0,3,0.0,True
-239,1995,Houston Rockets,Hakeem Olajuwon,Charles Jones,False,0.0,3,0.0,True
-240,1994,Houston Rockets,Hakeem Olajuwon,Hakeem Olajuwon,True,0.97,1,1.0,True
-241,1994,Houston Rockets,Hakeem Olajuwon,Vernon Maxwell,False,0.0,3,0.0,True
-242,1994,Houston Rockets,Hakeem Olajuwon,Robert Horry,False,0.0,3,0.0,True
-243,1994,Houston Rockets,Hakeem Olajuwon,Sam Cassell,False,0.0,3,0.0,True
-244,1994,Houston Rockets,Hakeem Olajuwon,Otis Thorpe,False,0.04,2,0.0,True
-245,1994,Houston Rockets,Hakeem Olajuwon,Carl Herrera,False,0.0,3,0.0,True
-246,1994,Houston Rockets,Hakeem Olajuwon,Kenny Smith,False,0.0,3,0.0,True
-247,1994,Houston Rockets,Hakeem Olajuwon,Mario Elie,False,0.0,3,0.0,True
-248,1993,Chicago Bulls,Michael Jordan,Michael Jordan,True,0.94,1,1.0,True
-249,1993,Chicago Bulls,Michael Jordan,Scottie Pippen,False,0.11,2,0.0,True
-250,1993,Chicago Bulls,Michael Jordan,B.J. Armstrong,False,0.01,3,0.0,True
-251,1993,Chicago Bulls,Michael Jordan,Horace Grant,False,0.0,4,0.0,True
-252,1993,Chicago Bulls,Michael Jordan,John Paxson,False,0.0,4,0.0,True
-253,1993,Chicago Bulls,Michael Jordan,Scott Williams,False,0.0,4,0.0,True
-254,1993,Chicago Bulls,Michael Jordan,Bill Cartwright,False,0.0,4,0.0,True
-255,1993,Chicago Bulls,Michael Jordan,Trent Tucker,False,0.0,4,0.0,True
-256,1992,Chicago Bulls,Michael Jordan,Michael Jordan,True,0.98,1,1.0,True
-257,1992,Chicago Bulls,Michael Jordan,Scottie Pippen,False,0.4,2,0.0,True
-258,1992,Chicago Bulls,Michael Jordan,John Paxson,False,0.01,4,0.0,True
-259,1992,Chicago Bulls,Michael Jordan,Horace Grant,False,0.13,3,0.0,True
-260,1992,Chicago Bulls,Michael Jordan,Bill Cartwright,False,0.0,5,0.0,True
-261,1992,Chicago Bulls,Michael Jordan,B.J. Armstrong,False,0.0,5,0.0,True
-262,1992,Chicago Bulls,Michael Jordan,Scott Williams,False,0.0,5,0.0,True
-263,1992,Chicago Bulls,Michael Jordan,Cliff Levingston,False,0.0,5,0.0,True
-264,1991,Chicago Bulls,Michael Jordan,Michael Jordan,True,0.96,1,1.0,True
-265,1991,Chicago Bulls,Michael Jordan,Scottie Pippen,False,0.56,2,1.0,False
-266,1991,Chicago Bulls,Michael Jordan,Horace Grant,False,0.05,4,0.0,True
-267,1991,Chicago Bulls,Michael Jordan,John Paxson,False,0.08,3,0.0,True
-268,1991,Chicago Bulls,Michael Jordan,Bill Cartwright,False,0.0,5,0.0,True
-269,1991,Chicago Bulls,Michael Jordan,Craig Hodges,False,0.0,5,0.0,True
-270,1991,Chicago Bulls,Michael Jordan,Cliff Levingston,False,0.0,5,0.0,True
-271,1991,Chicago Bulls,Michael Jordan,B.J. Armstrong,False,0.0,5,0.0,True
-272,1990,Detroit Pistons,Isiah Thomas,Isiah Thomas,True,0.98,1,1.0,True
-273,1990,Detroit Pistons,Isiah Thomas,Joe Dumars,False,0.15,2,0.0,True
-274,1990,Detroit Pistons,Isiah Thomas,James Edwards,False,0.0,4,0.0,True
-275,1990,Detroit Pistons,Isiah Thomas,Bill Laimbeer,False,0.08,3,0.0,True
-276,1990,Detroit Pistons,Isiah Thomas,Vinnie Johnson,False,0.0,4,0.0,True
-277,1990,Detroit Pistons,Isiah Thomas,Mark Aguirre,False,0.0,4,0.0,True
-278,1990,Detroit Pistons,Isiah Thomas,John Salley,False,0.0,4,0.0,True
-279,1990,Detroit Pistons,Isiah Thomas,Dennis Rodman,False,0.0,4,0.0,True
-280,1989,Detroit Pistons,Joe Dumars,Joe Dumars,True,0.17,1,0.0,False
-281,1989,Detroit Pistons,Joe Dumars,Isiah Thomas,False,0.07,2,0.0,True
-282,1989,Detroit Pistons,Joe Dumars,Vinnie Johnson,False,0.0,3,0.0,True
-283,1989,Detroit Pistons,Joe Dumars,James Edwards,False,0.0,3,0.0,True
-284,1989,Detroit Pistons,Joe Dumars,Bill Laimbeer,False,0.0,3,0.0,True
-285,1989,Detroit Pistons,Joe Dumars,Mark Aguirre,False,0.0,3,0.0,True
-286,1989,Detroit Pistons,Joe Dumars,John Salley,False,0.0,3,0.0,True
-287,1989,Detroit Pistons,Joe Dumars,Rick Mahorn,False,0.0,3,0.0,True
-288,1988,Los Angeles Lakers,James Worthy,James Worthy,True,0.05,3,0.0,False
-289,1988,Los Angeles Lakers,James Worthy,Magic Johnson,False,0.98,1,1.0,False
-290,1988,Los Angeles Lakers,James Worthy,Byron Scott,False,0.06,2,0.0,True
-291,1988,Los Angeles Lakers,James Worthy,Kareem Abdul-Jabbar,False,0.0,5,0.0,True
-292,1988,Los Angeles Lakers,James Worthy,A.C. Green,False,0.01,4,0.0,True
-293,1988,Los Angeles Lakers,James Worthy,Mychal Thompson,False,0.0,5,0.0,True
-294,1988,Los Angeles Lakers,James Worthy,Michael Cooper,False,0.0,5,0.0,True
-295,1988,Los Angeles Lakers,James Worthy,Tony Campbell,False,0.0,5,0.0,True
-296,1987,Los Angeles Lakers,Magic Johnson,Magic Johnson,True,1.0,1,1.0,True
-297,1987,Los Angeles Lakers,Magic Johnson,Kareem Abdul-Jabbar,False,0.0,3,0.0,True
-298,1987,Los Angeles Lakers,Magic Johnson,James Worthy,False,0.11,2,0.0,True
-299,1987,Los Angeles Lakers,Magic Johnson,Michael Cooper,False,0.0,3,0.0,True
-300,1987,Los Angeles Lakers,Magic Johnson,Byron Scott,False,0.0,3,0.0,True
-301,1987,Los Angeles Lakers,Magic Johnson,Mychal Thompson,False,0.0,3,0.0,True
-302,1987,Los Angeles Lakers,Magic Johnson,A.C. Green,False,0.0,3,0.0,True
-303,1987,Los Angeles Lakers,Magic Johnson,Kurt Rambis,False,0.0,3,0.0,True
-304,1986,Boston Celtics,Larry Bird,Kevin McHale,False,0.54,2,1.0,False
-305,1986,Boston Celtics,Larry Bird,Larry Bird,True,0.96,1,1.0,True
-306,1986,Boston Celtics,Larry Bird,Dennis Johnson,False,0.0,4,0.0,True
-307,1986,Boston Celtics,Larry Bird,Danny Ainge,False,0.02,3,0.0,True
-308,1986,Boston Celtics,Larry Bird,Robert Parish,False,0.0,4,0.0,True
-309,1986,Boston Celtics,Larry Bird,Bill Walton,False,0.0,4,0.0,True
-310,1986,Boston Celtics,Larry Bird,Jerry Sichting,False,0.0,4,0.0,True
-311,1986,Boston Celtics,Larry Bird,Rick Carlisle,False,0.0,4,0.0,True
-312,1985,Los Angeles Lakers,Kareem Abdul-Jabbar,Kareem Abdul-Jabbar,True,0.95,1,1.0,True
-313,1985,Los Angeles Lakers,Kareem Abdul-Jabbar,James Worthy,False,0.6,3,1.0,False
-314,1985,Los Angeles Lakers,Kareem Abdul-Jabbar,Magic Johnson,False,0.73,2,1.0,False
-315,1985,Los Angeles Lakers,Kareem Abdul-Jabbar,Byron Scott,False,0.0,4,0.0,True
-316,1985,Los Angeles Lakers,Kareem Abdul-Jabbar,Michael Cooper,False,0.0,4,0.0,True
-317,1985,Los Angeles Lakers,Kareem Abdul-Jabbar,Bob McAdoo,False,0.0,4,0.0,True
-318,1985,Los Angeles Lakers,Kareem Abdul-Jabbar,Kurt Rambis,False,0.0,4,0.0,True
-319,1985,Los Angeles Lakers,Kareem Abdul-Jabbar,Mitch Kupchak,False,0.0,4,0.0,True
-320,1984,Boston Celtics,Larry Bird,Larry Bird,True,1.0,1,1.0,True
-321,1984,Boston Celtics,Larry Bird,Dennis Johnson,False,0.02,2,0.0,True
-322,1984,Boston Celtics,Larry Bird,Robert Parish,False,0.0,3,0.0,True
-323,1984,Boston Celtics,Larry Bird,Kevin McHale,False,0.0,3,0.0,True
-324,1984,Boston Celtics,Larry Bird,Cedric Maxwell,False,0.0,3,0.0,True
-325,1984,Boston Celtics,Larry Bird,Gerald Henderson,False,0.0,3,0.0,True
-326,1984,Boston Celtics,Larry Bird,Danny Ainge,False,0.0,3,0.0,True
-327,1984,Boston Celtics,Larry Bird,Scott Wedman,False,0.0,3,0.0,True
-328,1983,Philadelphia 76ers,Moses Malone,Moses Malone,True,0.96,1,1.0,True
-329,1983,Philadelphia 76ers,Moses Malone,Andrew Toney,False,0.02,4,0.0,True
-330,1983,Philadelphia 76ers,Moses Malone,Julius Erving,False,0.27,2,0.0,True
-331,1983,Philadelphia 76ers,Moses Malone,Maurice Cheeks,False,0.08,3,0.0,True
-332,1983,Philadelphia 76ers,Moses Malone,Bobby Jones,False,0.0,5,0.0,True
-333,1983,Philadelphia 76ers,Moses Malone,Clint Richardson,False,0.0,5,0.0,True
-334,1983,Philadelphia 76ers,Moses Malone,Marc Iavaroni,False,0.0,5,0.0,True
-335,1983,Philadelphia 76ers,Moses Malone,Clemon Johnson,False,0.0,5,0.0,True
-336,1982,Los Angeles Lakers,Magic Johnson,Jamaal Wilkes,False,0.02,2,0.0,True
-337,1982,Los Angeles Lakers,Magic Johnson,Kareem Abdul-Jabbar,False,0.01,3,0.0,True
-338,1982,Los Angeles Lakers,Magic Johnson,Norm Nixon,False,0.0,4,0.0,True
-339,1982,Los Angeles Lakers,Magic Johnson,Bob McAdoo,False,0.0,4,0.0,True
-340,1982,Los Angeles Lakers,Magic Johnson,Magic Johnson,True,0.18,1,0.0,False
-341,1982,Los Angeles Lakers,Magic Johnson,Michael Cooper,False,0.0,4,0.0,True
-342,1982,Los Angeles Lakers,Magic Johnson,Kurt Rambis,False,0.0,4,0.0,True
-343,1982,Los Angeles Lakers,Magic Johnson,Mike McGee,False,0.0,4,0.0,True
-344,1981,Boston Celtics,Cedric Maxwell,Cedric Maxwell,True,0.99,1,1.0,True
-345,1981,Boston Celtics,Cedric Maxwell,Larry Bird,False,0.66,2,1.0,False
-346,1981,Boston Celtics,Cedric Maxwell,Robert Parish,False,0.0,3,0.0,True
-347,1981,Boston Celtics,Cedric Maxwell,Chris Ford,False,0.0,3,0.0,True
-348,1981,Boston Celtics,Cedric Maxwell,Tiny Archibald,False,0.0,3,0.0,True
-349,1981,Boston Celtics,Cedric Maxwell,Rick Robey,False,0.0,3,0.0,True
-350,1981,Boston Celtics,Cedric Maxwell,Gerald Henderson,False,0.0,3,0.0,True
-351,1981,Boston Celtics,Cedric Maxwell,M.L. Carr,False,0.0,3,0.0,True
-352,1980,Los Angeles Lakers,Magic Johnson,Kareem Abdul-Jabbar,False,0.99,1,1.0,False
-353,1980,Los Angeles Lakers,Magic Johnson,Magic Johnson,True,0.98,2,1.0,True
-354,1980,Los Angeles Lakers,Magic Johnson,Jamaal Wilkes,False,0.01,3,0.0,True
-355,1980,Los Angeles Lakers,Magic Johnson,Norm Nixon,False,0.0,4,0.0,True
-356,1980,Los Angeles Lakers,Magic Johnson,Michael Cooper,False,0.0,4,0.0,True
-357,1980,Los Angeles Lakers,Magic Johnson,Jim Chones,False,0.0,4,0.0,True
-358,1980,Los Angeles Lakers,Magic Johnson,Mark Landsberger,False,0.0,4,0.0,True
-359,1980,Los Angeles Lakers,Magic Johnson,Brad Holland,False,0.0,4,0.0,True
-360,1979,Seattle SuperSonics,Dennis Johnson,Gus Williams,False,0.12,2,0.0,True
-361,1979,Seattle SuperSonics,Dennis Johnson,Dennis Johnson,True,0.11,3,0.0,False
-362,1979,Seattle SuperSonics,Dennis Johnson,Jack Sikma,False,0.87,1,1.0,False
-363,1979,Seattle SuperSonics,Dennis Johnson,John Johnson,False,0.02,4,0.0,True
-364,1979,Seattle SuperSonics,Dennis Johnson,Fred Brown,False,0.0,5,0.0,True
-365,1979,Seattle SuperSonics,Dennis Johnson,Lonnie Shelton,False,0.0,5,0.0,True
-366,1979,Seattle SuperSonics,Dennis Johnson,Paul Silas,False,0.0,5,0.0,True
-367,1979,Seattle SuperSonics,Dennis Johnson,Dennis Awtrey,False,0.0,5,0.0,True
-368,1978,Washington Bullets,Wes Unseld,Elvin Hayes,False,0.84,1,1.0,False
-369,1978,Washington Bullets,Wes Unseld,Bob Dandridge,False,0.43,2,0.0,True
-370,1978,Washington Bullets,Wes Unseld,Kevin Grevey,False,0.0,3,0.0,True
-371,1978,Washington Bullets,Wes Unseld,Tom Henderson,False,0.0,3,0.0,True
-372,1978,Washington Bullets,Wes Unseld,Charles Johnson,False,0.0,3,0.0,True
-373,1978,Washington Bullets,Wes Unseld,Mitch Kupchak,False,0.0,3,0.0,True
-374,1978,Washington Bullets,Wes Unseld,Wes Unseld,True,0.0,3,0.0,False
-375,1978,Washington Bullets,Wes Unseld,Larry Wright,False,0.0,3,0.0,True
-376,1977,Portland Trail Blazers,Bill Walton,Maurice Lucas,False,0.48,3,0.0,True
-377,1977,Portland Trail Blazers,Bill Walton,Bill Walton,True,0.88,1,1.0,True
-378,1977,Portland Trail Blazers,Bill Walton,Bob Gross,False,0.57,2,1.0,False
-379,1977,Portland Trail Blazers,Bill Walton,Lionel Hollins,False,0.0,4,0.0,True
-380,1977,Portland Trail Blazers,Bill Walton,Johnny Davis,False,0.0,4,0.0,True
-381,1977,Portland Trail Blazers,Bill Walton,Lloyd Neal,False,0.0,4,0.0,True
-382,1977,Portland Trail Blazers,Bill Walton,Dave Twardzik,False,0.0,4,0.0,True
-383,1977,Portland Trail Blazers,Bill Walton,Herm Gilliam,False,0.0,4,0.0,True
-384,1976,Boston Celtics,Jo Jo White,Jo Jo White,True,0.98,2,1.0,True
-385,1976,Boston Celtics,Jo Jo White,Dave Cowens,False,0.99,1,1.0,False
-386,1976,Boston Celtics,Jo Jo White,John Havlicek,False,0.0,4,0.0,True
-387,1976,Boston Celtics,Jo Jo White,Charlie Scott,False,0.0,4,0.0,True
-388,1976,Boston Celtics,Jo Jo White,Paul Silas,False,0.01,3,0.0,True
-389,1976,Boston Celtics,Jo Jo White,Steve Kuberski,False,0.0,4,0.0,True
-390,1976,Boston Celtics,Jo Jo White,Don Nelson,False,0.0,4,0.0,True
-391,1976,Boston Celtics,Jo Jo White,Jim Ard,False,0.0,4,0.0,True
-392,1975,Golden State Warriors,Rick Barry,Rick Barry,True,0.97,1,1.0,True
-393,1975,Golden State Warriors,Rick Barry,Jamaal Wilkes,False,0.0,3,0.0,True
-394,1975,Golden State Warriors,Rick Barry,Phil Smith,False,0.0,3,0.0,True
-395,1975,Golden State Warriors,Rick Barry,Derrek Dickey,False,0.01,2,0.0,True
-396,1975,Golden State Warriors,Rick Barry,Jeff Mullins,False,0.0,3,0.0,True
-397,1975,Golden State Warriors,Rick Barry,Charles Johnson,False,0.0,3,0.0,True
-398,1975,Golden State Warriors,Rick Barry,Butch Beard,False,0.0,3,0.0,True
-399,1975,Golden State Warriors,Rick Barry,Clifford Ray,False,0.0,3,0.0,True
-400,1974,Boston Celtics,John Havlicek,John Havlicek,True,0.91,1,1.0,True
-401,1974,Boston Celtics,John Havlicek,Dave Cowens,False,0.28,3,0.0,True
-402,1974,Boston Celtics,John Havlicek,Jo Jo White,False,0.62,2,1.0,False
-403,1974,Boston Celtics,John Havlicek,Don Chaney,False,0.0,4,0.0,True
-404,1974,Boston Celtics,John Havlicek,Paul Silas,False,0.0,4,0.0,True
-405,1974,Boston Celtics,John Havlicek,Don Nelson,False,0.0,4,0.0,True
-406,1974,Boston Celtics,John Havlicek,Paul Westphal,False,0.0,4,0.0,True
-407,1974,Boston Celtics,John Havlicek,Hank Finkel,False,0.0,4,0.0,True
-408,1973,New York Knicks,Willis Reed,Bill Bradley,False,0.78,2,1.0,False
-409,1973,New York Knicks,Willis Reed,Walt Frazier,False,0.91,1,1.0,False
-410,1973,New York Knicks,Willis Reed,Willis Reed,True,0.0,3,0.0,False
-411,1973,New York Knicks,Willis Reed,Earl Monroe,False,0.0,3,0.0,True
-412,1973,New York Knicks,Willis Reed,Dave DeBusschere,False,0.0,3,0.0,True
-413,1973,New York Knicks,Willis Reed,Phil Jackson,False,0.0,3,0.0,True
-414,1973,New York Knicks,Willis Reed,Jerry Lucas,False,0.0,3,0.0,True
-415,1973,New York Knicks,Willis Reed,Dean Meminger,False,0.0,3,0.0,True
-416,1972,Los Angeles Lakers,Wilt Chamberlain,Gail Goodrich,False,0.25,2,0.0,True
-417,1972,Los Angeles Lakers,Wilt Chamberlain,Jerry West,False,0.0,3,0.0,True
-418,1972,Los Angeles Lakers,Wilt Chamberlain,Wilt Chamberlain,True,0.98,1,1.0,True
-419,1972,Los Angeles Lakers,Wilt Chamberlain,Jim McMillian,False,0.0,3,0.0,True
-420,1972,Los Angeles Lakers,Wilt Chamberlain,Happy Hairston,False,0.0,3,0.0,True
-421,1972,Los Angeles Lakers,Wilt Chamberlain,Pat Riley,False,0.0,3,0.0,True
-422,1972,Los Angeles Lakers,Wilt Chamberlain,Leroy Ellis,False,0.0,3,0.0,True
-423,1972,Los Angeles Lakers,Wilt Chamberlain,Flynn Robinson,False,0.0,3,0.0,True
-424,1971,Milwaukee Bucks,Kareem Abdul-Jabbar,Kareem Abdul-Jabbar,True,1.0,1,1.0,True
-425,1971,Milwaukee Bucks,Kareem Abdul-Jabbar,Oscar Robertson,False,0.59,2,1.0,False
-426,1971,Milwaukee Bucks,Kareem Abdul-Jabbar,Bob Dandridge,False,0.41,3,0.0,True
-427,1971,Milwaukee Bucks,Kareem Abdul-Jabbar,Jon McGlocklin,False,0.0,4,0.0,True
-428,1971,Milwaukee Bucks,Kareem Abdul-Jabbar,Greg Smith,False,0.0,4,0.0,True
-429,1971,Milwaukee Bucks,Kareem Abdul-Jabbar,Lucius Allen,False,0.0,4,0.0,True
-430,1971,Milwaukee Bucks,Kareem Abdul-Jabbar,Bob Boozer,False,0.0,4,0.0,True
-431,1971,Milwaukee Bucks,Kareem Abdul-Jabbar,McCoy McLemore,False,0.0,4,0.0,True
-432,1970,New York Knicks,Willis Reed,Willis Reed,True,0.0,3,0.0,False
-433,1970,New York Knicks,Willis Reed,Dave DeBusschere,False,0.56,2,1.0,False
-434,1970,New York Knicks,Willis Reed,Dick Barnett,False,0.0,3,0.0,True
-435,1970,New York Knicks,Willis Reed,Walt Frazier,False,0.99,1,1.0,False
-436,1970,New York Knicks,Willis Reed,Bill Bradley,False,0.0,3,0.0,True
-437,1970,New York Knicks,Willis Reed,Cazzie Russell,False,0.0,3,0.0,True
-438,1970,New York Knicks,Willis Reed,Dave Stallworth,False,0.0,3,0.0,True
-439,1970,New York Knicks,Willis Reed,Mike Riordan,False,0.0,3,0.0,True
-440,1969,Boston Celtics,Jerry West,John Havlicek,False,1.0,1,1.0,False
-441,1969,Boston Celtics,Jerry West,Sam Jones,False,0.13,2,0.0,True
-442,1969,Boston Celtics,Jerry West,Larry Siegfried,False,0.0,3,0.0,True
-443,1969,Boston Celtics,Jerry West,Don Nelson,False,0.0,3,0.0,True
-444,1969,Boston Celtics,Jerry West,Em Bryant,False,0.0,3,0.0,True
-445,1969,Boston Celtics,Jerry West,Bailey Howell,False,0.0,3,0.0,True
-446,1969,Boston Celtics,Jerry West,Bill Russell,False,0.0,3,0.0,True
-447,1969,Boston Celtics,Jerry West,Tom Sanders,False,0.0,3,0.0,True
+Year,Team,MVP,Player,mvp_share,mvp,prob_mvp,Binary,Correct,Rank
+2026,New York Knicks,Jalen Brunson,Jalen Brunson,0.998,True,0.99,1,True,1
+2026,New York Knicks,Jalen Brunson,OG Anunoby,0.002,False,0.28,0,True,2
+2026,New York Knicks,Jalen Brunson,Karl-Anthony Towns,0.0,False,0.0,0,True,3
+2026,New York Knicks,Jalen Brunson,Mikal Bridges,0.0,False,0.0,0,True,3
+2026,New York Knicks,Jalen Brunson,Josh Hart,0.0,False,0.0,0,True,3
+2026,New York Knicks,Jalen Brunson,Landry Shamet,0.0,False,0.0,0,True,3
+2026,New York Knicks,Jalen Brunson,Jose Alvarado,0.0,False,0.0,0,True,3
+2026,New York Knicks,Jalen Brunson,Mitchell Robinson,0.0,False,0.0,0,True,3
+2025,Oklahoma City Thunder,Shai Gilgeous-Alexander,Shai Gilgeous-Alexander,0.907,True,0.99,1,True,1
+2025,Oklahoma City Thunder,Shai Gilgeous-Alexander,Jalen Williams,0.093,False,0.95,1,False,2
+2025,Oklahoma City Thunder,Shai Gilgeous-Alexander,Chet Holmgren,0.0,False,0.0,0,True,3
+2025,Oklahoma City Thunder,Shai Gilgeous-Alexander,Alex Caruso,0.0,False,0.0,0,True,3
+2025,Oklahoma City Thunder,Shai Gilgeous-Alexander,Luguentz Dort,0.0,False,0.0,0,True,3
+2025,Oklahoma City Thunder,Shai Gilgeous-Alexander,Cason Wallace,0.0,False,0.0,0,True,3
+2025,Oklahoma City Thunder,Shai Gilgeous-Alexander,Aaron Wiggins,0.0,False,0.0,0,True,3
+2025,Oklahoma City Thunder,Shai Gilgeous-Alexander,Isaiah Hartenstein,0.0,False,0.0,0,True,3
+2024,Boston Celtics,Jaylen Brown,Jayson Tatum,0.953,False,0.63,1,False,1
+2024,Boston Celtics,Jaylen Brown,Jaylen Brown,0.032,True,0.06,0,False,2
+2024,Boston Celtics,Jaylen Brown,Jrue Holiday,0.007,False,0.01,0,True,3
+2024,Boston Celtics,Jaylen Brown,Derrick White,0.0,False,0.0,0,True,6
+2024,Boston Celtics,Jaylen Brown,Sam Hauser,0.001,False,0.0,0,True,5
+2024,Boston Celtics,Jaylen Brown,Kristaps Porzingis,0.005,False,0.01,0,True,4
+2024,Boston Celtics,Jaylen Brown,Al Horford,0.0,False,0.0,0,True,6
+2024,Boston Celtics,Jaylen Brown,Payton Pritchard,0.0,False,0.0,0,True,6
+2023,Denver Nuggets,Nikola Jokić,Nikola Jokic,0.998,True,1.0,1,True,1
+2023,Denver Nuggets,Nikola Jokić,Jamal Murray,0.002,False,0.67,1,False,2
+2023,Denver Nuggets,Nikola Jokić,Aaron Gordon,0.0,False,0.03,0,True,3
+2023,Denver Nuggets,Nikola Jokić,Bruce Brown,0.0,False,0.01,0,True,3
+2023,Denver Nuggets,Nikola Jokić,Michael Porter Jr.,0.0,False,0.0,0,True,3
+2023,Denver Nuggets,Nikola Jokić,Kentavious Caldwell-Pope,0.0,False,0.0,0,True,3
+2023,Denver Nuggets,Nikola Jokić,Christian Braun,0.0,False,0.0,0,True,3
+2023,Denver Nuggets,Nikola Jokić,Jeff Green,0.0,False,0.22,0,True,3
+2022,Golden State Warriors,Stephen Curry,Stephen Curry,0.999,True,1.0,1,True,1
+2022,Golden State Warriors,Stephen Curry,Andrew Wiggins,0.001,False,0.15,0,True,2
+2022,Golden State Warriors,Stephen Curry,Klay Thompson,0.0,False,0.01,0,True,3
+2022,Golden State Warriors,Stephen Curry,Jordan Poole,0.0,False,0.08,0,True,3
+2022,Golden State Warriors,Stephen Curry,Draymond Green,0.0,False,0.0,0,True,3
+2022,Golden State Warriors,Stephen Curry,Gary Payton II,0.0,False,0.04,0,True,3
+2022,Golden State Warriors,Stephen Curry,Otto Porter Jr.,0.0,False,0.0,0,True,3
+2022,Golden State Warriors,Stephen Curry,Kevon Looney,0.0,False,0.0,0,True,3
+2021,Milwaukee Bucks,Giannis Antetokounmpo,Giannis Antetokounmpo,0.997,True,1.0,1,True,1
+2021,Milwaukee Bucks,Giannis Antetokounmpo,Khris Middleton,0.003,False,0.6,1,False,2
+2021,Milwaukee Bucks,Giannis Antetokounmpo,Jrue Holiday,0.0,False,0.02,0,True,3
+2021,Milwaukee Bucks,Giannis Antetokounmpo,Brook Lopez,0.0,False,0.01,0,True,3
+2021,Milwaukee Bucks,Giannis Antetokounmpo,Pat Connaughton,0.0,False,0.0,0,True,3
+2021,Milwaukee Bucks,Giannis Antetokounmpo,Bobby Portis,0.0,False,0.0,0,True,3
+2021,Milwaukee Bucks,Giannis Antetokounmpo,P.J. Tucker,0.0,False,0.0,0,True,3
+2021,Milwaukee Bucks,Giannis Antetokounmpo,Bryn Forbes,0.0,False,0.0,0,True,3
+2020,Los Angeles Lakers,LeBron James,LeBron James,0.991,True,1.0,1,True,1
+2020,Los Angeles Lakers,LeBron James,Anthony Davis,0.009,False,0.81,1,False,2
+2020,Los Angeles Lakers,LeBron James,Kentavious Caldwell-Pope,0.0,False,0.0,0,True,3
+2020,Los Angeles Lakers,LeBron James,Rajon Rondo,0.0,False,0.0,0,True,3
+2020,Los Angeles Lakers,LeBron James,Kyle Kuzma,0.0,False,0.0,0,True,3
+2020,Los Angeles Lakers,LeBron James,Danny Green,0.0,False,0.0,0,True,3
+2020,Los Angeles Lakers,LeBron James,Markieff Morris,0.0,False,0.0,0,True,3
+2020,Los Angeles Lakers,LeBron James,Alex Caruso,0.0,False,0.0,0,True,3
+2019,Toronto Raptors,Kawhi Leonard,Kawhi Leonard,0.959,True,0.93,1,True,1
+2019,Toronto Raptors,Kawhi Leonard,Pascal Siakam,0.032,False,0.3,0,True,2
+2019,Toronto Raptors,Kawhi Leonard,Kyle Lowry,0.002,False,0.02,0,True,4
+2019,Toronto Raptors,Kawhi Leonard,Fred VanVleet,0.0,False,0.0,0,True,5
+2019,Toronto Raptors,Kawhi Leonard,Marc Gasol,0.0,False,0.01,0,True,5
+2019,Toronto Raptors,Kawhi Leonard,Serge Ibaka,0.006,False,0.07,0,True,3
+2019,Toronto Raptors,Kawhi Leonard,Danny Green,0.0,False,0.0,0,True,5
+2019,Toronto Raptors,Kawhi Leonard,Norman Powell,0.0,False,0.0,0,True,5
+2018,Golden State Warriors,Kevin Durant,Kevin Durant,0.389,True,0.82,1,True,2
+2018,Golden State Warriors,Kevin Durant,Stephen Curry,0.585,False,0.87,1,False,1
+2018,Golden State Warriors,Kevin Durant,Klay Thompson,0.0,False,0.0,0,True,5
+2018,Golden State Warriors,Kevin Durant,Draymond Green,0.0,False,0.0,0,True,5
+2018,Golden State Warriors,Kevin Durant,JaVale McGee,0.003,False,0.04,0,True,4
+2018,Golden State Warriors,Kevin Durant,Shaun Livingston,0.019,False,0.18,0,True,3
+2018,Golden State Warriors,Kevin Durant,Jordan Bell,0.003,False,0.03,0,True,4
+2018,Golden State Warriors,Kevin Durant,Andre Iguodala,0.0,False,0.0,0,True,5
+2017,Golden State Warriors,Kevin Durant,Kevin Durant,0.981,True,0.99,1,True,1
+2017,Golden State Warriors,Kevin Durant,Stephen Curry,0.019,False,0.76,1,False,2
+2017,Golden State Warriors,Kevin Durant,Klay Thompson,0.0,False,0.0,0,True,3
+2017,Golden State Warriors,Kevin Durant,Draymond Green,0.0,False,0.0,0,True,3
+2017,Golden State Warriors,Kevin Durant,Andre Iguodala,0.0,False,0.0,0,True,3
+2017,Golden State Warriors,Kevin Durant,Shaun Livingston,0.0,False,0.0,0,True,3
+2017,Golden State Warriors,Kevin Durant,David West,0.0,False,0.0,0,True,3
+2017,Golden State Warriors,Kevin Durant,Ian Clark,0.0,False,0.0,0,True,3
+2016,Cleveland Cavaliers,LeBron James,LeBron James,0.98,True,1.0,1,True,1
+2016,Cleveland Cavaliers,LeBron James,Kyrie Irving,0.02,False,0.97,1,False,2
+2016,Cleveland Cavaliers,LeBron James,J.R. Smith,0.0,False,0.0,0,True,3
+2016,Cleveland Cavaliers,LeBron James,Tristan Thompson,0.0,False,0.02,0,True,3
+2016,Cleveland Cavaliers,LeBron James,Kevin Love,0.0,False,0.0,0,True,3
+2016,Cleveland Cavaliers,LeBron James,Richard Jefferson,0.0,False,0.0,0,True,3
+2016,Cleveland Cavaliers,LeBron James,Iman Shumpert,0.0,False,0.0,0,True,3
+2016,Cleveland Cavaliers,LeBron James,Matthew Dellavedova,0.0,False,0.0,0,True,3
+2015,Golden State Warriors,Andre Iguodala,Stephen Curry,0.99,False,0.98,1,False,1
+2015,Golden State Warriors,Andre Iguodala,Andre Iguodala,0.007,True,0.29,0,False,2
+2015,Golden State Warriors,Andre Iguodala,Klay Thompson,0.003,False,0.13,0,True,3
+2015,Golden State Warriors,Andre Iguodala,Draymond Green,0.0,False,0.02,0,True,4
+2015,Golden State Warriors,Andre Iguodala,Harrison Barnes,0.0,False,0.0,0,True,4
+2015,Golden State Warriors,Andre Iguodala,Leandro Barbosa,0.0,False,0.0,0,True,4
+2015,Golden State Warriors,Andre Iguodala,Shaun Livingston,0.0,False,0.0,0,True,4
+2015,Golden State Warriors,Andre Iguodala,Festus Ezeli,0.0,False,0.0,0,True,4
+2014,San Antonio Spurs,Kawhi Leonard,Tony Parker,0.269,False,0.43,0,True,2
+2014,San Antonio Spurs,Kawhi Leonard,Kawhi Leonard,0.571,True,0.62,1,True,1
+2014,San Antonio Spurs,Kawhi Leonard,Tim Duncan,0.041,False,0.1,0,True,5
+2014,San Antonio Spurs,Kawhi Leonard,Manu Ginóbili,0.043,False,0.11,0,True,4
+2014,San Antonio Spurs,Kawhi Leonard,Patty Mills,0.054,False,0.13,0,True,3
+2014,San Antonio Spurs,Kawhi Leonard,Danny Green,0.019,False,0.05,0,True,6
+2014,San Antonio Spurs,Kawhi Leonard,Boris Diaw,0.0,False,0.0,0,True,8
+2014,San Antonio Spurs,Kawhi Leonard,Tiago Splitter,0.004,False,0.01,0,True,7
+2013,Miami Heat,LeBron James,LeBron James,0.992,True,0.99,1,True,1
+2013,Miami Heat,LeBron James,Dwyane Wade,0.008,False,0.4,0,True,2
+2013,Miami Heat,LeBron James,Chris Bosh,0.0,False,0.0,0,True,3
+2013,Miami Heat,LeBron James,Ray Allen,0.0,False,0.0,0,True,3
+2013,Miami Heat,LeBron James,Mario Chalmers,0.0,False,0.0,0,True,3
+2013,Miami Heat,LeBron James,Shane Battier,0.0,False,0.0,0,True,3
+2013,Miami Heat,LeBron James,Mike Miller,0.0,False,0.0,0,True,3
+2013,Miami Heat,LeBron James,Chris Andersen,0.0,False,0.0,0,True,3
+2012,Miami Heat,LeBron James,LeBron James,0.862,True,0.92,1,True,1
+2012,Miami Heat,LeBron James,Dwyane Wade,0.132,False,0.65,1,False,2
+2012,Miami Heat,LeBron James,Chris Bosh,0.001,False,0.01,0,True,4
+2012,Miami Heat,LeBron James,Shane Battier,0.0,False,0.0,0,True,5
+2012,Miami Heat,LeBron James,Mario Chalmers,0.0,False,0.0,0,True,5
+2012,Miami Heat,LeBron James,Mike Miller,0.005,False,0.07,0,True,3
+2012,Miami Heat,LeBron James,Norris Cole,0.0,False,0.0,0,True,5
+2012,Miami Heat,LeBron James,Udonis Haslem,0.0,False,0.0,0,True,5
+2011,Dallas Mavericks,Dirk Nowitzki,Dirk Nowitzki,0.996,True,0.99,1,True,1
+2011,Dallas Mavericks,Dirk Nowitzki,Jason Terry,0.004,False,0.24,0,True,2
+2011,Dallas Mavericks,Dirk Nowitzki,Shawn Marion,0.0,False,0.01,0,True,3
+2011,Dallas Mavericks,Dirk Nowitzki,Tyson Chandler,0.0,False,0.0,0,True,3
+2011,Dallas Mavericks,Dirk Nowitzki,J.J. Barea,0.0,False,0.02,0,True,3
+2011,Dallas Mavericks,Dirk Nowitzki,Jason Kidd,0.0,False,0.0,0,True,3
+2011,Dallas Mavericks,Dirk Nowitzki,DeShawn Stevenson,0.0,False,0.0,0,True,3
+2011,Dallas Mavericks,Dirk Nowitzki,Ian Mahinmi,0.0,False,0.0,0,True,3
+2010,Los Angeles Lakers,Kobe Bryant,Kobe Bryant,0.999,True,1.0,1,True,1
+2010,Los Angeles Lakers,Kobe Bryant,Pau Gasol,0.001,False,0.46,0,True,2
+2010,Los Angeles Lakers,Kobe Bryant,Metta World Peace,0.0,False,0.0,0,True,3
+2010,Los Angeles Lakers,Kobe Bryant,Derek Fisher,0.0,False,0.0,0,True,3
+2010,Los Angeles Lakers,Kobe Bryant,Lamar Odom,0.0,False,0.0,0,True,3
+2010,Los Angeles Lakers,Kobe Bryant,Andrew Bynum,0.0,False,0.0,0,True,3
+2010,Los Angeles Lakers,Kobe Bryant,Shannon Brown,0.0,False,0.0,0,True,3
+2010,Los Angeles Lakers,Kobe Bryant,Jordan Farmar,0.0,False,0.0,0,True,3
+2009,Los Angeles Lakers,Kobe Bryant,Kobe Bryant,0.998,True,1.0,1,True,1
+2009,Los Angeles Lakers,Kobe Bryant,Pau Gasol,0.002,False,0.27,0,True,2
+2009,Los Angeles Lakers,Kobe Bryant,Lamar Odom,0.0,False,0.1,0,True,3
+2009,Los Angeles Lakers,Kobe Bryant,Trevor Ariza,0.0,False,0.0,0,True,3
+2009,Los Angeles Lakers,Kobe Bryant,Derek Fisher,0.0,False,0.01,0,True,3
+2009,Los Angeles Lakers,Kobe Bryant,Andrew Bynum,0.0,False,0.0,0,True,3
+2009,Los Angeles Lakers,Kobe Bryant,Luke Walton,0.0,False,0.0,0,True,3
+2009,Los Angeles Lakers,Kobe Bryant,Jordan Farmar,0.0,False,0.0,0,True,3
+2008,Boston Celtics,Paul Pierce,Paul Pierce,0.084,True,0.17,0,False,3
+2008,Boston Celtics,Paul Pierce,Ray Allen,0.373,False,0.48,0,True,2
+2008,Boston Celtics,Paul Pierce,Kevin Garnett,0.509,False,0.55,1,False,1
+2008,Boston Celtics,Paul Pierce,Rajon Rondo,0.0,False,0.0,0,True,6
+2008,Boston Celtics,Paul Pierce,James Posey,0.005,False,0.01,0,True,5
+2008,Boston Celtics,Paul Pierce,Leon Powe,0.028,False,0.06,0,True,4
+2008,Boston Celtics,Paul Pierce,Eddie House,0.0,False,0.0,0,True,6
+2008,Boston Celtics,Paul Pierce,P.J. Brown,0.0,False,0.0,0,True,6
+2007,San Antonio Spurs,Tony Parker,Tony Parker,0.838,True,0.95,1,True,1
+2007,San Antonio Spurs,Tony Parker,Tim Duncan,0.074,False,0.64,1,False,3
+2007,San Antonio Spurs,Tony Parker,Manu Ginóbili,0.085,False,0.67,1,False,2
+2007,San Antonio Spurs,Tony Parker,Bruce Bowen,0.0,False,0.0,0,True,5
+2007,San Antonio Spurs,Tony Parker,Fabricio Oberto,0.0,False,0.0,0,True,5
+2007,San Antonio Spurs,Tony Parker,Francisco Elson,0.003,False,0.08,0,True,4
+2007,San Antonio Spurs,Tony Parker,Michael Finley,0.0,False,0.0,0,True,5
+2007,San Antonio Spurs,Tony Parker,Brent Barry,0.0,False,0.0,0,True,5
+2006,Miami Heat,Dwyane Wade,Dwyane Wade,1.0,True,1.0,1,True,1
+2006,Miami Heat,Dwyane Wade,Antoine Walker,0.0,False,0.02,0,True,2
+2006,Miami Heat,Dwyane Wade,Shaquille O'Neal,0.0,False,0.13,0,True,2
+2006,Miami Heat,Dwyane Wade,Jason Williams,0.0,False,0.0,0,True,2
+2006,Miami Heat,Dwyane Wade,James Posey,0.0,False,0.0,0,True,2
+2006,Miami Heat,Dwyane Wade,Udonis Haslem,0.0,False,0.0,0,True,2
+2006,Miami Heat,Dwyane Wade,Alonzo Mourning,0.0,False,0.02,0,True,2
+2006,Miami Heat,Dwyane Wade,Gary Payton,0.0,False,0.0,0,True,2
+2005,San Antonio Spurs,Tim Duncan,Tim Duncan,0.694,True,0.93,1,True,1
+2005,San Antonio Spurs,Tim Duncan,Manu Ginóbili,0.3,False,0.86,1,False,2
+2005,San Antonio Spurs,Tim Duncan,Tony Parker,0.003,False,0.05,0,True,3
+2005,San Antonio Spurs,Tim Duncan,Robert Horry,0.003,False,0.05,0,True,3
+2005,San Antonio Spurs,Tim Duncan,Bruce Bowen,0.0,False,0.0,0,True,4
+2005,San Antonio Spurs,Tim Duncan,Nazr Mohammed,0.0,False,0.0,0,True,4
+2005,San Antonio Spurs,Tim Duncan,Brent Barry,0.0,False,0.0,0,True,4
+2005,San Antonio Spurs,Tim Duncan,Beno Udrih,0.0,False,0.0,0,True,4
+2004,Detroit Pistons,Chauncey Billups,Richard Hamilton,0.578,False,0.3,0,True,1
+2004,Detroit Pistons,Chauncey Billups,Chauncey Billups,0.266,True,0.17,0,False,2
+2004,Detroit Pistons,Chauncey Billups,Rasheed Wallace,0.142,False,0.1,0,True,3
+2004,Detroit Pistons,Chauncey Billups,Ben Wallace,0.005,False,0.0,0,True,4
+2004,Detroit Pistons,Chauncey Billups,Tayshaun Prince,0.004,False,0.0,0,True,5
+2004,Detroit Pistons,Chauncey Billups,Corliss Williamson,0.0,False,0.0,0,True,8
+2004,Detroit Pistons,Chauncey Billups,Lindsey Hunter,0.001,False,0.0,0,True,7
+2004,Detroit Pistons,Chauncey Billups,Elden Campbell,0.003,False,0.0,0,True,6
+2003,San Antonio Spurs,Tim Duncan,Tim Duncan,0.984,True,0.93,1,True,1
+2003,San Antonio Spurs,Tim Duncan,Tony Parker,0.004,False,0.05,0,True,3
+2003,San Antonio Spurs,Tim Duncan,David Robinson,0.005,False,0.06,0,True,2
+2003,San Antonio Spurs,Tim Duncan,Stephen Jackson,0.001,False,0.01,0,True,4
+2003,San Antonio Spurs,Tim Duncan,Manu Ginóbili,0.0,False,0.0,0,True,5
+2003,San Antonio Spurs,Tim Duncan,Malik Rose,0.001,False,0.02,0,True,4
+2003,San Antonio Spurs,Tim Duncan,Speedy Claxton,0.005,False,0.07,0,True,2
+2003,San Antonio Spurs,Tim Duncan,Bruce Bowen,0.0,False,0.0,0,True,5
+2002,Los Angeles Lakers,Shaquille O'Neal,Shaquille O'Neal,0.952,True,0.99,1,True,1
+2002,Los Angeles Lakers,Shaquille O'Neal,Kobe Bryant,0.048,False,0.85,1,False,2
+2002,Los Angeles Lakers,Shaquille O'Neal,Derek Fisher,0.0,False,0.03,0,True,3
+2002,Los Angeles Lakers,Shaquille O'Neal,Rick Fox,0.0,False,0.0,0,True,3
+2002,Los Angeles Lakers,Shaquille O'Neal,Robert Horry,0.0,False,0.0,0,True,3
+2002,Los Angeles Lakers,Shaquille O'Neal,Devean George,0.0,False,0.0,0,True,3
+2002,Los Angeles Lakers,Shaquille O'Neal,Brian Shaw,0.0,False,0.0,0,True,3
+2002,Los Angeles Lakers,Shaquille O'Neal,Samaki Walker,0.0,False,0.0,0,True,3
+2001,Los Angeles Lakers,Shaquille O'Neal,Shaquille O'Neal,0.973,True,0.98,1,True,1
+2001,Los Angeles Lakers,Shaquille O'Neal,Kobe Bryant,0.027,False,0.64,1,False,2
+2001,Los Angeles Lakers,Shaquille O'Neal,Derek Fisher,0.0,False,0.0,0,True,3
+2001,Los Angeles Lakers,Shaquille O'Neal,Rick Fox,0.0,False,0.0,0,True,3
+2001,Los Angeles Lakers,Shaquille O'Neal,Robert Horry,0.0,False,0.01,0,True,3
+2001,Los Angeles Lakers,Shaquille O'Neal,Horace Grant,0.0,False,0.0,0,True,3
+2001,Los Angeles Lakers,Shaquille O'Neal,Tyronn Lue,0.0,False,0.0,0,True,3
+2001,Los Angeles Lakers,Shaquille O'Neal,Brian Shaw,0.0,False,0.0,0,True,3
+2000,Los Angeles Lakers,Shaquille O'Neal,Shaquille O'Neal,1.0,True,1.0,1,True,1
+2000,Los Angeles Lakers,Shaquille O'Neal,Kobe Bryant,0.0,False,0.0,0,True,2
+2000,Los Angeles Lakers,Shaquille O'Neal,Glen Rice,0.0,False,0.0,0,True,2
+2000,Los Angeles Lakers,Shaquille O'Neal,Ron Harper,0.0,False,0.0,0,True,2
+2000,Los Angeles Lakers,Shaquille O'Neal,Robert Horry,0.0,False,0.0,0,True,2
+2000,Los Angeles Lakers,Shaquille O'Neal,Rick Fox,0.0,False,0.01,0,True,2
+2000,Los Angeles Lakers,Shaquille O'Neal,Derek Fisher,0.0,False,0.0,0,True,2
+2000,Los Angeles Lakers,Shaquille O'Neal,A.C. Green,0.0,False,0.0,0,True,2
+1999,San Antonio Spurs,Tim Duncan,Tim Duncan,0.976,True,0.97,1,True,1
+1999,San Antonio Spurs,Tim Duncan,David Robinson,0.024,False,0.47,0,True,2
+1999,San Antonio Spurs,Tim Duncan,Mario Elie,0.001,False,0.02,0,True,3
+1999,San Antonio Spurs,Tim Duncan,Avery Johnson,0.0,False,0.0,0,True,4
+1999,San Antonio Spurs,Tim Duncan,Sean Elliott,0.0,False,0.0,0,True,4
+1999,San Antonio Spurs,Tim Duncan,Jaren Jackson,0.0,False,0.0,0,True,4
+1999,San Antonio Spurs,Tim Duncan,Antonio Daniels,0.0,False,0.01,0,True,4
+1999,San Antonio Spurs,Tim Duncan,Steve Kerr,0.0,False,0.0,0,True,4
+1998,Chicago Bulls,Michael Jordan,Michael Jordan,1.0,True,1.0,1,True,1
+1998,Chicago Bulls,Michael Jordan,Scottie Pippen,0.0,False,0.15,0,True,2
+1998,Chicago Bulls,Michael Jordan,Toni Kukoč,0.0,False,0.11,0,True,2
+1998,Chicago Bulls,Michael Jordan,Ron Harper,0.0,False,0.0,0,True,2
+1998,Chicago Bulls,Michael Jordan,Luc Longley,0.0,False,0.0,0,True,2
+1998,Chicago Bulls,Michael Jordan,Steve Kerr,0.0,False,0.0,0,True,2
+1998,Chicago Bulls,Michael Jordan,Scott Burrell,0.0,False,0.0,0,True,2
+1998,Chicago Bulls,Michael Jordan,Dennis Rodman,0.0,False,0.0,0,True,2
+1997,Chicago Bulls,Michael Jordan,Michael Jordan,1.0,True,1.0,1,True,1
+1997,Chicago Bulls,Michael Jordan,Scottie Pippen,0.0,False,0.15,0,True,2
+1997,Chicago Bulls,Michael Jordan,Toni Kukoč,0.0,False,0.0,0,True,2
+1997,Chicago Bulls,Michael Jordan,Bison Dele,0.0,False,0.0,0,True,2
+1997,Chicago Bulls,Michael Jordan,Luc Longley,0.0,False,0.0,0,True,2
+1997,Chicago Bulls,Michael Jordan,Ron Harper,0.0,False,0.0,0,True,2
+1997,Chicago Bulls,Michael Jordan,Steve Kerr,0.0,False,0.0,0,True,2
+1997,Chicago Bulls,Michael Jordan,Dennis Rodman,0.0,False,0.0,0,True,2
+1996,Chicago Bulls,Michael Jordan,Michael Jordan,0.999,True,0.98,1,True,1
+1996,Chicago Bulls,Michael Jordan,Scottie Pippen,0.0,False,0.02,0,True,2
+1996,Chicago Bulls,Michael Jordan,Toni Kukoč,0.0,False,0.01,0,True,2
+1996,Chicago Bulls,Michael Jordan,Luc Longley,0.0,False,0.01,0,True,2
+1996,Chicago Bulls,Michael Jordan,Dennis Rodman,0.0,False,0.0,0,True,2
+1996,Chicago Bulls,Michael Jordan,Ron Harper,0.0,False,0.0,0,True,2
+1996,Chicago Bulls,Michael Jordan,Steve Kerr,0.0,False,0.0,0,True,2
+1996,Chicago Bulls,Michael Jordan,Randy Brown,0.0,False,0.0,0,True,2
+1995,Houston Rockets,Hakeem Olajuwon,Hakeem Olajuwon,0.996,True,0.98,1,True,1
+1995,Houston Rockets,Hakeem Olajuwon,Clyde Drexler,0.003,False,0.14,0,True,2
+1995,Houston Rockets,Hakeem Olajuwon,Robert Horry,0.0,False,0.0,0,True,4
+1995,Houston Rockets,Hakeem Olajuwon,Mario Elie,0.0,False,0.02,0,True,4
+1995,Houston Rockets,Hakeem Olajuwon,Sam Cassell,0.001,False,0.03,0,True,3
+1995,Houston Rockets,Hakeem Olajuwon,Kenny Smith,0.0,False,0.0,0,True,4
+1995,Houston Rockets,Hakeem Olajuwon,Chucky Brown,0.0,False,0.0,0,True,4
+1995,Houston Rockets,Hakeem Olajuwon,Charles Jones,0.0,False,0.0,0,True,4
+1994,Houston Rockets,Hakeem Olajuwon,Hakeem Olajuwon,1.0,True,1.0,1,True,1
+1994,Houston Rockets,Hakeem Olajuwon,Vernon Maxwell,0.0,False,0.02,0,True,2
+1994,Houston Rockets,Hakeem Olajuwon,Robert Horry,0.0,False,0.0,0,True,2
+1994,Houston Rockets,Hakeem Olajuwon,Sam Cassell,0.0,False,0.06,0,True,2
+1994,Houston Rockets,Hakeem Olajuwon,Otis Thorpe,0.0,False,0.01,0,True,2
+1994,Houston Rockets,Hakeem Olajuwon,Carl Herrera,0.0,False,0.02,0,True,2
+1994,Houston Rockets,Hakeem Olajuwon,Kenny Smith,0.0,False,0.0,0,True,2
+1994,Houston Rockets,Hakeem Olajuwon,Mario Elie,0.0,False,0.0,0,True,2
+1993,Chicago Bulls,Michael Jordan,Michael Jordan,1.0,True,1.0,1,True,1
+1993,Chicago Bulls,Michael Jordan,Scottie Pippen,0.0,False,0.19,0,True,2
+1993,Chicago Bulls,Michael Jordan,B.J. Armstrong,0.0,False,0.01,0,True,2
+1993,Chicago Bulls,Michael Jordan,Horace Grant,0.0,False,0.0,0,True,2
+1993,Chicago Bulls,Michael Jordan,John Paxson,0.0,False,0.0,0,True,2
+1993,Chicago Bulls,Michael Jordan,Scott Williams,0.0,False,0.0,0,True,2
+1993,Chicago Bulls,Michael Jordan,Bill Cartwright,0.0,False,0.0,0,True,2
+1993,Chicago Bulls,Michael Jordan,Trent Tucker,0.0,False,0.0,0,True,2
+1992,Chicago Bulls,Michael Jordan,Michael Jordan,1.0,True,1.0,1,True,1
+1992,Chicago Bulls,Michael Jordan,Scottie Pippen,0.0,False,0.81,1,False,2
+1992,Chicago Bulls,Michael Jordan,John Paxson,0.0,False,0.0,0,True,2
+1992,Chicago Bulls,Michael Jordan,Horace Grant,0.0,False,0.0,0,True,2
+1992,Chicago Bulls,Michael Jordan,Bill Cartwright,0.0,False,0.0,0,True,2
+1992,Chicago Bulls,Michael Jordan,B.J. Armstrong,0.0,False,0.0,0,True,2
+1992,Chicago Bulls,Michael Jordan,Scott Williams,0.0,False,0.0,0,True,2
+1992,Chicago Bulls,Michael Jordan,Cliff Levingston,0.0,False,0.0,0,True,2
+1991,Chicago Bulls,Michael Jordan,Michael Jordan,0.998,True,1.0,1,True,1
+1991,Chicago Bulls,Michael Jordan,Scottie Pippen,0.002,False,0.47,0,True,2
+1991,Chicago Bulls,Michael Jordan,Horace Grant,0.0,False,0.01,0,True,3
+1991,Chicago Bulls,Michael Jordan,John Paxson,0.0,False,0.07,0,True,3
+1991,Chicago Bulls,Michael Jordan,Bill Cartwright,0.0,False,0.0,0,True,3
+1991,Chicago Bulls,Michael Jordan,Craig Hodges,0.0,False,0.0,0,True,3
+1991,Chicago Bulls,Michael Jordan,Cliff Levingston,0.0,False,0.0,0,True,3
+1991,Chicago Bulls,Michael Jordan,B.J. Armstrong,0.0,False,0.0,0,True,3
+1990,Detroit Pistons,Isiah Thomas,Isiah Thomas,0.997,True,0.99,1,True,1
+1990,Detroit Pistons,Isiah Thomas,Joe Dumars,0.002,False,0.16,0,True,2
+1990,Detroit Pistons,Isiah Thomas,James Edwards,0.001,False,0.06,0,True,3
+1990,Detroit Pistons,Isiah Thomas,Bill Laimbeer,0.0,False,0.02,0,True,4
+1990,Detroit Pistons,Isiah Thomas,Vinnie Johnson,0.0,False,0.0,0,True,4
+1990,Detroit Pistons,Isiah Thomas,Mark Aguirre,0.0,False,0.0,0,True,4
+1990,Detroit Pistons,Isiah Thomas,John Salley,0.0,False,0.0,0,True,4
+1990,Detroit Pistons,Isiah Thomas,Dennis Rodman,0.0,False,0.0,0,True,4
+1989,Detroit Pistons,Joe Dumars,Joe Dumars,0.614,True,0.44,0,False,1
+1989,Detroit Pistons,Joe Dumars,Isiah Thomas,0.269,False,0.25,0,True,2
+1989,Detroit Pistons,Joe Dumars,Vinnie Johnson,0.114,False,0.13,0,True,3
+1989,Detroit Pistons,Joe Dumars,James Edwards,0.0,False,0.0,0,True,5
+1989,Detroit Pistons,Joe Dumars,Bill Laimbeer,0.002,False,0.0,0,True,4
+1989,Detroit Pistons,Joe Dumars,Mark Aguirre,0.0,False,0.0,0,True,5
+1989,Detroit Pistons,Joe Dumars,John Salley,0.0,False,0.0,0,True,5
+1989,Detroit Pistons,Joe Dumars,Rick Mahorn,0.0,False,0.0,0,True,5
+1988,Los Angeles Lakers,James Worthy,James Worthy,0.049,True,0.67,1,True,2
+1988,Los Angeles Lakers,James Worthy,Magic Johnson,0.945,False,0.97,1,False,1
+1988,Los Angeles Lakers,James Worthy,Byron Scott,0.005,False,0.17,0,True,3
+1988,Los Angeles Lakers,James Worthy,Kareem Abdul-Jabbar,0.0,False,0.01,0,True,4
+1988,Los Angeles Lakers,James Worthy,A.C. Green,0.0,False,0.0,0,True,4
+1988,Los Angeles Lakers,James Worthy,Mychal Thompson,0.0,False,0.0,0,True,4
+1988,Los Angeles Lakers,James Worthy,Michael Cooper,0.0,False,0.0,0,True,4
+1988,Los Angeles Lakers,James Worthy,Tony Campbell,0.0,False,0.0,0,True,4
+1987,Los Angeles Lakers,Magic Johnson,Magic Johnson,0.985,True,0.95,1,True,1
+1987,Los Angeles Lakers,Magic Johnson,Kareem Abdul-Jabbar,0.011,False,0.18,0,True,2
+1987,Los Angeles Lakers,Magic Johnson,James Worthy,0.003,False,0.06,0,True,3
+1987,Los Angeles Lakers,Magic Johnson,Michael Cooper,0.0,False,0.01,0,True,4
+1987,Los Angeles Lakers,Magic Johnson,Byron Scott,0.0,False,0.0,0,True,4
+1987,Los Angeles Lakers,Magic Johnson,Mychal Thompson,0.0,False,0.0,0,True,4
+1987,Los Angeles Lakers,Magic Johnson,A.C. Green,0.0,False,0.0,0,True,4
+1987,Los Angeles Lakers,Magic Johnson,Kurt Rambis,0.0,False,0.0,0,True,4
+1986,Boston Celtics,Larry Bird,Kevin McHale,0.122,False,0.45,0,True,2
+1986,Boston Celtics,Larry Bird,Larry Bird,0.863,True,0.85,1,True,1
+1986,Boston Celtics,Larry Bird,Dennis Johnson,0.004,False,0.03,0,True,4
+1986,Boston Celtics,Larry Bird,Danny Ainge,0.003,False,0.02,0,True,5
+1986,Boston Celtics,Larry Bird,Robert Parish,0.0,False,0.0,0,True,7
+1986,Boston Celtics,Larry Bird,Bill Walton,0.002,False,0.01,0,True,6
+1986,Boston Celtics,Larry Bird,Jerry Sichting,0.0,False,0.0,0,True,7
+1986,Boston Celtics,Larry Bird,Rick Carlisle,0.006,False,0.04,0,True,3
+1985,Los Angeles Lakers,Kareem Abdul-Jabbar,Kareem Abdul-Jabbar,0.776,True,0.88,1,True,1
+1985,Los Angeles Lakers,Kareem Abdul-Jabbar,James Worthy,0.13,False,0.55,1,False,2
+1985,Los Angeles Lakers,Kareem Abdul-Jabbar,Magic Johnson,0.093,False,0.47,0,True,3
+1985,Los Angeles Lakers,Kareem Abdul-Jabbar,Byron Scott,0.0,False,0.0,0,True,5
+1985,Los Angeles Lakers,Kareem Abdul-Jabbar,Michael Cooper,0.001,False,0.01,0,True,4
+1985,Los Angeles Lakers,Kareem Abdul-Jabbar,Bob McAdoo,0.0,False,0.0,0,True,5
+1985,Los Angeles Lakers,Kareem Abdul-Jabbar,Kurt Rambis,0.0,False,0.0,0,True,5
+1985,Los Angeles Lakers,Kareem Abdul-Jabbar,Mitch Kupchak,0.0,False,0.0,0,True,5
+1984,Boston Celtics,Larry Bird,Larry Bird,0.969,True,0.84,1,True,1
+1984,Boston Celtics,Larry Bird,Dennis Johnson,0.026,False,0.12,0,True,2
+1984,Boston Celtics,Larry Bird,Robert Parish,0.002,False,0.01,0,True,3
+1984,Boston Celtics,Larry Bird,Kevin McHale,0.0,False,0.0,0,True,5
+1984,Boston Celtics,Larry Bird,Cedric Maxwell,0.001,False,0.01,0,True,4
+1984,Boston Celtics,Larry Bird,Gerald Henderson,0.002,False,0.01,0,True,3
+1984,Boston Celtics,Larry Bird,Danny Ainge,0.0,False,0.0,0,True,5
+1984,Boston Celtics,Larry Bird,Scott Wedman,0.0,False,0.0,0,True,5

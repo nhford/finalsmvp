@@ -1,0 +1,22 @@
+# Local scrape caches (not needed to run the notebook)
+data/series_html/
+data/teams/html/
+
+# Notebook / OS noise
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Optional local env
+.venv/
+venv/
+.env
+
+# Local scratch (not committed)
+TODO.local.md
+
+# Frontend
+web/node_modules/
+web/dist/
+web/.astro/
