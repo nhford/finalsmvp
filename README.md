@@ -1,33 +1,81 @@
-## Who should've won NBA Finals MVP?
+# Finals MVP
 
-### A Python Machine Learning Analysis
+**Live demo:** [finalsmvp.netlify.app](https://finalsmvp.netlify.app/)
 
-### Directory
+Interactive standings + logistic model for who *should* have won NBA Finals MVP. Built by Noah Ford (MSCS, Carnegie Mellon ’26) as a sports-analytics portfolio project: scrape → feature design → out-of-fold classification → a UI meant for non-technical stakeholders.
 
-#### What matters
+## What it does
 
-[finalsmvp.ipynb](finalsmvp.ipynb) has a walk-through of the data collection, processing, and machine learning itself.
+- **Standings** — Browse Finals years (1984–2026) by season or champion. Each row shows model MVP share, predicted vs actual award, and whether the pick matched. Expand a row for the full share stack and series box stats.
+- **Predicted vs Actual** — Toggle the standings strip to compare the model’s top pick against the real Finals MVP.
+- **How It Works** — Short project brief: lean feature weights, correlation/VIF diagnostics, and how to read the page.
 
-[output](output) contains several csvs created at different key points of the notebook.
+The model scores each champion Finals top-8 scorer, then softmaxes logits within the year into an **MVP share**. Treat it as a transparent counterfactual on the award, not a guarantee.
 
-[tableau](tableau) shows some of the output I was able to visualize.
+## Model (brief)
 
-<img src="/tableau/predictions_crop.png" alt="Predictions Cropped" style="width:100%;height:100%; padding-top:10px"> <br>
+- **Task:** Binary classification — among champion Finals top scorers, does this player’s series resemble Finals MVP seasons?
+- **Algorithm:** Logistic regression on **10** lean series features (`USG%`, `PTS_CV`, `eFG%`, `rel_Q4_eFG%`, `rel_WL_eFG%`, `TRB%`, `AST%-TOV%`, `NetRtg`, `MP`, `GM`), with SMOTE inside each training fold for class imbalance.
+- **Evaluation:** 5-fold out-of-fold probabilities; year-level pick = argmax of softmaxed OOF logits. Matches the actual award in **38/43** years (1984–2026).
+- **Data:** Finals box scores and award history from [Basketball-Reference](https://www.basketball-reference.com/); scraping is intentionally separated from the analysis notebook.
+- **Serving:** Precomputed OOF scores → JSON for the Astro UI (no live predict API).
 
-#### What does not
+## Stack
 
-[csvs](csvs) contains, well, csvs, of the cumulative series box scores for each finals winning team.
+| Layer | Choice |
+| --- | --- |
+| Analysis | Python, pandas, scikit-learn, imbalanced-learn, Jupyter |
+| Pipeline | Scrapers + feature builders under `scripts/` |
+| Frontend | Astro + React + TypeScript, Tailwind CSS |
+| Data | Committed series CSVs → generated `web/src/data/finals.json` |
 
-[series](series) contains the html pulled from basketball reference.
+## Local development
 
-[helper_funcs.ipynb](helper_funcs.ipynb) contains much of the backend helper functions used to pull the data. This file can mostly be ignored for the non-technical viewer.
+```bash
+# Explore / model (uses committed CSVs)
+jupyter notebook finalsmvp.ipynb
 
-[README.md](README.md) well I suppose if you read this far, then this is inaptly categorized.
+# After a new Finals season, refresh tables then re-run the notebook
+python3 scripts/refresh_data.py
 
-### Development
+# Frontend — rebuild JSON then run the site
+python3 scripts/build_frontend_data.py
+cd web && npm install && npm run dev
 
-we use python
+# Production build (canonical / Open Graph use https://finalsmvp.netlify.app)
+cd web && npm run build
+```
 
-### Next Steps
+## Project layout
 
-...
+```
+finalsmvp.ipynb           # explanatory ML walkthrough (starts from CSVs)
+helpers/                  # box scores, meta lookups, softmax, naming
+scripts/                  # scrape → features → ML output → frontend JSON
+web/                      # Astro + React standings UI
+  src/features/standings/
+  src/features/how-it-works/
+  src/data/finals.json    # generated year summary + candidates
+data/
+  series_tables/          # committed box-score CSVs (basic/advanced × winner/loser)
+  meta/                   # finals_mvp, series games, champions, team IDs
+output/                   # model / feature CSVs (+ frontend_finals.json)
+```
+
+HTML scrape caches (`data/series_html/`, `data/teams/html/`) are optional and gitignored; the notebook and UI read the CSV layer.
+
+## Notes for recruiters
+
+- End-to-end path: scrape Basketball-Reference → engineer lean series features → OOF logistic with imbalance handling → ship an interactive UI that compares model picks to the actual award.
+- Emphasis on **communicating the award counterfactual** (MVP share, predicted vs actual, expandable box scores, feature-weight transparency) as much as on raw hit rate.
+- Honest limits: box scores miss narrative and defensive reputation; the model is strongest when one star clearly leads scoring/usage, and can miss years with two near-equal candidates.
+
+## Possible next work
+
+- Richer clutch / series-context features beyond the lean set
+- Stronger evaluation reporting (calibration, era holdouts)
+- Live predict API for counterfactual “what if this player’s series looked like X?”
+
+## License
+
+MIT — see [LICENSE](LICENSE).

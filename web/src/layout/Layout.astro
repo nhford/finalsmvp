@@ -1,0 +1,89 @@
+---
+import "../styles/globals.css";
+import Header from "./Header.astro";
+
+interface Props {
+  title: string;
+  description?: string;
+  minYear?: number;
+  maxYear?: number;
+}
+
+const { title, minYear, maxYear } = Astro.props;
+const yearRange =
+  minYear != null && maxYear != null ? `${minYear}–${maxYear}` : "1984–present";
+const description =
+  Astro.props.description ??
+  `Who should have won NBA Finals MVP? A logistic regression model scores champion Finals box scores (${yearRange}) and compares picks to the actual award.`;
+const siteUrl = (
+  import.meta.env.PUBLIC_SITE_URL ??
+  Astro.site?.toString() ??
+  "https://finalsmvp.netlify.app"
+).replace(/\/$/, "");
+const canonical = siteUrl
+  ? new URL(Astro.url.pathname, `${siteUrl}/`).toString()
+  : undefined;
+const ogImage = siteUrl ? `${siteUrl}/favicon.png` : undefined;
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "Who should've won Finals MVP?",
+  description,
+  applicationCategory: "SportsApplication",
+  operatingSystem: "Any",
+  author: {
+    "@type": "Person",
+    name: "Noah Ford",
+  },
+  ...(siteUrl ? { url: siteUrl } : {}),
+};
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="author" content="Noah Ford" />
+    <meta name="theme-color" content="#262626" />
+    <meta
+      name="keywords"
+      content="NBA Finals MVP, Finals MVP model, basketball analytics, logistic regression, Basketball-Reference"
+    />
+    {canonical ? <link rel="canonical" href={canonical} /> : null}
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    {canonical ? <meta property="og:url" content={canonical} /> : null}
+    {ogImage ? <meta property="og:image" content={ogImage} /> : null}
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    {ogImage ? <meta name="twitter:image" content={ogImage} /> : null}
+
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <title>{title}</title>
+    <script
+      is:inline
+      type="application/ld+json"
+      set:html={JSON.stringify(jsonLd)}
+    />
+  </head>
+  <body class="px-2 antialiased text-white bg-neutral-800 sm:px-8">
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-white focus:px-3 focus:py-2 focus:text-black focus:outline-none focus:ring-2 focus:ring-[#e0b86c]"
+    >
+      Skip to main content
+    </a>
+    <Header minYear={minYear} maxYear={maxYear} />
+    <main id="main-content" class="w-full grow" tabindex="-1">
+      <slot />
+    </main>
+  </body>
+</html>

@@ -1,0 +1,220 @@
+year,abbrev,team,round_order,result,round,wins,losses,opponent,series_text
+2026,NYK,New York Knicks,1,Won,NBA Eastern Conference First Round,4,2,Atlanta Hawks,Won NBA Eastern Conference First Round (4-2) versus Atlanta Hawks
+2026,NYK,New York Knicks,2,Won,NBA Eastern Conference Semifinals,4,0,Philadelphia 76ers,Won NBA Eastern Conference Semifinals (4-0) versus Philadelphia 76ers
+2026,NYK,New York Knicks,3,Won,NBA Eastern Conference Finals,4,0,Cleveland Cavaliers,Won NBA Eastern Conference Finals (4-0) versus Cleveland Cavaliers
+2026,NYK,New York Knicks,4,Won,NBA Finals,4,1,San Antonio Spurs,Won NBA Finals (4-1) versus San Antonio Spurs
+2025,OKC,Oklahoma City Thunder,1,Won,NBA Western Conference First Round,4,0,Memphis Grizzlies,Won NBA Western Conference First Round (4-0) versus Memphis Grizzlies
+2025,OKC,Oklahoma City Thunder,2,Won,NBA Western Conference Semifinals,4,3,Denver Nuggets,Won NBA Western Conference Semifinals (4-3) versus Denver Nuggets
+2025,OKC,Oklahoma City Thunder,3,Won,NBA Western Conference Finals,4,1,Minnesota Timberwolves,Won NBA Western Conference Finals (4-1) versus Minnesota Timberwolves
+2025,OKC,Oklahoma City Thunder,4,Won,NBA Finals,4,3,Indiana Pacers,Won NBA Finals (4-3) versus Indiana Pacers
+2024,BOS,Boston Celtics,1,Won,NBA Eastern Conference First Round,4,1,Miami Heat,Won NBA Eastern Conference First Round (4-1) versus Miami Heat
+2024,BOS,Boston Celtics,2,Won,NBA Eastern Conference Semifinals,4,1,Cleveland Cavaliers,Won NBA Eastern Conference Semifinals (4-1) versus Cleveland Cavaliers
+2024,BOS,Boston Celtics,3,Won,NBA Eastern Conference Finals,4,0,Indiana Pacers,Won NBA Eastern Conference Finals (4-0) versus Indiana Pacers
+2024,BOS,Boston Celtics,4,Won,NBA Finals,4,1,Dallas Mavericks,Won NBA Finals (4-1) versus Dallas Mavericks
+2023,DEN,Denver Nuggets,1,Won,NBA Western Conference First Round,4,1,Minnesota Timberwolves,Won NBA Western Conference First Round (4-1) versus Minnesota Timberwolves
+2023,DEN,Denver Nuggets,2,Won,NBA Western Conference Semifinals,4,2,Phoenix Suns,Won NBA Western Conference Semifinals (4-2) versus Phoenix Suns
+2023,DEN,Denver Nuggets,3,Won,NBA Western Conference Finals,4,0,Los Angeles Lakers,Won NBA Western Conference Finals (4-0) versus Los Angeles Lakers
+2023,DEN,Denver Nuggets,4,Won,NBA Finals,4,1,Miami Heat,Won NBA Finals (4-1) versus Miami Heat
+2022,GSW,Golden State Warriors,1,Won,NBA Western Conference First Round,4,1,Denver Nuggets,Won NBA Western Conference First Round (4-1) versus Denver Nuggets
+2022,GSW,Golden State Warriors,2,Won,NBA Western Conference Semifinals,4,2,Memphis Grizzlies,Won NBA Western Conference Semifinals (4-2) versus Memphis Grizzlies
+2022,GSW,Golden State Warriors,3,Won,NBA Western Conference Finals,4,1,Dallas Mavericks,Won NBA Western Conference Finals (4-1) versus Dallas Mavericks
+2022,GSW,Golden State Warriors,4,Won,NBA Finals,4,2,Boston Celtics,Won NBA Finals (4-2) versus Boston Celtics
+2021,MIL,Milwaukee Bucks,1,Won,NBA Eastern Conference First Round,4,0,Miami Heat,Won NBA Eastern Conference First Round (4-0) versus Miami Heat
+2021,MIL,Milwaukee Bucks,2,Won,NBA Eastern Conference Semifinals,4,3,Brooklyn Nets,Won NBA Eastern Conference Semifinals (4-3) versus Brooklyn Nets
+2021,MIL,Milwaukee Bucks,3,Won,NBA Eastern Conference Finals,4,2,Atlanta Hawks,Won NBA Eastern Conference Finals (4-2) versus Atlanta Hawks
+2021,MIL,Milwaukee Bucks,4,Won,NBA Finals,4,2,Phoenix Suns,Won NBA Finals (4-2) versus Phoenix Suns
+2020,LAL,Los Angeles Lakers,1,Won,NBA Western Conference First Round,4,1,Portland Trail Blazers,Won NBA Western Conference First Round (4-1) versus Portland Trail Blazers
+2020,LAL,Los Angeles Lakers,2,Won,NBA Western Conference Semifinals,4,1,Houston Rockets,Won NBA Western Conference Semifinals (4-1) versus Houston Rockets
+2020,LAL,Los Angeles Lakers,3,Won,NBA Western Conference Finals,4,1,Denver Nuggets,Won NBA Western Conference Finals (4-1) versus Denver Nuggets
+2020,LAL,Los Angeles Lakers,4,Won,NBA Finals,4,2,Miami Heat,Won NBA Finals (4-2) versus Miami Heat
+2019,TOR,Toronto Raptors,1,Won,NBA Eastern Conference First Round,4,1,Orlando Magic,Won NBA Eastern Conference First Round (4-1) versus Orlando Magic
+2019,TOR,Toronto Raptors,2,Won,NBA Eastern Conference Semifinals,4,3,Philadelphia 76ers,Won NBA Eastern Conference Semifinals (4-3) versus Philadelphia 76ers
+2019,TOR,Toronto Raptors,3,Won,NBA Eastern Conference Finals,4,2,Milwaukee Bucks,Won NBA Eastern Conference Finals (4-2) versus Milwaukee Bucks
+2019,TOR,Toronto Raptors,4,Won,NBA Finals,4,2,Golden State Warriors,Won NBA Finals (4-2) versus Golden State Warriors
+2018,GSW,Golden State Warriors,1,Won,NBA Western Conference First Round,4,1,San Antonio Spurs,Won NBA Western Conference First Round (4-1) versus San Antonio Spurs
+2018,GSW,Golden State Warriors,2,Won,NBA Western Conference Semifinals,4,1,New Orleans Pelicans,Won NBA Western Conference Semifinals (4-1) versus New Orleans Pelicans
+2018,GSW,Golden State Warriors,3,Won,NBA Western Conference Finals,4,3,Houston Rockets,Won NBA Western Conference Finals (4-3) versus Houston Rockets
+2018,GSW,Golden State Warriors,4,Won,NBA Finals,4,0,Cleveland Cavaliers,Won NBA Finals (4-0) versus Cleveland Cavaliers
+2017,GSW,Golden State Warriors,1,Won,NBA Western Conference First Round,4,0,Portland Trail Blazers,Won NBA Western Conference First Round (4-0) versus Portland Trail Blazers
+2017,GSW,Golden State Warriors,2,Won,NBA Western Conference Semifinals,4,0,Utah Jazz,Won NBA Western Conference Semifinals (4-0) versus Utah Jazz
+2017,GSW,Golden State Warriors,3,Won,NBA Western Conference Finals,4,0,San Antonio Spurs,Won NBA Western Conference Finals (4-0) versus San Antonio Spurs
+2017,GSW,Golden State Warriors,4,Won,NBA Finals,4,1,Cleveland Cavaliers,Won NBA Finals (4-1) versus Cleveland Cavaliers
+2016,CLE,Cleveland Cavaliers,1,Won,NBA Eastern Conference First Round,4,0,Detroit Pistons,Won NBA Eastern Conference First Round (4-0) versus Detroit Pistons
+2016,CLE,Cleveland Cavaliers,2,Won,NBA Eastern Conference Semifinals,4,0,Atlanta Hawks,Won NBA Eastern Conference Semifinals (4-0) versus Atlanta Hawks
+2016,CLE,Cleveland Cavaliers,3,Won,NBA Eastern Conference Finals,4,2,Toronto Raptors,Won NBA Eastern Conference Finals (4-2) versus Toronto Raptors
+2016,CLE,Cleveland Cavaliers,4,Won,NBA Finals,4,3,Golden State Warriors,Won NBA Finals (4-3) versus Golden State Warriors
+2015,GSW,Golden State Warriors,1,Won,NBA Western Conference First Round,4,0,New Orleans Pelicans,Won NBA Western Conference First Round (4-0) versus New Orleans Pelicans
+2015,GSW,Golden State Warriors,2,Won,NBA Western Conference Semifinals,4,2,Memphis Grizzlies,Won NBA Western Conference Semifinals (4-2) versus Memphis Grizzlies
+2015,GSW,Golden State Warriors,3,Won,NBA Western Conference Finals,4,1,Houston Rockets,Won NBA Western Conference Finals (4-1) versus Houston Rockets
+2015,GSW,Golden State Warriors,4,Won,NBA Finals,4,2,Cleveland Cavaliers,Won NBA Finals (4-2) versus Cleveland Cavaliers
+2014,SAS,San Antonio Spurs,1,Won,NBA Western Conference First Round,4,3,Dallas Mavericks,Won NBA Western Conference First Round (4-3) versus Dallas Mavericks
+2014,SAS,San Antonio Spurs,2,Won,NBA Western Conference Semifinals,4,1,Portland Trail Blazers,Won NBA Western Conference Semifinals (4-1) versus Portland Trail Blazers
+2014,SAS,San Antonio Spurs,3,Won,NBA Western Conference Finals,4,2,Oklahoma City Thunder,Won NBA Western Conference Finals (4-2) versus Oklahoma City Thunder
+2014,SAS,San Antonio Spurs,4,Won,NBA Finals,4,1,Miami Heat,Won NBA Finals (4-1) versus Miami Heat
+2013,MIA,Miami Heat,1,Won,NBA Eastern Conference First Round,4,0,Milwaukee Bucks,Won NBA Eastern Conference First Round (4-0) versus Milwaukee Bucks
+2013,MIA,Miami Heat,2,Won,NBA Eastern Conference Semifinals,4,1,Chicago Bulls,Won NBA Eastern Conference Semifinals (4-1) versus Chicago Bulls
+2013,MIA,Miami Heat,3,Won,NBA Eastern Conference Finals,4,3,Indiana Pacers,Won NBA Eastern Conference Finals (4-3) versus Indiana Pacers
+2013,MIA,Miami Heat,4,Won,NBA Finals,4,3,San Antonio Spurs,Won NBA Finals (4-3) versus San Antonio Spurs
+2012,MIA,Miami Heat,1,Won,NBA Eastern Conference First Round,4,1,New York Knicks,Won NBA Eastern Conference First Round (4-1) versus New York Knicks
+2012,MIA,Miami Heat,2,Won,NBA Eastern Conference Semifinals,4,2,Indiana Pacers,Won NBA Eastern Conference Semifinals (4-2) versus Indiana Pacers
+2012,MIA,Miami Heat,3,Won,NBA Eastern Conference Finals,4,3,Boston Celtics,Won NBA Eastern Conference Finals (4-3) versus Boston Celtics
+2012,MIA,Miami Heat,4,Won,NBA Finals,4,1,Oklahoma City Thunder,Won NBA Finals (4-1) versus Oklahoma City Thunder
+2011,DAL,Dallas Mavericks,1,Won,NBA Western Conference First Round,4,2,Portland Trail Blazers,Won NBA Western Conference First Round (4-2) versus Portland Trail Blazers
+2011,DAL,Dallas Mavericks,2,Won,NBA Western Conference Semifinals,4,0,Los Angeles Lakers,Won NBA Western Conference Semifinals (4-0) versus Los Angeles Lakers
+2011,DAL,Dallas Mavericks,3,Won,NBA Western Conference Finals,4,1,Oklahoma City Thunder,Won NBA Western Conference Finals (4-1) versus Oklahoma City Thunder
+2011,DAL,Dallas Mavericks,4,Won,NBA Finals,4,2,Miami Heat,Won NBA Finals (4-2) versus Miami Heat
+2010,LAL,Los Angeles Lakers,1,Won,NBA Western Conference First Round,4,2,Oklahoma City Thunder,Won NBA Western Conference First Round (4-2) versus Oklahoma City Thunder
+2010,LAL,Los Angeles Lakers,2,Won,NBA Western Conference Semifinals,4,0,Utah Jazz,Won NBA Western Conference Semifinals (4-0) versus Utah Jazz
+2010,LAL,Los Angeles Lakers,3,Won,NBA Western Conference Finals,4,2,Phoenix Suns,Won NBA Western Conference Finals (4-2) versus Phoenix Suns
+2010,LAL,Los Angeles Lakers,4,Won,NBA Finals,4,3,Boston Celtics,Won NBA Finals (4-3) versus Boston Celtics
+2009,LAL,Los Angeles Lakers,1,Won,NBA Western Conference First Round,4,1,Utah Jazz,Won NBA Western Conference First Round (4-1) versus Utah Jazz
+2009,LAL,Los Angeles Lakers,2,Won,NBA Western Conference Semifinals,4,3,Houston Rockets,Won NBA Western Conference Semifinals (4-3) versus Houston Rockets
+2009,LAL,Los Angeles Lakers,3,Won,NBA Western Conference Finals,4,2,Denver Nuggets,Won NBA Western Conference Finals (4-2) versus Denver Nuggets
+2009,LAL,Los Angeles Lakers,4,Won,NBA Finals,4,1,Orlando Magic,Won NBA Finals (4-1) versus Orlando Magic
+2008,BOS,Boston Celtics,1,Won,NBA Eastern Conference First Round,4,3,Atlanta Hawks,Won NBA Eastern Conference First Round (4-3) versus Atlanta Hawks
+2008,BOS,Boston Celtics,2,Won,NBA Eastern Conference Semifinals,4,3,Cleveland Cavaliers,Won NBA Eastern Conference Semifinals (4-3) versus Cleveland Cavaliers
+2008,BOS,Boston Celtics,3,Won,NBA Eastern Conference Finals,4,2,Detroit Pistons,Won NBA Eastern Conference Finals (4-2) versus Detroit Pistons
+2008,BOS,Boston Celtics,4,Won,NBA Finals,4,2,Los Angeles Lakers,Won NBA Finals (4-2) versus Los Angeles Lakers
+2007,SAS,San Antonio Spurs,1,Won,NBA Western Conference First Round,4,1,Denver Nuggets,Won NBA Western Conference First Round (4-1) versus Denver Nuggets
+2007,SAS,San Antonio Spurs,2,Won,NBA Western Conference Semifinals,4,2,Phoenix Suns,Won NBA Western Conference Semifinals (4-2) versus Phoenix Suns
+2007,SAS,San Antonio Spurs,3,Won,NBA Western Conference Finals,4,1,Utah Jazz,Won NBA Western Conference Finals (4-1) versus Utah Jazz
+2007,SAS,San Antonio Spurs,4,Won,NBA Finals,4,0,Cleveland Cavaliers,Won NBA Finals (4-0) versus Cleveland Cavaliers
+2006,MIA,Miami Heat,1,Won,NBA Eastern Conference First Round,4,2,Chicago Bulls,Won NBA Eastern Conference First Round (4-2) versus Chicago Bulls
+2006,MIA,Miami Heat,2,Won,NBA Eastern Conference Semifinals,4,1,New Jersey Nets,Won NBA Eastern Conference Semifinals (4-1) versus New Jersey Nets
+2006,MIA,Miami Heat,3,Won,NBA Eastern Conference Finals,4,2,Detroit Pistons,Won NBA Eastern Conference Finals (4-2) versus Detroit Pistons
+2006,MIA,Miami Heat,4,Won,NBA Finals,4,2,Dallas Mavericks,Won NBA Finals (4-2) versus Dallas Mavericks
+2005,SAS,San Antonio Spurs,1,Won,NBA Western Conference First Round,4,1,Denver Nuggets,Won NBA Western Conference First Round (4-1) versus Denver Nuggets
+2005,SAS,San Antonio Spurs,2,Won,NBA Western Conference Semifinals,4,2,Seattle SuperSonics,Won NBA Western Conference Semifinals (4-2) versus Seattle SuperSonics
+2005,SAS,San Antonio Spurs,3,Won,NBA Western Conference Finals,4,1,Phoenix Suns,Won NBA Western Conference Finals (4-1) versus Phoenix Suns
+2005,SAS,San Antonio Spurs,4,Won,NBA Finals,4,3,Detroit Pistons,Won NBA Finals (4-3) versus Detroit Pistons
+2004,DET,Detroit Pistons,1,Won,NBA Eastern Conference First Round,4,1,Milwaukee Bucks,Won NBA Eastern Conference First Round (4-1) versus Milwaukee Bucks
+2004,DET,Detroit Pistons,2,Won,NBA Eastern Conference Semifinals,4,3,New Jersey Nets,Won NBA Eastern Conference Semifinals (4-3) versus New Jersey Nets
+2004,DET,Detroit Pistons,3,Won,NBA Eastern Conference Finals,4,2,Indiana Pacers,Won NBA Eastern Conference Finals (4-2) versus Indiana Pacers
+2004,DET,Detroit Pistons,4,Won,NBA Finals,4,1,Los Angeles Lakers,Won NBA Finals (4-1) versus Los Angeles Lakers
+2003,SAS,San Antonio Spurs,1,Won,NBA Western Conference First Round,4,2,Phoenix Suns,Won NBA Western Conference First Round (4-2) versus Phoenix Suns
+2003,SAS,San Antonio Spurs,2,Won,NBA Western Conference Semifinals,4,2,Los Angeles Lakers,Won NBA Western Conference Semifinals (4-2) versus Los Angeles Lakers
+2003,SAS,San Antonio Spurs,3,Won,NBA Western Conference Finals,4,2,Dallas Mavericks,Won NBA Western Conference Finals (4-2) versus Dallas Mavericks
+2003,SAS,San Antonio Spurs,4,Won,NBA Finals,4,2,New Jersey Nets,Won NBA Finals (4-2) versus New Jersey Nets
+2002,LAL,Los Angeles Lakers,1,Won,NBA Western Conference First Round,3,0,Portland Trail Blazers,Won NBA Western Conference First Round (3-0) versus Portland Trail Blazers
+2002,LAL,Los Angeles Lakers,2,Won,NBA Western Conference Semifinals,4,1,San Antonio Spurs,Won NBA Western Conference Semifinals (4-1) versus San Antonio Spurs
+2002,LAL,Los Angeles Lakers,3,Won,NBA Western Conference Finals,4,3,Sacramento Kings,Won NBA Western Conference Finals (4-3) versus Sacramento Kings
+2002,LAL,Los Angeles Lakers,4,Won,NBA Finals,4,0,New Jersey Nets,Won NBA Finals (4-0) versus New Jersey Nets
+2001,LAL,Los Angeles Lakers,1,Won,NBA Western Conference First Round,3,0,Portland Trail Blazers,Won NBA Western Conference First Round (3-0) versus Portland Trail Blazers
+2001,LAL,Los Angeles Lakers,2,Won,NBA Western Conference Semifinals,4,0,Sacramento Kings,Won NBA Western Conference Semifinals (4-0) versus Sacramento Kings
+2001,LAL,Los Angeles Lakers,3,Won,NBA Western Conference Finals,4,0,San Antonio Spurs,Won NBA Western Conference Finals (4-0) versus San Antonio Spurs
+2001,LAL,Los Angeles Lakers,4,Won,NBA Finals,4,1,Philadelphia 76ers,Won NBA Finals (4-1) versus Philadelphia 76ers
+2000,LAL,Los Angeles Lakers,1,Won,NBA Western Conference First Round,3,2,Sacramento Kings,Won NBA Western Conference First Round (3-2) versus Sacramento Kings
+2000,LAL,Los Angeles Lakers,2,Won,NBA Western Conference Semifinals,4,1,Phoenix Suns,Won NBA Western Conference Semifinals (4-1) versus Phoenix Suns
+2000,LAL,Los Angeles Lakers,3,Won,NBA Western Conference Finals,4,3,Portland Trail Blazers,Won NBA Western Conference Finals (4-3) versus Portland Trail Blazers
+2000,LAL,Los Angeles Lakers,4,Won,NBA Finals,4,2,Indiana Pacers,Won NBA Finals (4-2) versus Indiana Pacers
+1999,SAS,San Antonio Spurs,1,Won,NBA Western Conference First Round,3,1,Minnesota Timberwolves,Won NBA Western Conference First Round (3-1) versus Minnesota Timberwolves
+1999,SAS,San Antonio Spurs,2,Won,NBA Western Conference Semifinals,4,0,Los Angeles Lakers,Won NBA Western Conference Semifinals (4-0) versus Los Angeles Lakers
+1999,SAS,San Antonio Spurs,3,Won,NBA Western Conference Finals,4,0,Portland Trail Blazers,Won NBA Western Conference Finals (4-0) versus Portland Trail Blazers
+1999,SAS,San Antonio Spurs,4,Won,NBA Finals,4,1,New York Knicks,Won NBA Finals (4-1) versus New York Knicks
+1998,CHI,Chicago Bulls,1,Won,NBA Eastern Conference First Round,3,0,New Jersey Nets,Won NBA Eastern Conference First Round (3-0) versus New Jersey Nets
+1998,CHI,Chicago Bulls,2,Won,NBA Eastern Conference Semifinals,4,1,Charlotte Hornets,Won NBA Eastern Conference Semifinals (4-1) versus Charlotte Hornets
+1998,CHI,Chicago Bulls,3,Won,NBA Eastern Conference Finals,4,3,Indiana Pacers,Won NBA Eastern Conference Finals (4-3) versus Indiana Pacers
+1998,CHI,Chicago Bulls,4,Won,NBA Finals,4,2,Utah Jazz,Won NBA Finals (4-2) versus Utah Jazz
+1997,CHI,Chicago Bulls,1,Won,NBA Eastern Conference First Round,3,0,Washington Bullets,Won NBA Eastern Conference First Round (3-0) versus Washington Bullets
+1997,CHI,Chicago Bulls,2,Won,NBA Eastern Conference Semifinals,4,1,Atlanta Hawks,Won NBA Eastern Conference Semifinals (4-1) versus Atlanta Hawks
+1997,CHI,Chicago Bulls,3,Won,NBA Eastern Conference Finals,4,1,Miami Heat,Won NBA Eastern Conference Finals (4-1) versus Miami Heat
+1997,CHI,Chicago Bulls,4,Won,NBA Finals,4,2,Utah Jazz,Won NBA Finals (4-2) versus Utah Jazz
+1996,CHI,Chicago Bulls,1,Won,NBA Eastern Conference First Round,3,0,Miami Heat,Won NBA Eastern Conference First Round (3-0) versus Miami Heat
+1996,CHI,Chicago Bulls,2,Won,NBA Eastern Conference Semifinals,4,1,New York Knicks,Won NBA Eastern Conference Semifinals (4-1) versus New York Knicks
+1996,CHI,Chicago Bulls,3,Won,NBA Eastern Conference Finals,4,0,Orlando Magic,Won NBA Eastern Conference Finals (4-0) versus Orlando Magic
+1996,CHI,Chicago Bulls,4,Won,NBA Finals,4,2,Seattle SuperSonics,Won NBA Finals (4-2) versus Seattle SuperSonics
+1995,HOU,Houston Rockets,1,Won,NBA Western Conference First Round,3,2,Utah Jazz,Won NBA Western Conference First Round (3-2) versus Utah Jazz
+1995,HOU,Houston Rockets,2,Won,NBA Western Conference Semifinals,4,3,Phoenix Suns,Won NBA Western Conference Semifinals (4-3) versus Phoenix Suns
+1995,HOU,Houston Rockets,3,Won,NBA Western Conference Finals,4,2,San Antonio Spurs,Won NBA Western Conference Finals (4-2) versus San Antonio Spurs
+1995,HOU,Houston Rockets,4,Won,NBA Finals,4,0,Orlando Magic,Won NBA Finals (4-0) versus Orlando Magic
+1994,HOU,Houston Rockets,1,Won,NBA Western Conference First Round,3,1,Portland Trail Blazers,Won NBA Western Conference First Round (3-1) versus Portland Trail Blazers
+1994,HOU,Houston Rockets,2,Won,NBA Western Conference Semifinals,4,3,Phoenix Suns,Won NBA Western Conference Semifinals (4-3) versus Phoenix Suns
+1994,HOU,Houston Rockets,3,Won,NBA Western Conference Finals,4,1,Utah Jazz,Won NBA Western Conference Finals (4-1) versus Utah Jazz
+1994,HOU,Houston Rockets,4,Won,NBA Finals,4,3,New York Knicks,Won NBA Finals (4-3) versus New York Knicks
+1993,CHI,Chicago Bulls,1,Won,NBA Eastern Conference First Round,3,0,Atlanta Hawks,Won NBA Eastern Conference First Round (3-0) versus Atlanta Hawks
+1993,CHI,Chicago Bulls,2,Won,NBA Eastern Conference Semifinals,4,0,Cleveland Cavaliers,Won NBA Eastern Conference Semifinals (4-0) versus Cleveland Cavaliers
+1993,CHI,Chicago Bulls,3,Won,NBA Eastern Conference Finals,4,2,New York Knicks,Won NBA Eastern Conference Finals (4-2) versus New York Knicks
+1993,CHI,Chicago Bulls,4,Won,NBA Finals,4,2,Phoenix Suns,Won NBA Finals (4-2) versus Phoenix Suns
+1992,CHI,Chicago Bulls,1,Won,NBA Eastern Conference First Round,3,0,Miami Heat,Won NBA Eastern Conference First Round (3-0) versus Miami Heat
+1992,CHI,Chicago Bulls,2,Won,NBA Eastern Conference Semifinals,4,3,New York Knicks,Won NBA Eastern Conference Semifinals (4-3) versus New York Knicks
+1992,CHI,Chicago Bulls,3,Won,NBA Eastern Conference Finals,4,2,Cleveland Cavaliers,Won NBA Eastern Conference Finals (4-2) versus Cleveland Cavaliers
+1992,CHI,Chicago Bulls,4,Won,NBA Finals,4,2,Portland Trail Blazers,Won NBA Finals (4-2) versus Portland Trail Blazers
+1991,CHI,Chicago Bulls,1,Won,NBA Eastern Conference First Round,3,0,New York Knicks,Won NBA Eastern Conference First Round (3-0) versus New York Knicks
+1991,CHI,Chicago Bulls,2,Won,NBA Eastern Conference Semifinals,4,1,Philadelphia 76ers,Won NBA Eastern Conference Semifinals (4-1) versus Philadelphia 76ers
+1991,CHI,Chicago Bulls,3,Won,NBA Eastern Conference Finals,4,0,Detroit Pistons,Won NBA Eastern Conference Finals (4-0) versus Detroit Pistons
+1991,CHI,Chicago Bulls,4,Won,NBA Finals,4,1,Los Angeles Lakers,Won NBA Finals (4-1) versus Los Angeles Lakers
+1990,DET,Detroit Pistons,1,Won,NBA Eastern Conference First Round,3,0,Indiana Pacers,Won NBA Eastern Conference First Round (3-0) versus Indiana Pacers
+1990,DET,Detroit Pistons,2,Won,NBA Eastern Conference Semifinals,4,1,New York Knicks,Won NBA Eastern Conference Semifinals (4-1) versus New York Knicks
+1990,DET,Detroit Pistons,3,Won,NBA Eastern Conference Finals,4,3,Chicago Bulls,Won NBA Eastern Conference Finals (4-3) versus Chicago Bulls
+1990,DET,Detroit Pistons,4,Won,NBA Finals,4,1,Portland Trail Blazers,Won NBA Finals (4-1) versus Portland Trail Blazers
+1989,DET,Detroit Pistons,1,Won,NBA Eastern Conference First Round,3,0,Boston Celtics,Won NBA Eastern Conference First Round (3-0) versus Boston Celtics
+1989,DET,Detroit Pistons,2,Won,NBA Eastern Conference Semifinals,4,0,Milwaukee Bucks,Won NBA Eastern Conference Semifinals (4-0) versus Milwaukee Bucks
+1989,DET,Detroit Pistons,3,Won,NBA Eastern Conference Finals,4,2,Chicago Bulls,Won NBA Eastern Conference Finals (4-2) versus Chicago Bulls
+1989,DET,Detroit Pistons,4,Won,NBA Finals,4,0,Los Angeles Lakers,Won NBA Finals (4-0) versus Los Angeles Lakers
+1988,LAL,Los Angeles Lakers,1,Won,NBA Western Conference First Round,3,0,San Antonio Spurs,Won NBA Western Conference First Round (3-0) versus San Antonio Spurs
+1988,LAL,Los Angeles Lakers,2,Won,NBA Western Conference Semifinals,4,3,Utah Jazz,Won NBA Western Conference Semifinals (4-3) versus Utah Jazz
+1988,LAL,Los Angeles Lakers,3,Won,NBA Western Conference Finals,4,3,Dallas Mavericks,Won NBA Western Conference Finals (4-3) versus Dallas Mavericks
+1988,LAL,Los Angeles Lakers,4,Won,NBA Finals,4,3,Detroit Pistons,Won NBA Finals (4-3) versus Detroit Pistons
+1987,LAL,Los Angeles Lakers,1,Won,NBA Western Conference First Round,3,0,Denver Nuggets,Won NBA Western Conference First Round (3-0) versus Denver Nuggets
+1987,LAL,Los Angeles Lakers,2,Won,NBA Western Conference Semifinals,4,1,Golden State Warriors,Won NBA Western Conference Semifinals (4-1) versus Golden State Warriors
+1987,LAL,Los Angeles Lakers,3,Won,NBA Western Conference Finals,4,0,Seattle SuperSonics,Won NBA Western Conference Finals (4-0) versus Seattle SuperSonics
+1987,LAL,Los Angeles Lakers,4,Won,NBA Finals,4,2,Boston Celtics,Won NBA Finals (4-2) versus Boston Celtics
+1986,BOS,Boston Celtics,1,Won,NBA Eastern Conference First Round,3,0,Chicago Bulls,Won NBA Eastern Conference First Round (3-0) versus Chicago Bulls
+1986,BOS,Boston Celtics,2,Won,NBA Eastern Conference Semifinals,4,1,Atlanta Hawks,Won NBA Eastern Conference Semifinals (4-1) versus Atlanta Hawks
+1986,BOS,Boston Celtics,3,Won,NBA Eastern Conference Finals,4,0,Milwaukee Bucks,Won NBA Eastern Conference Finals (4-0) versus Milwaukee Bucks
+1986,BOS,Boston Celtics,4,Won,NBA Finals,4,2,Houston Rockets,Won NBA Finals (4-2) versus Houston Rockets
+1985,LAL,Los Angeles Lakers,1,Won,NBA Western Conference First Round,3,0,Phoenix Suns,Won NBA Western Conference First Round (3-0) versus Phoenix Suns
+1985,LAL,Los Angeles Lakers,2,Won,NBA Western Conference Semifinals,4,1,Portland Trail Blazers,Won NBA Western Conference Semifinals (4-1) versus Portland Trail Blazers
+1985,LAL,Los Angeles Lakers,3,Won,NBA Western Conference Finals,4,1,Denver Nuggets,Won NBA Western Conference Finals (4-1) versus Denver Nuggets
+1985,LAL,Los Angeles Lakers,4,Won,NBA Finals,4,2,Boston Celtics,Won NBA Finals (4-2) versus Boston Celtics
+1984,BOS,Boston Celtics,1,Won,NBA Eastern Conference First Round,3,1,Washington Bullets,Won NBA Eastern Conference First Round (3-1) versus Washington Bullets
+1984,BOS,Boston Celtics,2,Won,NBA Eastern Conference Semifinals,4,3,New York Knicks,Won NBA Eastern Conference Semifinals (4-3) versus New York Knicks
+1984,BOS,Boston Celtics,3,Won,NBA Eastern Conference Finals,4,1,Milwaukee Bucks,Won NBA Eastern Conference Finals (4-1) versus Milwaukee Bucks
+1984,BOS,Boston Celtics,4,Won,NBA Finals,4,3,Los Angeles Lakers,Won NBA Finals (4-3) versus Los Angeles Lakers
+1983,PHI,Philadelphia 76ers,1,Won,NBA Eastern Conference Semifinals,4,0,New York Knicks,Won NBA Eastern Conference Semifinals (4-0) versus New York Knicks
+1983,PHI,Philadelphia 76ers,2,Won,NBA Eastern Conference Finals,4,1,Milwaukee Bucks,Won NBA Eastern Conference Finals (4-1) versus Milwaukee Bucks
+1983,PHI,Philadelphia 76ers,3,Won,NBA Finals,4,0,Los Angeles Lakers,Won NBA Finals (4-0) versus Los Angeles Lakers
+1982,LAL,Los Angeles Lakers,1,Won,NBA Western Conference Semifinals,4,0,Phoenix Suns,Won NBA Western Conference Semifinals (4-0) versus Phoenix Suns
+1982,LAL,Los Angeles Lakers,2,Won,NBA Western Conference Finals,4,0,San Antonio Spurs,Won NBA Western Conference Finals (4-0) versus San Antonio Spurs
+1982,LAL,Los Angeles Lakers,3,Won,NBA Finals,4,2,Philadelphia 76ers,Won NBA Finals (4-2) versus Philadelphia 76ers
+1981,BOS,Boston Celtics,1,Won,NBA Eastern Conference Semifinals,4,0,Chicago Bulls,Won NBA Eastern Conference Semifinals (4-0) versus Chicago Bulls
+1981,BOS,Boston Celtics,2,Won,NBA Eastern Conference Finals,4,3,Philadelphia 76ers,Won NBA Eastern Conference Finals (4-3) versus Philadelphia 76ers
+1981,BOS,Boston Celtics,3,Won,NBA Finals,4,2,Houston Rockets,Won NBA Finals (4-2) versus Houston Rockets
+1980,LAL,Los Angeles Lakers,1,Won,NBA Western Conference Semifinals,4,1,Phoenix Suns,Won NBA Western Conference Semifinals (4-1) versus Phoenix Suns
+1980,LAL,Los Angeles Lakers,2,Won,NBA Western Conference Finals,4,1,Seattle SuperSonics,Won NBA Western Conference Finals (4-1) versus Seattle SuperSonics
+1980,LAL,Los Angeles Lakers,3,Won,NBA Finals,4,2,Philadelphia 76ers,Won NBA Finals (4-2) versus Philadelphia 76ers
+1979,SEA,Seattle SuperSonics,1,Won,NBA Western Conference Semifinals,4,1,Los Angeles Lakers,Won NBA Western Conference Semifinals (4-1) versus Los Angeles Lakers
+1979,SEA,Seattle SuperSonics,2,Won,NBA Western Conference Finals,4,3,Phoenix Suns,Won NBA Western Conference Finals (4-3) versus Phoenix Suns
+1979,SEA,Seattle SuperSonics,3,Won,NBA Finals,4,1,Washington Bullets,Won NBA Finals (4-1) versus Washington Bullets
+1978,WSB,Washington Bullets,1,Won,NBA Eastern Conference First Round,2,0,Atlanta Hawks,Won NBA Eastern Conference First Round (2-0) versus Atlanta Hawks
+1978,WSB,Washington Bullets,2,Won,NBA Eastern Conference Semifinals,4,2,San Antonio Spurs,Won NBA Eastern Conference Semifinals (4-2) versus San Antonio Spurs
+1978,WSB,Washington Bullets,3,Won,NBA Eastern Conference Finals,4,2,Philadelphia 76ers,Won NBA Eastern Conference Finals (4-2) versus Philadelphia 76ers
+1978,WSB,Washington Bullets,4,Won,NBA Finals,4,3,Seattle SuperSonics,Won NBA Finals (4-3) versus Seattle SuperSonics
+1977,POR,Portland Trail Blazers,1,Won,NBA Western Conference First Round,2,1,Chicago Bulls,Won NBA Western Conference First Round (2-1) versus Chicago Bulls
+1977,POR,Portland Trail Blazers,2,Won,NBA Western Conference Semifinals,4,2,Denver Nuggets,Won NBA Western Conference Semifinals (4-2) versus Denver Nuggets
+1977,POR,Portland Trail Blazers,3,Won,NBA Western Conference Finals,4,0,Los Angeles Lakers,Won NBA Western Conference Finals (4-0) versus Los Angeles Lakers
+1977,POR,Portland Trail Blazers,4,Won,NBA Finals,4,2,Philadelphia 76ers,Won NBA Finals (4-2) versus Philadelphia 76ers
+1976,BOS,Boston Celtics,1,Won,NBA Eastern Conference Semifinals,4,2,Buffalo Braves,Won NBA Eastern Conference Semifinals (4-2) versus Buffalo Braves
+1976,BOS,Boston Celtics,2,Won,NBA Eastern Conference Finals,4,2,Cleveland Cavaliers,Won NBA Eastern Conference Finals (4-2) versus Cleveland Cavaliers
+1976,BOS,Boston Celtics,3,Won,NBA Finals,4,2,Phoenix Suns,Won NBA Finals (4-2) versus Phoenix Suns
+1975,GSW,Golden State Warriors,1,Won,NBA Western Conference Semifinals,4,2,Seattle SuperSonics,Won NBA Western Conference Semifinals (4-2) versus Seattle SuperSonics
+1975,GSW,Golden State Warriors,2,Won,NBA Western Conference Finals,4,3,Chicago Bulls,Won NBA Western Conference Finals (4-3) versus Chicago Bulls
+1975,GSW,Golden State Warriors,3,Won,NBA Finals,4,0,Washington Bullets,Won NBA Finals (4-0) versus Washington Bullets
+1974,BOS,Boston Celtics,1,Won,NBA Eastern Conference Semifinals,4,2,Buffalo Braves,Won NBA Eastern Conference Semifinals (4-2) versus Buffalo Braves
+1974,BOS,Boston Celtics,2,Won,NBA Eastern Conference Finals,4,1,New York Knicks,Won NBA Eastern Conference Finals (4-1) versus New York Knicks
+1974,BOS,Boston Celtics,3,Won,NBA Finals,4,3,Milwaukee Bucks,Won NBA Finals (4-3) versus Milwaukee Bucks
+1973,NYK,New York Knicks,1,Won,NBA Eastern Conference Semifinals,4,1,Baltimore Bullets,Won NBA Eastern Conference Semifinals (4-1) versus Baltimore Bullets
+1973,NYK,New York Knicks,2,Won,NBA Eastern Conference Finals,4,3,Boston Celtics,Won NBA Eastern Conference Finals (4-3) versus Boston Celtics
+1973,NYK,New York Knicks,3,Won,NBA Finals,4,1,Los Angeles Lakers,Won NBA Finals (4-1) versus Los Angeles Lakers
+1972,LAL,Los Angeles Lakers,1,Won,NBA Western Conference Semifinals,4,0,Chicago Bulls,Won NBA Western Conference Semifinals (4-0) versus Chicago Bulls
+1972,LAL,Los Angeles Lakers,2,Won,NBA Western Conference Finals,4,2,Milwaukee Bucks,Won NBA Western Conference Finals (4-2) versus Milwaukee Bucks
+1972,LAL,Los Angeles Lakers,3,Won,NBA Finals,4,1,New York Knicks,Won NBA Finals (4-1) versus New York Knicks
+1971,MIL,Milwaukee Bucks,1,Won,NBA Western Conference Semifinals,4,1,San Francisco Warriors,Won NBA Western Conference Semifinals (4-1) versus San Francisco Warriors
+1971,MIL,Milwaukee Bucks,2,Won,NBA Western Conference Finals,4,1,Los Angeles Lakers,Won NBA Western Conference Finals (4-1) versus Los Angeles Lakers
+1971,MIL,Milwaukee Bucks,3,Won,NBA Finals,4,0,Baltimore Bullets,Won NBA Finals (4-0) versus Baltimore Bullets
+1970,NYK,New York Knicks,1,Won,NBA Eastern Division Semifinals,4,3,Baltimore Bullets,Won NBA Eastern Division Semifinals (4-3) versus Baltimore Bullets
+1970,NYK,New York Knicks,2,Won,NBA Eastern Division Finals,4,1,Milwaukee Bucks,Won NBA Eastern Division Finals (4-1) versus Milwaukee Bucks
+1970,NYK,New York Knicks,3,Won,NBA Finals,4,3,Los Angeles Lakers,Won NBA Finals (4-3) versus Los Angeles Lakers
+1969,BOS,Boston Celtics,1,Won,NBA Eastern Division Semifinals,4,1,Philadelphia 76ers,Won NBA Eastern Division Semifinals (4-1) versus Philadelphia 76ers
+1969,BOS,Boston Celtics,2,Won,NBA Eastern Division Finals,4,2,New York Knicks,Won NBA Eastern Division Finals (4-2) versus New York Knicks
+1969,BOS,Boston Celtics,3,Won,NBA Finals,4,3,Los Angeles Lakers,Won NBA Finals (4-3) versus Los Angeles Lakers

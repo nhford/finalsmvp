@@ -1,0 +1,150 @@
+{
+  "note": "Standardized logistic coefficients from the last OOF fold fit",
+  "features": [
+    {
+      "name": "USG%",
+      "weight": 3.368
+    },
+    {
+      "name": "MP",
+      "weight": 1.687
+    },
+    {
+      "name": "eFG%",
+      "weight": 1.489
+    },
+    {
+      "name": "NetRtg",
+      "weight": 1.417
+    },
+    {
+      "name": "rel_WL_eFG%",
+      "weight": 1.262
+    },
+    {
+      "name": "AST%-TOV%",
+      "weight": 0.468
+    },
+    {
+      "name": "rel_Q4_eFG%",
+      "weight": 0.367
+    },
+    {
+      "name": "TRB%",
+      "weight": 0.192
+    },
+    {
+      "name": "GM",
+      "weight": -0.597
+    },
+    {
+      "name": "PTS_CV",
+      "weight": -0.936
+    }
+  ],
+  "n": 344,
+  "topPairs": [
+    {
+      "a": "eFG%",
+      "b": "NetRtg",
+      "r": 0.757
+    },
+    {
+      "a": "PTS_CV",
+      "b": "MP",
+      "r": -0.623
+    },
+    {
+      "a": "USG%",
+      "b": "AST%-TOV%",
+      "r": 0.498
+    },
+    {
+      "a": "USG%",
+      "b": "PTS_CV",
+      "r": -0.481
+    },
+    {
+      "a": "USG%",
+      "b": "MP",
+      "r": 0.405
+    },
+    {
+      "a": "PTS_CV",
+      "b": "AST%-TOV%",
+      "r": -0.37
+    },
+    {
+      "a": "MP",
+      "b": "GM",
+      "r": -0.344
+    },
+    {
+      "a": "AST%-TOV%",
+      "b": "NetRtg",
+      "r": 0.325
+    },
+    {
+      "a": "AST%-TOV%",
+      "b": "MP",
+      "r": 0.302
+    },
+    {
+      "a": "PTS_CV",
+      "b": "NetRtg",
+      "r": -0.258
+    },
+    {
+      "a": "eFG%",
+      "b": "rel_WL_eFG%",
+      "r": -0.189
+    },
+    {
+      "a": "TRB%",
+      "b": "NetRtg",
+      "r": 0.188
+    }
+  ],
+  "vif": [
+    {
+      "name": "NetRtg",
+      "vif": 4.32
+    },
+    {
+      "name": "eFG%",
+      "vif": 3.36
+    },
+    {
+      "name": "AST%-TOV%",
+      "vif": 2.16
+    },
+    {
+      "name": "PTS_CV",
+      "vif": 2.12
+    },
+    {
+      "name": "MP",
+      "vif": 2.03
+    },
+    {
+      "name": "USG%",
+      "vif": 1.91
+    },
+    {
+      "name": "TRB%",
+      "vif": 1.48
+    },
+    {
+      "name": "GM",
+      "vif": 1.19
+    },
+    {
+      "name": "rel_WL_eFG%",
+      "vif": 1.1
+    },
+    {
+      "name": "rel_Q4_eFG%",
+      "vif": 1.05
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+---
+import Layout from "@/layout/Layout.astro";
+import Content from "@/features/standings/Content";
+import HowItWorks from "@/features/how-it-works/HowItWorks";
+import Footer from "@/layout/Footer";
+import type { FinalsData } from "@/types/finals";
+import finals from "@/data/finals.json";
+
+const data = finals as FinalsData;
+const correct = data.years.filter((y) => y.correct).length;
+const featureWeights = data.featureWeights ?? [];
+const featureVif = data.featureVif ?? [];
+const featureTopPairs = data.featureTopPairs ?? [];
+const featureN = data.featureN ?? null;
+---
+
+<Layout
+  title="Finals MVP*"
+  description={`Who should have won NBA Finals MVP? Explore ${correct}/${data.years.length} model picks vs the actual award (${data.minYear}–${data.maxYear}), with feature weights and series box scores.`}
+  minYear={data.minYear}
+  maxYear={data.maxYear}
+>
+  <div class="min-h-screen flex flex-col">
+    <div class="flex flex-col md:flex-row md:gap-0 flex-grow">
+      <section
+        class="w-full md:flex-1 min-w-0"
+        aria-labelledby="standings-heading"
+      >
+        <h2
+          id="standings-heading"
+          class="my-2 text-xl md:text-2xl lg:text-3xl text-center font-bold"
+        >
+          Finals MVP*
+        </h2>
+        <p class="text-center text-sm md:text-base text-white/65 mb-2">
+          {correct}/{data.years.length} years where the model matched the award ({
+            data.minYear
+          }–{data.maxYear})
+        </p>
+        <Content data={data} client:load />
+      </section>
+
+      <hr class="md:hidden w-full border-0 border-t border-white/30 my-2" />
+      <div
+        aria-hidden
+        class="hidden md:block w-px shrink-0 self-stretch bg-white/30 mx-4 lg:mx-6"
+      >
+      </div>
+
+      <section
+        class="w-full md:flex-1 min-w-0"
+        aria-labelledby="how-it-works-heading"
+      >
+        <h2
+          id="how-it-works-heading"
+          class="my-2 text-xl md:text-2xl lg:text-3xl text-center font-bold"
+        >
+          How It Works
+        </h2>
+        <HowItWorks
+          client:load
+          featureWeights={featureWeights}
+          featureVif={featureVif}
+          featureTopPairs={featureTopPairs}
+          featureN={featureN}
+          correct={correct}
+          total={data.years.length}
+          minYear={data.minYear}
+          maxYear={data.maxYear}
+        />
+      </section>
+    </div>
+    <div class="mt-auto">
+      <Footer client:only />
+    </div>
+  </div>
+</Layout>
