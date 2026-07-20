@@ -1,4 +1,4 @@
-# Finals MVP
+# Finals MVP*
 
 **Live demo:** [finalsmvp.netlify.app](https://finalsmvp.netlify.app/)
 
