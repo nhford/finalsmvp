@@ -25,7 +25,6 @@ const USE_STEPS = [
 const FEATURE_BLURBS: Record<string, string> = {
   "USG%": "Usage rate — how much offense runs through the player",
   PTS_CV: "Per-game points volatility (std / mean) — lower is steadier",
-  rel_closeout_PTS: "Closeout-game PTS vs rest of series",
   "eFG%": "Effective field-goal percentage",
   NetRtg: "Net rating — ORtg minus DRtg",
   "rel_Q4_eFG%": "Clutch Q4 relative effective FG%",
@@ -254,14 +253,14 @@ export default function HowItWorks({
       title: "What drives the prediction?",
       body: (
         <>
-          Each champion Finals top-8 scorer is scored with a lean box-score set
-          (usage, points, shooting, counting stats, minutes, games missed) plus
-          advanced{" "}
-          <span className="text-white/90">USG%</span> and{" "}
-          <span className="text-white/90">NetRtg</span> (ORtg − DRtg) from 1984
-          on. Class imbalance is handled with SMOTE inside each training fold;
-          player probabilities are out-of-fold, then softmaxed within the year
-          into an MVP share.
+          Each champion Finals top-8 scorer is scored with a lean 10-feature set:
+          usage, minutes, games missed, scoring volatility, shooting rates
+          (including clutch Q4 and win/loss eFG splits), rebound rate, assist
+          minus turnover rate, and{" "}
+          <span className="text-white/90">NetRtg</span> (ORtg − DRtg) from the
+          advanced table (1984+). Class imbalance is handled with SMOTE inside
+          each training fold; player probabilities are out-of-fold, then
+          softmaxed within the year into an MVP share.
         </>
       ),
     },
@@ -334,7 +333,9 @@ export default function HowItWorks({
             <div key={id} className="border-b border-white/20">
               <button
                 type="button"
+                id={`how-${id}-button`}
                 aria-expanded={open}
+                aria-controls={`how-${id}-panel`}
                 onClick={() => setOpenId(open ? null : id)}
                 className="flex w-full items-center justify-between gap-3 py-3 text-left text-sm md:text-base font-semibold text-white transition-colors hover:bg-white/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
               >
@@ -347,7 +348,12 @@ export default function HowItWorks({
                 </span>
               </button>
               {open ? (
-                <div className="pb-3 text-sm md:text-base text-white/75 leading-relaxed">
+                <div
+                  id={`how-${id}-panel`}
+                  role="region"
+                  aria-labelledby={`how-${id}-button`}
+                  className="pb-3 text-sm md:text-base text-white/75 leading-relaxed"
+                >
                   {body}
                 </div>
               ) : null}

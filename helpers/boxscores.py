@@ -22,12 +22,10 @@ ADVANCED_DERIVED_COLS = ("NetRtg", "AST%-TOV%")
 # Lean logistic feature set: usage/minutes, rates, secondary stats, GM.
 # Drops collinear counting stats (FG/FT/ORB/DRB/TRB/AST/STL/BLK/PF/G/3P/FT%/TOV).
 # PTS_CV = std(per-game PTS) / mean(per-game PTS) — scale-free consistency.
-# rel_closeout_PTS = closeout PTS − mean PTS in other series games.
 # NetRtg replaces separate ORtg / DRtg; AST%-TOV% replaces raw TOV%.
 LEAN_MODEL_FEATURE_COLS = (
     "USG%",
     "PTS_CV",
-    "rel_closeout_PTS",
     "eFG%",
     "rel_Q4_eFG%",
     "rel_WL_eFG%",
@@ -314,7 +312,7 @@ def build_top8(
     ``q4=True`` adds ``rel_Q4_eFG%`` (Q4 eFG% − series eFG%; 0 before 1997 / no Q4 FGA).
     ``wl=True`` adds ``rel_WL_eFG%`` (eFG% in team wins − eFG% in team losses; 0 if
     either side has no FGA).
-    ``pts_cv=True`` adds ``PTS_CV`` (std/mean of per-game PTS; 0 if <2 games).
+    ``pts_cv=True`` adds ``PTS_std`` / ``PTS_CV`` from per-game PTS (0 if <2 games).
     ``closeout=True`` adds ``rel_closeout_PTS`` (closeout PTS − mean other-game PTS;
     0 if the player missed the closeout or has no other games).
     """

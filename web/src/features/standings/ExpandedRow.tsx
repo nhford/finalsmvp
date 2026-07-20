@@ -40,6 +40,13 @@ function candidateHighlight(c: Candidate, view: ViewMode) {
   return c.isActualMvp;
 }
 
+function seriesResult(row: YearRow): string | null {
+  // Champions always win; Finals length → 4–0 … 4–3.
+  const games = row.candidates[0]?.stats.Series_G;
+  if (games == null || games < 4 || games > 7) return null;
+  return `4–${games - 4}`;
+}
+
 export default function ExpandedRow({ row, view }: Props) {
   const [showAll, setShowAll] = useState(false);
   const disagree = !row.correct;
@@ -48,9 +55,10 @@ export default function ExpandedRow({ row, view }: Props) {
     ? row.candidates
     : row.candidates.slice(0, DEFAULT_VISIBLE);
   const hiddenCount = row.candidates.length - DEFAULT_VISIBLE;
+  const result = seriesResult(row);
 
   return (
-    <tr className="bg-neutral-50">
+    <tr id={`expanded-${row.year}`} className="bg-neutral-50">
       <td colSpan={5} className="px-3 py-4 md:px-5">
         <div className="flex flex-col gap-4">
           <div className="flex flex-col md:flex-row md:items-start gap-3 md:gap-6">
@@ -67,6 +75,7 @@ export default function ExpandedRow({ row, view }: Props) {
                 <p className="text-sm text-neutral-600">
                   {row.year} Finals
                   {row.opponent ? ` vs ${row.opponent}` : ""}
+                  {result ? ` · ${result}` : ""}
                 </p>
               </div>
             </div>
@@ -81,7 +90,7 @@ export default function ExpandedRow({ row, view }: Props) {
               </div>
               <div className="rounded border border-neutral-200 px-3 py-2">
                 <p className="text-neutral-500 text-xs uppercase tracking-wide">
-                  Actual Finals MVP
+                  Actual MVP
                 </p>
                 <p className="font-bold">{row.actualPlayer}</p>
                 <p className="tabular-nums">{row.actualShare.toFixed(3)} share</p>
@@ -140,6 +149,7 @@ export default function ExpandedRow({ row, view }: Props) {
                           <img
                             src={headshot}
                             alt=""
+                            role="presentation"
                             className="h-8 w-8 object-contain shrink-0"
                           />
                           <span>

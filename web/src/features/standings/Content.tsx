@@ -42,8 +42,14 @@ export default function Content({ data }: Props) {
   return (
     <div className="h-full pb-10">
       <div className="flex flex-wrap py-2 gap-x-6 gap-y-2 justify-center items-center">
-        <div className="flex flex-wrap gap-2 items-center">
-          <p className="text-sm md:text-base mr-1">view:</p>
+        <div
+          className="flex flex-wrap gap-2 items-center"
+          role="group"
+          aria-label="View mode"
+        >
+          <p className="text-sm md:text-base mr-1" id="view-label">
+            view:
+          </p>
           {(
             [
               { key: "predicted", label: "Predicted" },
@@ -61,8 +67,14 @@ export default function Content({ data }: Props) {
             </ControlButton>
           ))}
         </div>
-        <div className="flex flex-wrap gap-2 items-center">
-          <p className="text-sm md:text-base mr-1">group by:</p>
+        <div
+          className="flex flex-wrap gap-2 items-center"
+          role="group"
+          aria-label="Group by"
+        >
+          <p className="text-sm md:text-base mr-1" id="groupby-label">
+            group by:
+          </p>
           {(
             [
               { key: "year", label: "Year" },
@@ -85,8 +97,14 @@ export default function Content({ data }: Props) {
         </div>
       </div>
 
-      <div className="flex items-center gap-2 py-2">
-        <p className="shrink-0 text-sm md:text-base">filter by:</p>
+      <div
+        className="flex items-center gap-2 py-2"
+        role="group"
+        aria-label="Filter by"
+      >
+        <p className="shrink-0 text-sm md:text-base" id="filter-label">
+          filter by:
+        </p>
         <ScrollHintStrip
           className="min-w-0 flex-1"
           label={

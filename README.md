@@ -13,7 +13,7 @@ The model scores each champion Finals top-8 scorer, then softmaxes logits within
 ## Model (brief)
 
 - **Task:** Binary classification — among champion Finals top scorers, does this player’s series resemble Finals MVP seasons?
-- **Algorithm:** Logistic regression on **16** lean series features (e.g. USG%, PTS, NetRtg, shooting rates, minutes, games missed, scoring volatility), with SMOTE inside each training fold for class imbalance.
+- **Algorithm:** Logistic regression on **10** lean series features (`USG%`, `PTS_CV`, `eFG%`, `rel_Q4_eFG%`, `rel_WL_eFG%`, `TRB%`, `AST%-TOV%`, `NetRtg`, `MP`, `GM`), with SMOTE inside each training fold for class imbalance.
 - **Evaluation:** 5-fold out-of-fold probabilities; year-level pick = argmax of softmaxed OOF logits. Matches the actual award in **38/43** years (1984–2026).
 - **Data:** Finals box scores and award history from [Basketball-Reference](https://www.basketball-reference.com/); scraping is intentionally separated from the analysis notebook.
 - **Serving:** Precomputed OOF scores → JSON for the Astro UI (no live predict API).
@@ -39,6 +39,9 @@ python3 scripts/refresh_data.py
 # Frontend — rebuild JSON then run the site
 python3 scripts/build_frontend_data.py
 cd web && npm install && npm run dev
+
+# Production build (set your live URL for canonical / Open Graph tags)
+cd web && PUBLIC_SITE_URL=https://your-domain.com npm run build
 ```
 
 ## Project layout
@@ -73,4 +76,4 @@ HTML scrape caches (`data/series_html/`, `data/teams/html/`) are optional and gi
 
 ## License
 
-Personal portfolio project — see repository for terms.
+MIT — see [LICENSE](LICENSE).

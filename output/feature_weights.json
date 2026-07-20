@@ -3,47 +3,43 @@
   "features": [
     {
       "name": "USG%",
-      "weight": 3.334
+      "weight": 3.368
     },
     {
       "name": "MP",
-      "weight": 1.685
+      "weight": 1.687
     },
     {
       "name": "eFG%",
-      "weight": 1.551
+      "weight": 1.489
     },
     {
       "name": "NetRtg",
-      "weight": 1.349
+      "weight": 1.417
     },
     {
       "name": "rel_WL_eFG%",
-      "weight": 1.148
+      "weight": 1.262
     },
     {
       "name": "AST%-TOV%",
-      "weight": 0.493
+      "weight": 0.468
     },
     {
       "name": "rel_Q4_eFG%",
-      "weight": 0.373
+      "weight": 0.367
     },
     {
       "name": "TRB%",
-      "weight": 0.217
-    },
-    {
-      "name": "rel_closeout_PTS",
-      "weight": -0.032
+      "weight": 0.192
     },
     {
       "name": "GM",
-      "weight": -0.605
+      "weight": -0.597
     },
     {
       "name": "PTS_CV",
-      "weight": -0.94
+      "weight": -0.936
     }
   ],
   "n": 344,
@@ -99,20 +95,20 @@
       "r": -0.258
     },
     {
-      "a": "rel_closeout_PTS",
-      "b": "rel_WL_eFG%",
-      "r": 0.189
-    },
-    {
       "a": "eFG%",
       "b": "rel_WL_eFG%",
       "r": -0.189
+    },
+    {
+      "a": "TRB%",
+      "b": "NetRtg",
+      "r": 0.188
     }
   ],
   "vif": [
     {
       "name": "NetRtg",
-      "vif": 4.33
+      "vif": 4.32
     },
     {
       "name": "eFG%",
@@ -132,7 +128,7 @@
     },
     {
       "name": "USG%",
-      "vif": 1.92
+      "vif": 1.91
     },
     {
       "name": "TRB%",
@@ -144,11 +140,7 @@
     },
     {
       "name": "rel_WL_eFG%",
-      "vif": 1.13
-    },
-    {
-      "name": "rel_closeout_PTS",
-      "vif": 1.05
+      "vif": 1.1
     },
     {
       "name": "rel_Q4_eFG%",

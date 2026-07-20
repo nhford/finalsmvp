@@ -62,12 +62,17 @@ export default function MvpTable({ view, groupBy, source }: Props) {
     <div className="w-full">
       <div className="w-full overflow-x-auto">
         <table className="w-full table-fixed text-left bg-white text-black rounded-lg">
+          <caption className="sr-only">
+            Finals MVP standings by year. White rows matched the award; red rows
+            missed. Expand a row for candidate shares and series stats. Currently
+            sorted by {sorted.key}, {sorted.dir === "asc" ? "ascending" : "descending"}.
+          </caption>
           <colgroup>
             <col className="w-12 md:w-16 lg:w-20" />
             <col className="w-10 md:w-16 lg:w-20" />
             <col />
             <col className="w-16 md:w-24" />
-            <col className="w-14 md:w-20" />
+            <col className="hidden md:table-column w-14 md:w-20" />
           </colgroup>
           <thead>
             <tr className="text-base md:text-lg border-b">
@@ -91,26 +96,46 @@ export default function MvpTable({ view, groupBy, source }: Props) {
                     natural: "desc" as const,
                   },
                 ] as const
-              ).map((col) => (
-                <th
-                  key={col.key}
-                  className={`px-1 py-4 whitespace-nowrap text-center cursor-pointer transition-colors hover:bg-neutral-100 hover:underline decoration-black underline-offset-2 ${
-                    col.key === "team" ? "border-x border-neutral-200" : ""
-                  } ${
-                    sorted.key === col.key
-                      ? "bg-neutral-200 hover:bg-neutral-300"
-                      : ""
-                  }`}
-                  onClick={() => {
-                    const next = toggleSort(sorted, col.key, col.natural);
-                    setSorted(next);
-                    setRows(sortRows(rows, next.key, next.dir, view));
-                    setPage(1);
-                  }}
-                >
-                  {col.label}
-                </th>
-              ))}
+              ).map((col) => {
+                const isSorted = sorted.key === col.key;
+                const ariaSort = isSorted
+                  ? sorted.dir === "asc"
+                    ? "ascending"
+                    : "descending"
+                  : "none";
+                return (
+                  <th
+                    key={col.key}
+                    scope="col"
+                    aria-sort={ariaSort}
+                    className={`p-0 whitespace-nowrap text-center ${
+                      col.key === "team" ? "border-x border-neutral-200" : ""
+                    } ${col.key === "correct" ? "hidden md:table-cell" : ""} ${
+                      isSorted ? "bg-neutral-200" : ""
+                    }`}
+                  >
+                    <button
+                      type="button"
+                      className={`w-full px-1 py-4 text-center font-[inherit] transition-colors hover:bg-neutral-100 hover:underline decoration-black underline-offset-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 focus-visible:ring-inset ${
+                        isSorted ? "hover:bg-neutral-300" : ""
+                      }`}
+                      onClick={() => {
+                        const next = toggleSort(sorted, col.key, col.natural);
+                        setSorted(next);
+                        setRows(sortRows(rows, next.key, next.dir, view));
+                        setPage(1);
+                      }}
+                    >
+                      {col.label}
+                      <span className="sr-only">
+                        {isSorted
+                          ? `, sorted ${sorted.dir === "asc" ? "ascending" : "descending"}`
+                          : ", sortable"}
+                      </span>
+                    </button>
+                  </th>
+                );
+              })}
             </tr>
           </thead>
           <tbody>
@@ -156,7 +181,10 @@ export default function MvpTable({ view, groupBy, source }: Props) {
             Showing {pageRows.length} of {total} results
           </p>
           {totalPages > 1 ? (
-            <div className="flex flex-wrap justify-center items-center gap-1.5">
+            <nav
+              className="flex flex-wrap justify-center items-center gap-1.5"
+              aria-label="Standings pagination"
+            >
               {pageNumbers(currentPage, totalPages).map((item, index) =>
                 item === "…" ? (
                   <span
@@ -172,13 +200,15 @@ export default function MvpTable({ view, groupBy, source }: Props) {
                     size="sm"
                     active={item === currentPage}
                     className="min-w-9 !px-2"
+                    aria-label={`Page ${item}`}
+                    aria-current={item === currentPage ? "page" : undefined}
                     onClick={() => setPage(item)}
                   >
                     {item}
                   </ControlButton>
                 ),
               )}
-            </div>
+            </nav>
           ) : null}
         </div>
       ) : null}

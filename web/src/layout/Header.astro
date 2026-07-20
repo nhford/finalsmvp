@@ -3,10 +3,6 @@ interface Props {
   maxYear?: number;
   minYear?: number;
 }
-
-const { maxYear, minYear } = Astro.props;
-const range =
-  maxYear != null && minYear != null ? `${minYear}–${maxYear}` : "1984–present";
 ---
 
 <header class="mx-auto mt-4 mb-4 md:mb-6">
@@ -45,10 +41,11 @@ const range =
         class="text-white/55 hover:decoration-[#e0b86c]"
       >
         Basketball-Reference
+        <span class="sr-only"> (opens in a new tab)</span>
       </a>
     </p>
     <p class="text-sm text-white/45 text-center">
-      Champion only · advanced era · {range}
+      champion only · advanced stats era · 1984 - present
     </p>
   </div>
 </header>

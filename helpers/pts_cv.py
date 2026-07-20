@@ -80,13 +80,14 @@ def attach_pts_cv(
     pts_cv_path: str = FINALS_PTS_CV_BY_SERIES_CSV,
     fill: float = 0.0,
 ) -> pd.DataFrame:
-    """Add ``PTS_CV`` = std(per-game PTS) / mean(per-game PTS).
+    """Add ``PTS_std`` and ``PTS_CV`` from per-game Finals points.
 
-    Scale-free scoring volatility — orthogonal to series ``PTS`` total. Fill
-    ``fill`` when the series CSV is missing, the year has no rows, or the
+    ``PTS_std`` = sample std of game PTS; ``PTS_CV`` = std / mean.
+    Fill ``fill`` when the series CSV is missing, the year has no rows, or the
     player has fewer than two scored games.
     """
     out = df.copy()
+    out["PTS_std"] = float(fill)
     out["PTS_CV"] = float(fill)
 
     path = Path(pts_cv_path)
@@ -94,7 +95,7 @@ def attach_pts_cv(
         return out
 
     cv = pd.read_csv(path)
-    need = ["Player", "PTS_CV", "PTS_G"]
+    need = ["Player", "PTS_std", "PTS_CV", "PTS_G"]
     missing = [c for c in need if c not in cv.columns]
     if missing:
         raise KeyError(
@@ -108,16 +109,23 @@ def attach_pts_cv(
     cv = cv.sort_values("PTS_G", ascending=False).drop_duplicates(
         "_player_key", keep="first"
     )
+    cv["PTS_std"] = pd.to_numeric(cv["PTS_std"], errors="coerce")
     cv["PTS_CV"] = pd.to_numeric(cv["PTS_CV"], errors="coerce")
 
     out["_player_key"] = out["Player"].map(normalize_player_name)
     merged = out.merge(
-        cv[["_player_key", "PTS_CV"]].rename(columns={"PTS_CV": "_pts_cv"}),
+        cv[["_player_key", "PTS_std", "PTS_CV"]].rename(
+            columns={"PTS_std": "_pts_std", "PTS_CV": "_pts_cv"}
+        ),
         on="_player_key",
         how="left",
     )
-    rel = pd.to_numeric(merged["_pts_cv"], errors="coerce").fillna(fill)
-    out["PTS_CV"] = rel.round(3).to_numpy()
+    out["PTS_std"] = (
+        pd.to_numeric(merged["_pts_std"], errors="coerce").fillna(fill).round(3).to_numpy()
+    )
+    out["PTS_CV"] = (
+        pd.to_numeric(merged["_pts_cv"], errors="coerce").fillna(fill).round(3).to_numpy()
+    )
     return out.drop(columns=["_player_key"])
 
 

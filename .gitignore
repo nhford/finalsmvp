@@ -16,6 +16,10 @@ venv/
 # Local scratch (not committed)
 TODO.local.md
 
+# Scrape / fetch logs
+output/*.log
+*.log
+
 # Frontend
 web/node_modules/
 web/dist/

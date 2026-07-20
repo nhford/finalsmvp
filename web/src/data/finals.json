@@ -22,53 +22,49 @@
   "featureWeights": [
     {
       "name": "USG%",
-      "weight": 3.334
+      "weight": 3.368
     },
     {
       "name": "MP",
-      "weight": 1.685
+      "weight": 1.687
     },
     {
       "name": "eFG%",
-      "weight": 1.551
+      "weight": 1.489
     },
     {
       "name": "NetRtg",
-      "weight": 1.349
+      "weight": 1.417
     },
     {
       "name": "rel_WL_eFG%",
-      "weight": 1.148
+      "weight": 1.262
     },
     {
       "name": "AST%-TOV%",
-      "weight": 0.493
+      "weight": 0.468
     },
     {
       "name": "rel_Q4_eFG%",
-      "weight": 0.373
+      "weight": 0.367
     },
     {
       "name": "TRB%",
-      "weight": 0.217
-    },
-    {
-      "name": "rel_closeout_PTS",
-      "weight": -0.032
+      "weight": 0.192
     },
     {
       "name": "GM",
-      "weight": -0.605
+      "weight": -0.597
     },
     {
       "name": "PTS_CV",
-      "weight": -0.94
+      "weight": -0.936
     }
   ],
   "featureVif": [
     {
       "name": "NetRtg",
-      "vif": 4.33
+      "vif": 4.32
     },
     {
       "name": "eFG%",
@@ -88,7 +84,7 @@
     },
     {
       "name": "USG%",
-      "vif": 1.92
+      "vif": 1.91
     },
     {
       "name": "TRB%",
@@ -100,11 +96,7 @@
     },
     {
       "name": "rel_WL_eFG%",
-      "vif": 1.13
-    },
-    {
-      "name": "rel_closeout_PTS",
-      "vif": 1.05
+      "vif": 1.1
     },
     {
       "name": "rel_Q4_eFG%",
@@ -163,14 +155,14 @@
       "r": -0.258
     },
     {
-      "a": "rel_closeout_PTS",
-      "b": "rel_WL_eFG%",
-      "r": 0.189
-    },
-    {
       "a": "eFG%",
       "b": "rel_WL_eFG%",
       "r": -0.189
+    },
+    {
+      "a": "TRB%",
+      "b": "NetRtg",
+      "r": 0.188
     }
   ],
   "featureN": 344,
@@ -182,15 +174,15 @@
       "logoUrl": "https://cdn.ssref.net/req/202606291/tlogo/bbr/NYK-2026.png",
       "opponent": "San Antonio Spurs",
       "predictedPlayer": "Jalen Brunson",
-      "predictedShare": 0.987,
+      "predictedShare": 0.996,
       "actualPlayer": "Jalen Brunson",
-      "actualShare": 0.987,
+      "actualShare": 0.996,
       "correct": true,
       "candidates": [
         {
           "player": "Jalen Brunson",
-          "mvpShare": 0.987,
-          "probMvp": 0.9,
+          "mvpShare": 0.996,
+          "probMvp": 0.96,
           "rank": 1,
           "isActualMvp": true,
           "isPredicted": true,
@@ -215,8 +207,8 @@
         },
         {
           "player": "OG Anunoby",
-          "mvpShare": 0.012,
-          "probMvp": 0.1,
+          "mvpShare": 0.004,
+          "probMvp": 0.08,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -404,14 +396,14 @@
       "logoUrl": "https://cdn.ssref.net/req/202606291/tlogo/bbr/OKC-2025.png",
       "opponent": "Indiana Pacers",
       "predictedPlayer": "Shai Gilgeous-Alexander",
-      "predictedShare": 0.966,
+      "predictedShare": 0.969,
       "actualPlayer": "Shai Gilgeous-Alexander",
-      "actualShare": 0.966,
+      "actualShare": 0.969,
       "correct": true,
       "candidates": [
         {
           "player": "Shai Gilgeous-Alexander",
-          "mvpShare": 0.966,
+          "mvpShare": 0.969,
           "probMvp": 0.99,
           "rank": 1,
           "isActualMvp": true,
@@ -437,8 +429,8 @@
         },
         {
           "player": "Jalen Williams",
-          "mvpShare": 0.034,
-          "probMvp": 0.73,
+          "mvpShare": 0.031,
+          "probMvp": 0.74,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -626,15 +618,15 @@
       "logoUrl": "https://cdn.ssref.net/req/202407241/tlogo/bbr/BOS-2024.png",
       "opponent": "Dallas Mavericks",
       "predictedPlayer": "Jayson Tatum",
-      "predictedShare": 0.788,
+      "predictedShare": 0.839,
       "actualPlayer": "Jaylen Brown",
-      "actualShare": 0.19,
+      "actualShare": 0.146,
       "correct": false,
       "candidates": [
         {
           "player": "Jayson Tatum",
-          "mvpShare": 0.788,
-          "probMvp": 0.48,
+          "mvpShare": 0.839,
+          "probMvp": 0.56,
           "rank": 1,
           "isActualMvp": false,
           "isPredicted": true,
@@ -659,7 +651,7 @@
         },
         {
           "player": "Jaylen Brown",
-          "mvpShare": 0.19,
+          "mvpShare": 0.146,
           "probMvp": 0.18,
           "rank": 2,
           "isActualMvp": true,
@@ -685,7 +677,7 @@
         },
         {
           "player": "Derrick White",
-          "mvpShare": 0.011,
+          "mvpShare": 0.008,
           "probMvp": 0.01,
           "rank": 3,
           "isActualMvp": false,
@@ -711,7 +703,7 @@
         },
         {
           "player": "Jrue Holiday",
-          "mvpShare": 0.009,
+          "mvpShare": 0.007,
           "probMvp": 0.01,
           "rank": 4,
           "isActualMvp": false,
@@ -763,9 +755,9 @@
         },
         {
           "player": "Kristaps Porzingis",
-          "mvpShare": 0.001,
+          "mvpShare": 0.0,
           "probMvp": 0.0,
-          "rank": 5,
+          "rank": 6,
           "isActualMvp": false,
           "isPredicted": false,
           "stats": {
@@ -848,14 +840,14 @@
       "logoUrl": "https://cdn.ssref.net/req/202407241/tlogo/bbr/DEN-2023.png",
       "opponent": "Miami Heat",
       "predictedPlayer": "Nikola Jokic",
-      "predictedShare": 0.998,
+      "predictedShare": 0.997,
       "actualPlayer": "Nikola Jokic",
-      "actualShare": 0.998,
+      "actualShare": 0.997,
       "correct": true,
       "candidates": [
         {
           "player": "Nikola Jokic",
-          "mvpShare": 0.998,
+          "mvpShare": 0.997,
           "probMvp": 1.0,
           "rank": 1,
           "isActualMvp": true,
@@ -881,8 +873,8 @@
         },
         {
           "player": "Jamal Murray",
-          "mvpShare": 0.002,
-          "probMvp": 0.51,
+          "mvpShare": 0.003,
+          "probMvp": 0.54,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -1070,15 +1062,15 @@
       "logoUrl": "https://cdn.ssref.net/req/202407241/tlogo/bbr/GSW-2022.png",
       "opponent": "Boston Celtics",
       "predictedPlayer": "Stephen Curry",
-      "predictedShare": 0.986,
+      "predictedShare": 0.991,
       "actualPlayer": "Stephen Curry",
-      "actualShare": 0.986,
+      "actualShare": 0.991,
       "correct": true,
       "candidates": [
         {
           "player": "Stephen Curry",
-          "mvpShare": 0.986,
-          "probMvp": 0.95,
+          "mvpShare": 0.991,
+          "probMvp": 0.97,
           "rank": 1,
           "isActualMvp": true,
           "isPredicted": true,
@@ -1103,8 +1095,8 @@
         },
         {
           "player": "Andrew Wiggins",
-          "mvpShare": 0.009,
-          "probMvp": 0.14,
+          "mvpShare": 0.005,
+          "probMvp": 0.12,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -1129,8 +1121,8 @@
         },
         {
           "player": "Jordan Poole",
-          "mvpShare": 0.004,
-          "probMvp": 0.07,
+          "mvpShare": 0.003,
+          "probMvp": 0.08,
           "rank": 3,
           "isActualMvp": false,
           "isPredicted": false,
@@ -1156,7 +1148,7 @@
         {
           "player": "Gary Payton II",
           "mvpShare": 0.001,
-          "probMvp": 0.02,
+          "probMvp": 0.03,
           "rank": 4,
           "isActualMvp": false,
           "isPredicted": false,
@@ -1292,15 +1284,15 @@
       "logoUrl": "https://cdn.ssref.net/req/202407241/tlogo/bbr/MIL-2021.png",
       "opponent": "Phoenix Suns",
       "predictedPlayer": "Giannis Antetokounmpo",
-      "predictedShare": 0.987,
+      "predictedShare": 0.996,
       "actualPlayer": "Giannis Antetokounmpo",
-      "actualShare": 0.987,
+      "actualShare": 0.996,
       "correct": true,
       "candidates": [
         {
           "player": "Giannis Antetokounmpo",
-          "mvpShare": 0.987,
-          "probMvp": 0.98,
+          "mvpShare": 0.996,
+          "probMvp": 0.99,
           "rank": 1,
           "isActualMvp": true,
           "isPredicted": true,
@@ -1325,8 +1317,8 @@
         },
         {
           "player": "Khris Middleton",
-          "mvpShare": 0.01,
-          "probMvp": 0.35,
+          "mvpShare": 0.002,
+          "probMvp": 0.25,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -1351,8 +1343,8 @@
         },
         {
           "player": "Jrue Holiday",
-          "mvpShare": 0.002,
-          "probMvp": 0.11,
+          "mvpShare": 0.001,
+          "probMvp": 0.16,
           "rank": 3,
           "isActualMvp": false,
           "isPredicted": false,
@@ -1548,7 +1540,7 @@
         {
           "player": "Anthony Davis",
           "mvpShare": 0.013,
-          "probMvp": 0.7,
+          "probMvp": 0.65,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -1736,15 +1728,15 @@
       "logoUrl": "https://cdn.ssref.net/req/202407241/tlogo/bbr/TOR-2019.png",
       "opponent": "Golden State Warriors",
       "predictedPlayer": "Kawhi Leonard",
-      "predictedShare": 0.964,
+      "predictedShare": 0.941,
       "actualPlayer": "Kawhi Leonard",
-      "actualShare": 0.964,
+      "actualShare": 0.941,
       "correct": true,
       "candidates": [
         {
           "player": "Kawhi Leonard",
-          "mvpShare": 0.964,
-          "probMvp": 0.96,
+          "mvpShare": 0.941,
+          "probMvp": 0.94,
           "rank": 1,
           "isActualMvp": true,
           "isPredicted": true,
@@ -1769,8 +1761,8 @@
         },
         {
           "player": "Pascal Siakam",
-          "mvpShare": 0.033,
-          "probMvp": 0.45,
+          "mvpShare": 0.056,
+          "probMvp": 0.5,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -1796,7 +1788,7 @@
         {
           "player": "Kyle Lowry",
           "mvpShare": 0.002,
-          "probMvp": 0.04,
+          "probMvp": 0.03,
           "rank": 3,
           "isActualMvp": false,
           "isPredicted": false,
@@ -1957,45 +1949,19 @@
       "teamAbbr": "GSW",
       "logoUrl": "https://cdn.ssref.net/req/202407241/tlogo/bbr/GSW-2018.png",
       "opponent": "Cleveland Cavaliers",
-      "predictedPlayer": "Kevin Durant",
-      "predictedShare": 0.493,
+      "predictedPlayer": "Stephen Curry",
+      "predictedShare": 0.532,
       "actualPlayer": "Kevin Durant",
-      "actualShare": 0.493,
-      "correct": true,
+      "actualShare": 0.419,
+      "correct": false,
       "candidates": [
         {
-          "player": "Kevin Durant",
-          "mvpShare": 0.493,
-          "probMvp": 0.91,
-          "rank": 1,
-          "isActualMvp": true,
-          "isPredicted": true,
-          "stats": {
-            "G": 4,
-            "GM": 0,
-            "Series_G": 4,
-            "MP": 165,
-            "PTS": 115,
-            "TRB": 43,
-            "AST": 30,
-            "STL": 3,
-            "BLK": 9,
-            "TOV": 9,
-            "FG%": 0.526,
-            "3P%": 0.409,
-            "USG%": 28.3,
-            "NetRtg": 25.0,
-            "ORtg": 129.0,
-            "DRtg": 104.0
-          }
-        },
-        {
           "player": "Stephen Curry",
-          "mvpShare": 0.472,
-          "probMvp": 0.91,
-          "rank": 2,
+          "mvpShare": 0.532,
+          "probMvp": 0.86,
+          "rank": 1,
           "isActualMvp": false,
-          "isPredicted": false,
+          "isPredicted": true,
           "stats": {
             "G": 4,
             "GM": 0,
@@ -2016,9 +1982,35 @@
           }
         },
         {
+          "player": "Kevin Durant",
+          "mvpShare": 0.419,
+          "probMvp": 0.83,
+          "rank": 2,
+          "isActualMvp": true,
+          "isPredicted": false,
+          "stats": {
+            "G": 4,
+            "GM": 0,
+            "Series_G": 4,
+            "MP": 165,
+            "PTS": 115,
+            "TRB": 43,
+            "AST": 30,
+            "STL": 3,
+            "BLK": 9,
+            "TOV": 9,
+            "FG%": 0.526,
+            "3P%": 0.409,
+            "USG%": 28.3,
+            "NetRtg": 25.0,
+            "ORtg": 129.0,
+            "DRtg": 104.0
+          }
+        },
+        {
           "player": "Shaun Livingston",
-          "mvpShare": 0.03,
-          "probMvp": 0.37,
+          "mvpShare": 0.044,
+          "probMvp": 0.34,
           "rank": 3,
           "isActualMvp": false,
           "isPredicted": false,
@@ -2044,7 +2036,7 @@
         {
           "player": "Jordan Bell",
           "mvpShare": 0.004,
-          "probMvp": 0.07,
+          "probMvp": 0.04,
           "rank": 4,
           "isActualMvp": false,
           "isPredicted": false,
@@ -2069,8 +2061,8 @@
         },
         {
           "player": "JaVale McGee",
-          "mvpShare": 0.001,
-          "probMvp": 0.03,
+          "mvpShare": 0.002,
+          "probMvp": 0.02,
           "rank": 5,
           "isActualMvp": false,
           "isPredicted": false,
@@ -2180,14 +2172,14 @@
       "logoUrl": "https://cdn.ssref.net/req/202407241/tlogo/bbr/GSW-2017.png",
       "opponent": "Cleveland Cavaliers",
       "predictedPlayer": "Kevin Durant",
-      "predictedShare": 0.957,
+      "predictedShare": 0.943,
       "actualPlayer": "Kevin Durant",
-      "actualShare": 0.957,
+      "actualShare": 0.943,
       "correct": true,
       "candidates": [
         {
           "player": "Kevin Durant",
-          "mvpShare": 0.957,
+          "mvpShare": 0.943,
           "probMvp": 1.0,
           "rank": 1,
           "isActualMvp": true,
@@ -2213,8 +2205,8 @@
         },
         {
           "player": "Stephen Curry",
-          "mvpShare": 0.043,
-          "probMvp": 0.96,
+          "mvpShare": 0.057,
+          "probMvp": 0.97,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -2402,14 +2394,14 @@
       "logoUrl": "https://cdn.ssref.net/req/202407241/tlogo/bbr/CLE-2016.png",
       "opponent": "Golden State Warriors",
       "predictedPlayer": "LeBron James",
-      "predictedShare": 0.993,
+      "predictedShare": 0.992,
       "actualPlayer": "LeBron James",
-      "actualShare": 0.993,
+      "actualShare": 0.992,
       "correct": true,
       "candidates": [
         {
           "player": "LeBron James",
-          "mvpShare": 0.993,
+          "mvpShare": 0.992,
           "probMvp": 1.0,
           "rank": 1,
           "isActualMvp": true,
@@ -2435,8 +2427,8 @@
         },
         {
           "player": "Kyrie Irving",
-          "mvpShare": 0.007,
-          "probMvp": 0.92,
+          "mvpShare": 0.008,
+          "probMvp": 0.93,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -2624,14 +2616,14 @@
       "logoUrl": "https://cdn.ssref.net/req/202407241/tlogo/bbr/GSW-2015.png",
       "opponent": "Cleveland Cavaliers",
       "predictedPlayer": "Stephen Curry",
-      "predictedShare": 0.998,
+      "predictedShare": 0.997,
       "actualPlayer": "Andre Iguodala",
       "actualShare": 0.001,
       "correct": false,
       "candidates": [
         {
           "player": "Stephen Curry",
-          "mvpShare": 0.998,
+          "mvpShare": 0.997,
           "probMvp": 0.98,
           "rank": 1,
           "isActualMvp": false,
@@ -2658,7 +2650,7 @@
         {
           "player": "Andre Iguodala",
           "mvpShare": 0.001,
-          "probMvp": 0.04,
+          "probMvp": 0.06,
           "rank": 2,
           "isActualMvp": true,
           "isPredicted": false,
@@ -2684,7 +2676,7 @@
         {
           "player": "Draymond Green",
           "mvpShare": 0.001,
-          "probMvp": 0.04,
+          "probMvp": 0.05,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -2846,15 +2838,15 @@
       "logoUrl": "https://cdn.ssref.net/req/202407241/tlogo/bbr/SAS-2014.png",
       "opponent": "Miami Heat",
       "predictedPlayer": "Kawhi Leonard",
-      "predictedShare": 0.703,
+      "predictedShare": 0.68,
       "actualPlayer": "Kawhi Leonard",
-      "actualShare": 0.703,
+      "actualShare": 0.68,
       "correct": true,
       "candidates": [
         {
           "player": "Kawhi Leonard",
-          "mvpShare": 0.703,
-          "probMvp": 0.73,
+          "mvpShare": 0.68,
+          "probMvp": 0.71,
           "rank": 1,
           "isActualMvp": true,
           "isPredicted": true,
@@ -2879,8 +2871,8 @@
         },
         {
           "player": "Tony Parker",
-          "mvpShare": 0.152,
-          "probMvp": 0.37,
+          "mvpShare": 0.128,
+          "probMvp": 0.32,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -2905,8 +2897,8 @@
         },
         {
           "player": "Patty Mills",
-          "mvpShare": 0.053,
-          "probMvp": 0.17,
+          "mvpShare": 0.105,
+          "probMvp": 0.28,
           "rank": 3,
           "isActualMvp": false,
           "isPredicted": false,
@@ -2957,8 +2949,8 @@
         },
         {
           "player": "Tim Duncan",
-          "mvpShare": 0.036,
-          "probMvp": 0.12,
+          "mvpShare": 0.034,
+          "probMvp": 0.11,
           "rank": 5,
           "isActualMvp": false,
           "isPredicted": false,
@@ -2983,8 +2975,8 @@
         },
         {
           "player": "Tiago Splitter",
-          "mvpShare": 0.006,
-          "probMvp": 0.02,
+          "mvpShare": 0.003,
+          "probMvp": 0.01,
           "rank": 6,
           "isActualMvp": false,
           "isPredicted": false,
@@ -3010,7 +3002,7 @@
         {
           "player": "Danny Green",
           "mvpShare": 0.001,
-          "probMvp": 0.01,
+          "probMvp": 0.0,
           "rank": 7,
           "isActualMvp": false,
           "isPredicted": false,
@@ -3068,14 +3060,14 @@
       "logoUrl": "https://cdn.ssref.net/req/202407241/tlogo/bbr/MIA-2013.png",
       "opponent": "San Antonio Spurs",
       "predictedPlayer": "LeBron James",
-      "predictedShare": 0.992,
+      "predictedShare": 0.993,
       "actualPlayer": "LeBron James",
-      "actualShare": 0.992,
+      "actualShare": 0.993,
       "correct": true,
       "candidates": [
         {
           "player": "LeBron James",
-          "mvpShare": 0.992,
+          "mvpShare": 0.993,
           "probMvp": 1.0,
           "rank": 1,
           "isActualMvp": true,
@@ -3101,8 +3093,8 @@
         },
         {
           "player": "Dwyane Wade",
-          "mvpShare": 0.008,
-          "probMvp": 0.64,
+          "mvpShare": 0.006,
+          "probMvp": 0.62,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -3206,7 +3198,7 @@
         {
           "player": "Shane Battier",
           "mvpShare": 0.0,
-          "probMvp": 0.01,
+          "probMvp": 0.03,
           "rank": 3,
           "isActualMvp": false,
           "isPredicted": false,
@@ -3290,15 +3282,15 @@
       "logoUrl": "https://cdn.ssref.net/req/202407241/tlogo/bbr/MIA-2012.png",
       "opponent": "Oklahoma City Thunder",
       "predictedPlayer": "LeBron James",
-      "predictedShare": 0.845,
+      "predictedShare": 0.877,
       "actualPlayer": "LeBron James",
-      "actualShare": 0.845,
+      "actualShare": 0.877,
       "correct": true,
       "candidates": [
         {
           "player": "LeBron James",
-          "mvpShare": 0.845,
-          "probMvp": 0.97,
+          "mvpShare": 0.877,
+          "probMvp": 0.98,
           "rank": 1,
           "isActualMvp": true,
           "isPredicted": true,
@@ -3323,7 +3315,7 @@
         },
         {
           "player": "Dwyane Wade",
-          "mvpShare": 0.152,
+          "mvpShare": 0.122,
           "probMvp": 0.85,
           "rank": 2,
           "isActualMvp": false,
@@ -3349,8 +3341,8 @@
         },
         {
           "player": "Mike Miller",
-          "mvpShare": 0.003,
-          "probMvp": 0.08,
+          "mvpShare": 0.001,
+          "probMvp": 0.03,
           "rank": 3,
           "isActualMvp": false,
           "isPredicted": false,
@@ -3402,7 +3394,7 @@
         {
           "player": "Shane Battier",
           "mvpShare": 0.0,
-          "probMvp": 0.01,
+          "probMvp": 0.0,
           "rank": 4,
           "isActualMvp": false,
           "isPredicted": false,
@@ -3512,15 +3504,15 @@
       "logoUrl": "https://cdn.ssref.net/req/202407241/tlogo/bbr/DAL-2011.png",
       "opponent": "Miami Heat",
       "predictedPlayer": "Dirk Nowitzki",
-      "predictedShare": 0.933,
+      "predictedShare": 0.942,
       "actualPlayer": "Dirk Nowitzki",
-      "actualShare": 0.933,
+      "actualShare": 0.942,
       "correct": true,
       "candidates": [
         {
           "player": "Dirk Nowitzki",
-          "mvpShare": 0.933,
-          "probMvp": 0.95,
+          "mvpShare": 0.942,
+          "probMvp": 0.96,
           "rank": 1,
           "isActualMvp": true,
           "isPredicted": true,
@@ -3545,8 +3537,8 @@
         },
         {
           "player": "Jason Terry",
-          "mvpShare": 0.064,
-          "probMvp": 0.54,
+          "mvpShare": 0.054,
+          "probMvp": 0.56,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -3572,7 +3564,7 @@
         {
           "player": "J.J. Barea",
           "mvpShare": 0.002,
-          "probMvp": 0.04,
+          "probMvp": 0.05,
           "rank": 3,
           "isActualMvp": false,
           "isPredicted": false,
@@ -3734,14 +3726,14 @@
       "logoUrl": "https://cdn.ssref.net/req/202407241/tlogo/bbr/LAL-2010.png",
       "opponent": "Boston Celtics",
       "predictedPlayer": "Kobe Bryant",
-      "predictedShare": 0.99,
+      "predictedShare": 0.993,
       "actualPlayer": "Kobe Bryant",
-      "actualShare": 0.99,
+      "actualShare": 0.993,
       "correct": true,
       "candidates": [
         {
           "player": "Kobe Bryant",
-          "mvpShare": 0.99,
+          "mvpShare": 0.993,
           "probMvp": 0.99,
           "rank": 1,
           "isActualMvp": true,
@@ -3767,8 +3759,8 @@
         },
         {
           "player": "Pau Gasol",
-          "mvpShare": 0.01,
-          "probMvp": 0.64,
+          "mvpShare": 0.007,
+          "probMvp": 0.56,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -4016,7 +4008,7 @@
         {
           "player": "Lamar Odom",
           "mvpShare": 0.0,
-          "probMvp": 0.0,
+          "probMvp": 0.01,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -4068,7 +4060,7 @@
         {
           "player": "Derek Fisher",
           "mvpShare": 0.0,
-          "probMvp": 0.01,
+          "probMvp": 0.02,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -4178,15 +4170,15 @@
       "logoUrl": "https://cdn.ssref.net/req/202407241/tlogo/bbr/BOS-2008.png",
       "opponent": "Los Angeles Lakers",
       "predictedPlayer": "Ray Allen",
-      "predictedShare": 0.443,
+      "predictedShare": 0.467,
       "actualPlayer": "Paul Pierce",
-      "actualShare": 0.084,
+      "actualShare": 0.112,
       "correct": false,
       "candidates": [
         {
           "player": "Ray Allen",
-          "mvpShare": 0.443,
-          "probMvp": 0.6,
+          "mvpShare": 0.467,
+          "probMvp": 0.64,
           "rank": 1,
           "isActualMvp": false,
           "isPredicted": true,
@@ -4211,8 +4203,8 @@
         },
         {
           "player": "Kevin Garnett",
-          "mvpShare": 0.407,
-          "probMvp": 0.58,
+          "mvpShare": 0.346,
+          "probMvp": 0.57,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -4237,8 +4229,8 @@
         },
         {
           "player": "Paul Pierce",
-          "mvpShare": 0.084,
-          "probMvp": 0.23,
+          "mvpShare": 0.112,
+          "probMvp": 0.3,
           "rank": 3,
           "isActualMvp": true,
           "isPredicted": false,
@@ -4263,8 +4255,8 @@
         },
         {
           "player": "Leon Powe",
-          "mvpShare": 0.062,
-          "probMvp": 0.18,
+          "mvpShare": 0.073,
+          "probMvp": 0.22,
           "rank": 4,
           "isActualMvp": false,
           "isPredicted": false,
@@ -4289,7 +4281,7 @@
         },
         {
           "player": "James Posey",
-          "mvpShare": 0.004,
+          "mvpShare": 0.002,
           "probMvp": 0.01,
           "rank": 5,
           "isActualMvp": false,
@@ -4400,15 +4392,15 @@
       "logoUrl": "https://cdn.ssref.net/req/202407241/tlogo/bbr/SAS-2007.png",
       "opponent": "Cleveland Cavaliers",
       "predictedPlayer": "Tony Parker",
-      "predictedShare": 0.556,
+      "predictedShare": 0.651,
       "actualPlayer": "Tony Parker",
-      "actualShare": 0.556,
+      "actualShare": 0.651,
       "correct": true,
       "candidates": [
         {
           "player": "Tony Parker",
-          "mvpShare": 0.556,
-          "probMvp": 0.64,
+          "mvpShare": 0.651,
+          "probMvp": 0.68,
           "rank": 1,
           "isActualMvp": true,
           "isPredicted": true,
@@ -4433,8 +4425,8 @@
         },
         {
           "player": "Tim Duncan",
-          "mvpShare": 0.227,
-          "probMvp": 0.42,
+          "mvpShare": 0.208,
+          "probMvp": 0.4,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -4459,8 +4451,8 @@
         },
         {
           "player": "Manu Ginóbili",
-          "mvpShare": 0.216,
-          "probMvp": 0.41,
+          "mvpShare": 0.141,
+          "probMvp": 0.31,
           "rank": 3,
           "isActualMvp": false,
           "isPredicted": false,
@@ -4844,15 +4836,15 @@
       "logoUrl": "https://cdn.ssref.net/req/202407241/tlogo/bbr/SAS-2005.png",
       "opponent": "Detroit Pistons",
       "predictedPlayer": "Tim Duncan",
-      "predictedShare": 0.703,
+      "predictedShare": 0.714,
       "actualPlayer": "Tim Duncan",
-      "actualShare": 0.703,
+      "actualShare": 0.714,
       "correct": true,
       "candidates": [
         {
           "player": "Tim Duncan",
-          "mvpShare": 0.703,
-          "probMvp": 0.93,
+          "mvpShare": 0.714,
+          "probMvp": 0.94,
           "rank": 1,
           "isActualMvp": true,
           "isPredicted": true,
@@ -4877,8 +4869,8 @@
         },
         {
           "player": "Manu Ginóbili",
-          "mvpShare": 0.294,
-          "probMvp": 0.85,
+          "mvpShare": 0.283,
+          "probMvp": 0.86,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -4904,7 +4896,7 @@
         {
           "player": "Robert Horry",
           "mvpShare": 0.002,
-          "probMvp": 0.04,
+          "probMvp": 0.05,
           "rank": 3,
           "isActualMvp": false,
           "isPredicted": false,
@@ -4930,7 +4922,7 @@
         {
           "player": "Tony Parker",
           "mvpShare": 0.001,
-          "probMvp": 0.02,
+          "probMvp": 0.01,
           "rank": 4,
           "isActualMvp": false,
           "isPredicted": false,
@@ -5066,15 +5058,15 @@
       "logoUrl": "https://cdn.ssref.net/req/202407241/tlogo/bbr/DET-2004.png",
       "opponent": "Los Angeles Lakers",
       "predictedPlayer": "Chauncey Billups",
-      "predictedShare": 0.701,
+      "predictedShare": 0.742,
       "actualPlayer": "Chauncey Billups",
-      "actualShare": 0.701,
+      "actualShare": 0.742,
       "correct": true,
       "candidates": [
         {
           "player": "Chauncey Billups",
-          "mvpShare": 0.701,
-          "probMvp": 0.27,
+          "mvpShare": 0.742,
+          "probMvp": 0.32,
           "rank": 1,
           "isActualMvp": true,
           "isPredicted": true,
@@ -5099,8 +5091,8 @@
         },
         {
           "player": "Richard Hamilton",
-          "mvpShare": 0.17,
-          "probMvp": 0.08,
+          "mvpShare": 0.159,
+          "probMvp": 0.09,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -5125,8 +5117,8 @@
         },
         {
           "player": "Rasheed Wallace",
-          "mvpShare": 0.121,
-          "probMvp": 0.06,
+          "mvpShare": 0.092,
+          "probMvp": 0.05,
           "rank": 3,
           "isActualMvp": false,
           "isPredicted": false,
@@ -5151,7 +5143,7 @@
         },
         {
           "player": "Ben Wallace",
-          "mvpShare": 0.007,
+          "mvpShare": 0.006,
           "probMvp": 0.0,
           "rank": 4,
           "isActualMvp": false,
@@ -5288,14 +5280,14 @@
       "logoUrl": "https://cdn.ssref.net/req/202407241/tlogo/bbr/SAS-2003.png",
       "opponent": "New Jersey Nets",
       "predictedPlayer": "Tim Duncan",
-      "predictedShare": 0.998,
+      "predictedShare": 0.999,
       "actualPlayer": "Tim Duncan",
-      "actualShare": 0.998,
+      "actualShare": 0.999,
       "correct": true,
       "candidates": [
         {
           "player": "Tim Duncan",
-          "mvpShare": 0.998,
+          "mvpShare": 0.999,
           "probMvp": 0.98,
           "rank": 1,
           "isActualMvp": true,
@@ -5322,7 +5314,7 @@
         {
           "player": "David Robinson",
           "mvpShare": 0.001,
-          "probMvp": 0.05,
+          "probMvp": 0.03,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -5510,14 +5502,14 @@
       "logoUrl": "https://cdn.ssref.net/req/202407241/tlogo/bbr/LAL-2002.png",
       "opponent": "New Jersey Nets",
       "predictedPlayer": "Shaquille O'Neal",
-      "predictedShare": 0.993,
+      "predictedShare": 0.994,
       "actualPlayer": "Shaquille O'Neal",
-      "actualShare": 0.993,
+      "actualShare": 0.994,
       "correct": true,
       "candidates": [
         {
           "player": "Shaquille O'Neal",
-          "mvpShare": 0.993,
+          "mvpShare": 0.994,
           "probMvp": 1.0,
           "rank": 1,
           "isActualMvp": true,
@@ -5543,8 +5535,8 @@
         },
         {
           "player": "Kobe Bryant",
-          "mvpShare": 0.007,
-          "probMvp": 0.76,
+          "mvpShare": 0.006,
+          "probMvp": 0.71,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -5570,7 +5562,7 @@
         {
           "player": "Derek Fisher",
           "mvpShare": 0.0,
-          "probMvp": 0.07,
+          "probMvp": 0.05,
           "rank": 3,
           "isActualMvp": false,
           "isPredicted": false,
@@ -5732,14 +5724,14 @@
       "logoUrl": "https://cdn.ssref.net/req/202407241/tlogo/bbr/LAL-2001.png",
       "opponent": "Philadelphia 76ers",
       "predictedPlayer": "Shaquille O'Neal",
-      "predictedShare": 0.986,
+      "predictedShare": 0.982,
       "actualPlayer": "Shaquille O'Neal",
-      "actualShare": 0.986,
+      "actualShare": 0.982,
       "correct": true,
       "candidates": [
         {
           "player": "Shaquille O'Neal",
-          "mvpShare": 0.986,
+          "mvpShare": 0.982,
           "probMvp": 0.99,
           "rank": 1,
           "isActualMvp": true,
@@ -5765,7 +5757,7 @@
         },
         {
           "player": "Kobe Bryant",
-          "mvpShare": 0.012,
+          "mvpShare": 0.015,
           "probMvp": 0.62,
           "rank": 2,
           "isActualMvp": false,
@@ -5791,8 +5783,8 @@
         },
         {
           "player": "Robert Horry",
-          "mvpShare": 0.002,
-          "probMvp": 0.24,
+          "mvpShare": 0.003,
+          "probMvp": 0.21,
           "rank": 3,
           "isActualMvp": false,
           "isPredicted": false,
@@ -6176,15 +6168,15 @@
       "logoUrl": "https://cdn.ssref.net/req/202407241/tlogo/bbr/SAS-1999.png",
       "opponent": "New York Knicks",
       "predictedPlayer": "Tim Duncan",
-      "predictedShare": 0.993,
+      "predictedShare": 0.997,
       "actualPlayer": "Tim Duncan",
-      "actualShare": 0.993,
+      "actualShare": 0.997,
       "correct": true,
       "candidates": [
         {
           "player": "Tim Duncan",
-          "mvpShare": 0.993,
-          "probMvp": 0.96,
+          "mvpShare": 0.997,
+          "probMvp": 0.98,
           "rank": 1,
           "isActualMvp": true,
           "isPredicted": true,
@@ -6209,8 +6201,8 @@
         },
         {
           "player": "David Robinson",
-          "mvpShare": 0.007,
-          "probMvp": 0.14,
+          "mvpShare": 0.003,
+          "probMvp": 0.13,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -6236,7 +6228,7 @@
         {
           "player": "Mario Elie",
           "mvpShare": 0.0,
-          "probMvp": 0.0,
+          "probMvp": 0.01,
           "rank": 3,
           "isActualMvp": false,
           "isPredicted": false,
@@ -6432,7 +6424,7 @@
         {
           "player": "Scottie Pippen",
           "mvpShare": 0.0,
-          "probMvp": 0.18,
+          "probMvp": 0.24,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -6654,7 +6646,7 @@
         {
           "player": "Scottie Pippen",
           "mvpShare": 0.0,
-          "probMvp": 0.26,
+          "probMvp": 0.19,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -7064,15 +7056,15 @@
       "logoUrl": "https://cdn.ssref.net/req/202407241/tlogo/bbr/HOU-1995.png",
       "opponent": "Orlando Magic",
       "predictedPlayer": "Hakeem Olajuwon",
-      "predictedShare": 0.987,
+      "predictedShare": 0.986,
       "actualPlayer": "Hakeem Olajuwon",
-      "actualShare": 0.987,
+      "actualShare": 0.986,
       "correct": true,
       "candidates": [
         {
           "player": "Hakeem Olajuwon",
-          "mvpShare": 0.987,
-          "probMvp": 0.95,
+          "mvpShare": 0.986,
+          "probMvp": 0.96,
           "rank": 1,
           "isActualMvp": true,
           "isPredicted": true,
@@ -7097,8 +7089,8 @@
         },
         {
           "player": "Clyde Drexler",
-          "mvpShare": 0.011,
-          "probMvp": 0.19,
+          "mvpShare": 0.012,
+          "probMvp": 0.22,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -7148,32 +7140,6 @@
           }
         },
         {
-          "player": "Sam Cassell",
-          "mvpShare": 0.001,
-          "probMvp": 0.01,
-          "rank": 3,
-          "isActualMvp": false,
-          "isPredicted": false,
-          "stats": {
-            "G": 4,
-            "GM": 0,
-            "Series_G": 4,
-            "MP": 93,
-            "PTS": 57,
-            "TRB": 7,
-            "AST": 12,
-            "STL": 7,
-            "BLK": 0,
-            "TOV": 6,
-            "FG%": 0.429,
-            "3P%": 0.467,
-            "USG%": 25.2,
-            "NetRtg": 14.0,
-            "ORtg": 123.0,
-            "DRtg": 109.0
-          }
-        },
-        {
           "player": "Robert Horry",
           "mvpShare": 0.0,
           "probMvp": 0.01,
@@ -7197,6 +7163,32 @@
             "NetRtg": 14.0,
             "ORtg": 119.0,
             "DRtg": 105.0
+          }
+        },
+        {
+          "player": "Sam Cassell",
+          "mvpShare": 0.0,
+          "probMvp": 0.01,
+          "rank": 4,
+          "isActualMvp": false,
+          "isPredicted": false,
+          "stats": {
+            "G": 4,
+            "GM": 0,
+            "Series_G": 4,
+            "MP": 93,
+            "PTS": 57,
+            "TRB": 7,
+            "AST": 12,
+            "STL": 7,
+            "BLK": 0,
+            "TOV": 6,
+            "FG%": 0.429,
+            "3P%": 0.467,
+            "USG%": 25.2,
+            "NetRtg": 14.0,
+            "ORtg": 123.0,
+            "DRtg": 109.0
           }
         },
         {
@@ -7319,8 +7311,8 @@
         },
         {
           "player": "Sam Cassell",
-          "mvpShare": 0.001,
-          "probMvp": 0.14,
+          "mvpShare": 0.002,
+          "probMvp": 0.15,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -7542,7 +7534,7 @@
         {
           "player": "Scottie Pippen",
           "mvpShare": 0.0,
-          "probMvp": 0.55,
+          "probMvp": 0.6,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -7764,7 +7756,7 @@
         {
           "player": "Scottie Pippen",
           "mvpShare": 0.002,
-          "probMvp": 0.78,
+          "probMvp": 0.77,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -7952,14 +7944,14 @@
       "logoUrl": "https://cdn.ssref.net/req/202407241/tlogo/bbr/CHI-1991.png",
       "opponent": "Los Angeles Lakers",
       "predictedPlayer": "Michael Jordan",
-      "predictedShare": 1.0,
+      "predictedShare": 0.999,
       "actualPlayer": "Michael Jordan",
-      "actualShare": 1.0,
+      "actualShare": 0.999,
       "correct": true,
       "candidates": [
         {
           "player": "Michael Jordan",
-          "mvpShare": 1.0,
+          "mvpShare": 0.999,
           "probMvp": 1.0,
           "rank": 1,
           "isActualMvp": true,
@@ -7985,8 +7977,8 @@
         },
         {
           "player": "Scottie Pippen",
-          "mvpShare": 0.0,
-          "probMvp": 0.28,
+          "mvpShare": 0.001,
+          "probMvp": 0.52,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -8013,7 +8005,7 @@
           "player": "Horace Grant",
           "mvpShare": 0.0,
           "probMvp": 0.01,
-          "rank": 2,
+          "rank": 3,
           "isActualMvp": false,
           "isPredicted": false,
           "stats": {
@@ -8038,8 +8030,8 @@
         {
           "player": "John Paxson",
           "mvpShare": 0.0,
-          "probMvp": 0.06,
-          "rank": 2,
+          "probMvp": 0.09,
+          "rank": 3,
           "isActualMvp": false,
           "isPredicted": false,
           "stats": {
@@ -8065,7 +8057,7 @@
           "player": "Bill Cartwright",
           "mvpShare": 0.0,
           "probMvp": 0.0,
-          "rank": 2,
+          "rank": 3,
           "isActualMvp": false,
           "isPredicted": false,
           "stats": {
@@ -8091,7 +8083,7 @@
           "player": "Craig Hodges",
           "mvpShare": 0.0,
           "probMvp": 0.0,
-          "rank": 2,
+          "rank": 3,
           "isActualMvp": false,
           "isPredicted": false,
           "stats": {
@@ -8117,7 +8109,7 @@
           "player": "Cliff Levingston",
           "mvpShare": 0.0,
           "probMvp": 0.0,
-          "rank": 2,
+          "rank": 3,
           "isActualMvp": false,
           "isPredicted": false,
           "stats": {
@@ -8143,7 +8135,7 @@
           "player": "B.J. Armstrong",
           "mvpShare": 0.0,
           "probMvp": 0.0,
-          "rank": 2,
+          "rank": 3,
           "isActualMvp": false,
           "isPredicted": false,
           "stats": {
@@ -8260,7 +8252,7 @@
         {
           "player": "Bill Laimbeer",
           "mvpShare": 0.0,
-          "probMvp": 0.01,
+          "probMvp": 0.0,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -8396,15 +8388,15 @@
       "logoUrl": "https://cdn.ssref.net/req/202407241/tlogo/bbr/DET-1989.png",
       "opponent": "Los Angeles Lakers",
       "predictedPlayer": "Joe Dumars",
-      "predictedShare": 0.697,
+      "predictedShare": 0.636,
       "actualPlayer": "Joe Dumars",
-      "actualShare": 0.697,
+      "actualShare": 0.636,
       "correct": true,
       "candidates": [
         {
           "player": "Joe Dumars",
-          "mvpShare": 0.697,
-          "probMvp": 0.66,
+          "mvpShare": 0.636,
+          "probMvp": 0.59,
           "rank": 1,
           "isActualMvp": true,
           "isPredicted": true,
@@ -8428,36 +8420,10 @@
           }
         },
         {
-          "player": "Vinnie Johnson",
-          "mvpShare": 0.152,
-          "probMvp": 0.3,
-          "rank": 2,
-          "isActualMvp": false,
-          "isPredicted": false,
-          "stats": {
-            "G": 4,
-            "GM": 0,
-            "Series_G": 4,
-            "MP": 95,
-            "PTS": 68,
-            "TRB": 13,
-            "AST": 11,
-            "STL": 0,
-            "BLK": 1,
-            "TOV": 2,
-            "FG%": 0.6,
-            "3P%": 0.2,
-            "USG%": 27.6,
-            "NetRtg": 13.0,
-            "ORtg": 129.0,
-            "DRtg": 116.0
-          }
-        },
-        {
           "player": "Isiah Thomas",
-          "mvpShare": 0.15,
-          "probMvp": 0.3,
-          "rank": 3,
+          "mvpShare": 0.246,
+          "probMvp": 0.36,
+          "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
           "stats": {
@@ -8480,10 +8446,62 @@
           }
         },
         {
+          "player": "Vinnie Johnson",
+          "mvpShare": 0.117,
+          "probMvp": 0.21,
+          "rank": 3,
+          "isActualMvp": false,
+          "isPredicted": false,
+          "stats": {
+            "G": 4,
+            "GM": 0,
+            "Series_G": 4,
+            "MP": 95,
+            "PTS": 68,
+            "TRB": 13,
+            "AST": 11,
+            "STL": 0,
+            "BLK": 1,
+            "TOV": 2,
+            "FG%": 0.6,
+            "3P%": 0.2,
+            "USG%": 27.6,
+            "NetRtg": 13.0,
+            "ORtg": 129.0,
+            "DRtg": 116.0
+          }
+        },
+        {
+          "player": "John Salley",
+          "mvpShare": 0.001,
+          "probMvp": 0.0,
+          "rank": 4,
+          "isActualMvp": false,
+          "isPredicted": false,
+          "stats": {
+            "G": 4,
+            "GM": 0,
+            "Series_G": 4,
+            "MP": 81,
+            "PTS": 30,
+            "TRB": 10,
+            "AST": 5,
+            "STL": 1,
+            "BLK": 11,
+            "TOV": 2,
+            "FG%": 0.684,
+            "3P%": 0.0,
+            "USG%": 13.6,
+            "NetRtg": 24.0,
+            "ORtg": 131.0,
+            "DRtg": 107.0
+          }
+        },
+        {
           "player": "James Edwards",
           "mvpShare": 0.0,
           "probMvp": 0.0,
-          "rank": 4,
+          "rank": 5,
           "isActualMvp": false,
           "isPredicted": false,
           "stats": {
@@ -8509,7 +8527,7 @@
           "player": "Bill Laimbeer",
           "mvpShare": 0.0,
           "probMvp": 0.0,
-          "rank": 4,
+          "rank": 5,
           "isActualMvp": false,
           "isPredicted": false,
           "stats": {
@@ -8535,7 +8553,7 @@
           "player": "Mark Aguirre",
           "mvpShare": 0.0,
           "probMvp": 0.0,
-          "rank": 4,
+          "rank": 5,
           "isActualMvp": false,
           "isPredicted": false,
           "stats": {
@@ -8558,36 +8576,10 @@
           }
         },
         {
-          "player": "John Salley",
-          "mvpShare": 0.0,
-          "probMvp": 0.0,
-          "rank": 4,
-          "isActualMvp": false,
-          "isPredicted": false,
-          "stats": {
-            "G": 4,
-            "GM": 0,
-            "Series_G": 4,
-            "MP": 81,
-            "PTS": 30,
-            "TRB": 10,
-            "AST": 5,
-            "STL": 1,
-            "BLK": 11,
-            "TOV": 2,
-            "FG%": 0.684,
-            "3P%": 0.0,
-            "USG%": 13.6,
-            "NetRtg": 24.0,
-            "ORtg": 131.0,
-            "DRtg": 107.0
-          }
-        },
-        {
           "player": "Rick Mahorn",
           "mvpShare": 0.0,
           "probMvp": 0.0,
-          "rank": 4,
+          "rank": 5,
           "isActualMvp": false,
           "isPredicted": false,
           "stats": {
@@ -8618,14 +8610,14 @@
       "logoUrl": "https://cdn.ssref.net/req/202407241/tlogo/bbr/LAL-1988.png",
       "opponent": "Detroit Pistons",
       "predictedPlayer": "Magic Johnson",
-      "predictedShare": 0.991,
+      "predictedShare": 0.987,
       "actualPlayer": "James Worthy",
-      "actualShare": 0.006,
+      "actualShare": 0.01,
       "correct": false,
       "candidates": [
         {
           "player": "Magic Johnson",
-          "mvpShare": 0.991,
+          "mvpShare": 0.987,
           "probMvp": 0.99,
           "rank": 1,
           "isActualMvp": false,
@@ -8651,8 +8643,8 @@
         },
         {
           "player": "James Worthy",
-          "mvpShare": 0.006,
-          "probMvp": 0.49,
+          "mvpShare": 0.01,
+          "probMvp": 0.55,
           "rank": 2,
           "isActualMvp": true,
           "isPredicted": false,
@@ -8677,7 +8669,7 @@
         },
         {
           "player": "Byron Scott",
-          "mvpShare": 0.002,
+          "mvpShare": 0.003,
           "probMvp": 0.26,
           "rank": 3,
           "isActualMvp": false,
@@ -8840,15 +8832,15 @@
       "logoUrl": "https://cdn.ssref.net/req/202407241/tlogo/bbr/LAL-1987.png",
       "opponent": "Boston Celtics",
       "predictedPlayer": "Magic Johnson",
-      "predictedShare": 0.908,
+      "predictedShare": 0.805,
       "actualPlayer": "Magic Johnson",
-      "actualShare": 0.908,
+      "actualShare": 0.805,
       "correct": true,
       "candidates": [
         {
           "player": "Magic Johnson",
-          "mvpShare": 0.908,
-          "probMvp": 0.92,
+          "mvpShare": 0.805,
+          "probMvp": 0.82,
           "rank": 1,
           "isActualMvp": true,
           "isPredicted": true,
@@ -8873,8 +8865,8 @@
         },
         {
           "player": "James Worthy",
-          "mvpShare": 0.048,
-          "probMvp": 0.36,
+          "mvpShare": 0.102,
+          "probMvp": 0.37,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -8899,7 +8891,7 @@
         },
         {
           "player": "Kareem Abdul-Jabbar",
-          "mvpShare": 0.044,
+          "mvpShare": 0.093,
           "probMvp": 0.35,
           "rank": 3,
           "isActualMvp": false,
@@ -9062,15 +9054,15 @@
       "logoUrl": "https://cdn.ssref.net/req/202407241/tlogo/bbr/BOS-1986.png",
       "opponent": "Houston Rockets",
       "predictedPlayer": "Larry Bird",
-      "predictedShare": 0.707,
+      "predictedShare": 0.864,
       "actualPlayer": "Larry Bird",
-      "actualShare": 0.707,
+      "actualShare": 0.864,
       "correct": true,
       "candidates": [
         {
           "player": "Larry Bird",
-          "mvpShare": 0.707,
-          "probMvp": 0.86,
+          "mvpShare": 0.864,
+          "probMvp": 0.9,
           "rank": 1,
           "isActualMvp": true,
           "isPredicted": true,
@@ -9094,36 +9086,10 @@
           }
         },
         {
-          "player": "Rick Carlisle",
-          "mvpShare": 0.18,
-          "probMvp": 0.61,
-          "rank": 2,
-          "isActualMvp": false,
-          "isPredicted": false,
-          "stats": {
-            "G": 3,
-            "GM": 3,
-            "Series_G": 6,
-            "MP": 8,
-            "PTS": 6,
-            "TRB": 0,
-            "AST": 3,
-            "STL": 0,
-            "BLK": 0,
-            "TOV": 0,
-            "FG%": 1.0,
-            "3P%": 0.0,
-            "USG%": 15.6,
-            "NetRtg": 87.0,
-            "ORtg": 201.0,
-            "DRtg": 114.0
-          }
-        },
-        {
           "player": "Kevin McHale",
-          "mvpShare": 0.105,
-          "probMvp": 0.48,
-          "rank": 3,
+          "mvpShare": 0.08,
+          "probMvp": 0.45,
+          "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
           "stats": {
@@ -9143,6 +9109,32 @@
             "NetRtg": 11.0,
             "ORtg": 118.0,
             "DRtg": 107.0
+          }
+        },
+        {
+          "player": "Rick Carlisle",
+          "mvpShare": 0.05,
+          "probMvp": 0.34,
+          "rank": 3,
+          "isActualMvp": false,
+          "isPredicted": false,
+          "stats": {
+            "G": 3,
+            "GM": 3,
+            "Series_G": 6,
+            "MP": 8,
+            "PTS": 6,
+            "TRB": 0,
+            "AST": 3,
+            "STL": 0,
+            "BLK": 0,
+            "TOV": 0,
+            "FG%": 1.0,
+            "3P%": 0.0,
+            "USG%": 15.6,
+            "NetRtg": 87.0,
+            "ORtg": 201.0,
+            "DRtg": 114.0
           }
         },
         {
@@ -9284,15 +9276,15 @@
       "logoUrl": "https://cdn.ssref.net/req/202407241/tlogo/bbr/LAL-1985.png",
       "opponent": "Boston Celtics",
       "predictedPlayer": "Kareem Abdul-Jabbar",
-      "predictedShare": 0.794,
+      "predictedShare": 0.816,
       "actualPlayer": "Kareem Abdul-Jabbar",
-      "actualShare": 0.794,
+      "actualShare": 0.816,
       "correct": true,
       "candidates": [
         {
           "player": "Kareem Abdul-Jabbar",
-          "mvpShare": 0.794,
-          "probMvp": 0.77,
+          "mvpShare": 0.816,
+          "probMvp": 0.8,
           "rank": 1,
           "isActualMvp": true,
           "isPredicted": true,
@@ -9317,8 +9309,8 @@
         },
         {
           "player": "James Worthy",
-          "mvpShare": 0.115,
-          "probMvp": 0.33,
+          "mvpShare": 0.117,
+          "probMvp": 0.37,
           "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
@@ -9343,8 +9335,8 @@
         },
         {
           "player": "Magic Johnson",
-          "mvpShare": 0.089,
-          "probMvp": 0.28,
+          "mvpShare": 0.064,
+          "probMvp": 0.24,
           "rank": 3,
           "isActualMvp": false,
           "isPredicted": false,
@@ -9506,15 +9498,15 @@
       "logoUrl": "https://cdn.ssref.net/req/202407241/tlogo/bbr/BOS-1984.png",
       "opponent": "Los Angeles Lakers",
       "predictedPlayer": "Larry Bird",
-      "predictedShare": 0.968,
+      "predictedShare": 0.949,
       "actualPlayer": "Larry Bird",
-      "actualShare": 0.968,
+      "actualShare": 0.949,
       "correct": true,
       "candidates": [
         {
           "player": "Larry Bird",
-          "mvpShare": 0.968,
-          "probMvp": 0.58,
+          "mvpShare": 0.949,
+          "probMvp": 0.55,
           "rank": 1,
           "isActualMvp": true,
           "isPredicted": true,
@@ -9538,36 +9530,10 @@
           }
         },
         {
-          "player": "Robert Parish",
-          "mvpShare": 0.013,
-          "probMvp": 0.02,
-          "rank": 2,
-          "isActualMvp": false,
-          "isPredicted": false,
-          "stats": {
-            "G": 7,
-            "GM": 0,
-            "Series_G": 7,
-            "MP": 256,
-            "PTS": 108,
-            "TRB": 80,
-            "AST": 9,
-            "STL": 11,
-            "BLK": 11,
-            "TOV": 14,
-            "FG%": 0.44,
-            "3P%": 0.0,
-            "USG%": 19.5,
-            "NetRtg": -3.0,
-            "ORtg": 104.0,
-            "DRtg": 107.0
-          }
-        },
-        {
           "player": "Dennis Johnson",
-          "mvpShare": 0.012,
-          "probMvp": 0.02,
-          "rank": 3,
+          "mvpShare": 0.027,
+          "probMvp": 0.03,
+          "rank": 2,
           "isActualMvp": false,
           "isPredicted": false,
           "stats": {
@@ -9590,8 +9556,34 @@
           }
         },
         {
+          "player": "Robert Parish",
+          "mvpShare": 0.013,
+          "probMvp": 0.02,
+          "rank": 3,
+          "isActualMvp": false,
+          "isPredicted": false,
+          "stats": {
+            "G": 7,
+            "GM": 0,
+            "Series_G": 7,
+            "MP": 256,
+            "PTS": 108,
+            "TRB": 80,
+            "AST": 9,
+            "STL": 11,
+            "BLK": 11,
+            "TOV": 14,
+            "FG%": 0.44,
+            "3P%": 0.0,
+            "USG%": 19.5,
+            "NetRtg": -3.0,
+            "ORtg": 104.0,
+            "DRtg": 107.0
+          }
+        },
+        {
           "player": "Gerald Henderson",
-          "mvpShare": 0.005,
+          "mvpShare": 0.006,
           "probMvp": 0.01,
           "rank": 4,
           "isActualMvp": false,
@@ -9617,8 +9609,8 @@
         },
         {
           "player": "Cedric Maxwell",
-          "mvpShare": 0.001,
-          "probMvp": 0.0,
+          "mvpShare": 0.004,
+          "probMvp": 0.01,
           "rank": 5,
           "isActualMvp": false,
           "isPredicted": false,
@@ -9645,7 +9637,7 @@
           "player": "Danny Ainge",
           "mvpShare": 0.001,
           "probMvp": 0.0,
-          "rank": 5,
+          "rank": 6,
           "isActualMvp": false,
           "isPredicted": false,
           "stats": {
@@ -9671,7 +9663,7 @@
           "player": "Kevin McHale",
           "mvpShare": 0.0,
           "probMvp": 0.0,
-          "rank": 6,
+          "rank": 7,
           "isActualMvp": false,
           "isPredicted": false,
           "stats": {
@@ -9697,7 +9689,7 @@
           "player": "Scott Wedman",
           "mvpShare": 0.0,
           "probMvp": 0.0,
-          "rank": 6,
+          "rank": 7,
           "isActualMvp": false,
           "isPredicted": false,
           "stats": {

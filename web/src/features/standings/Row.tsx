@@ -48,7 +48,10 @@ export default function Row({
         role="button"
         tabIndex={0}
         aria-expanded={isExpanded}
-        aria-label={`${isExpanded ? "Collapse" : "Expand"} details for ${row.year} ${player}`}
+        aria-controls={`expanded-${rowId}`}
+        aria-label={`${isExpanded ? "Collapse" : "Expand"} details for ${row.year} ${player}. ${
+          row.correct ? "Model matched the award." : "Model missed the award."
+        }`}
         onClick={toggleExpanded}
         onKeyDown={(event) => {
           if (event.key === "Enter" || event.key === " ") {
@@ -107,7 +110,7 @@ export default function Row({
             sortKey,
             "correct",
             row.correct,
-            "text-center text-base md:text-lg",
+            "hidden md:table-cell text-center text-base md:text-lg",
           )}
         >
           {row.correct ? "Yes" : "No"}
