@@ -1,5 +1,7 @@
 # Finals MVP
 
+**Live demo:** [finalsmvp.netlify.app](https://finalsmvp.netlify.app/)
+
 Interactive standings + logistic model for who *should* have won NBA Finals MVP. Built by Noah Ford (MSCS, Carnegie Mellon ’26) as a sports-analytics portfolio project: scrape → feature design → out-of-fold classification → a UI meant for non-technical stakeholders.
 
 ## What it does
@@ -40,8 +42,8 @@ python3 scripts/refresh_data.py
 python3 scripts/build_frontend_data.py
 cd web && npm install && npm run dev
 
-# Production build (set your live URL for canonical / Open Graph tags)
-cd web && PUBLIC_SITE_URL=https://your-domain.com npm run build
+# Production build (canonical / Open Graph use https://finalsmvp.netlify.app)
+cd web && npm run build
 ```
 
 ## Project layout
