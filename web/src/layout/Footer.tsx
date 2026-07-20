@@ -43,7 +43,7 @@ export default function Footer() {
         aria-label="Creator links"
       >
         <a
-          href="https://github.com/NFordUMass/finalsmvp"
+          href="https://github.com/nhford/finalsmvp"
           target="_blank"
           rel="noopener noreferrer"
           className="p-2"
